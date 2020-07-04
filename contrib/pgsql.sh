@@ -22,9 +22,6 @@ export RESTART=always
 # Seconds to wait for stop before killing container, https://docs.docker.com/engine/reference/commandline/stop/#options
 export KILL_TIMEOUT=10
 
-# Additional postgresql extensions, you can use version number or "1" (or "latest"). For example POSTGIS=25.
-POSTGIS=
-
 if [[ ! -z $PGSQL_POSTGRES_PASSWORD ]]; then
     PASSWORD="-e PGSQL_POSTGRES_PASSWORD=$PGSQL_POSTGRES_PASSWORD"
 else
@@ -33,7 +30,6 @@ fi
 
 export DOCKER_CONTAINER_ARGS="
     $PASSWORD \
-    -e POSTGIS=$POSTGIS \
     -v pgsql:/var/local/pgsql/data \
     -v /var/run/postgresql:/var/run/postgresql \
     -p 5432:5432/tcp \

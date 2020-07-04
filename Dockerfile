@@ -1,4 +1,4 @@
-FROM softvisio/code:latest
+FROM softvisio/core:latest
 
 LABEL maintainer="zdm <zdm@softvisio.net>"
 
@@ -27,5 +27,4 @@ RUN \
         pg${POSTGRES_VER}-extensions
         --nobest \
 
-ENTRYPOINT [ "/bin/bash", "-l", "-c", "exec ../bin/docker-run.sh \"$@\"", "bash" ]
-# ENTRYPOINT [ "/bin/bash", "-l", "-c", "node ../bin/main.js \"$@\"", "bash" ]
+ENTRYPOINT [ "/bin/bash", "-l", "-c", "node ../bin/main.js \"$@\"", "bash" ]
