@@ -1,0 +1,9 @@
+{
+    "name": "pgsql",
+    "private": true,
+    "scripts": {
+        "lint": "eslint --fix --ext=.js bin lib"
+    },
+    "type": "commonjs",
+    "version": "0.1.0"
+}
