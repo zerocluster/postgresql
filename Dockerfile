@@ -1,4 +1,4 @@
-FROM softvisio/pcore:v0.135.2
+FROM softvisio/code:latest
 
 LABEL maintainer="zdm <zdm@softvisio.net>"
 
@@ -16,9 +16,6 @@ ADD . $DIST_PATH
 WORKDIR $DIST_PATH/data
 
 RUN \
-    # setup perl build env
-    # curl -fsSL https://bitbucket.org/softvisio/scripts/raw/master/env-build-perl.sh | /bin/bash -s -- setup \
-    \
     # generate additional locales
     # localedef --force -i ru_UA -f UTF-8 ru_UA.UTF-8 \
     dnf install -y langpacks-ru langpacks-uk \
@@ -27,14 +24,8 @@ RUN \
         postgresql${POSTGRES_VER}-server \
         postgresql${POSTGRES_VER}-llvmjit \
         postgresql${POSTGRES_VER}-contrib \
-        pg${POSTGRES_VER}-extensions \
+        pg${POSTGRES_VER}-extensions
         --nobest \
-    \
-    # deploy
-    && pcore deploy --recommends --suggests \
-    && pcore test -j $(nproc)
-    # \
-    # cleanup perl build env
-    # && curl -fsSL https://bitbucket.org/softvisio/scripts/raw/master/env-build-perl.sh | /bin/bash -s -- cleanup
 
 ENTRYPOINT [ "/bin/bash", "-l", "-c", "exec ../bin/docker-run.sh \"$@\"", "bash" ]
+# ENTRYPOINT [ "/bin/bash", "-l", "-c", "node ../bin/main.js \"$@\"", "bash" ]

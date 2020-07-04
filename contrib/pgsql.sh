@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# curl -fsSLO https://bitbucket.org/softvisio/pcore-service-pgsql/raw/master/contrib/pgsql.sh && chmod +x pgsql.sh
+# curl -fsSLO https://bitbucket.org/softvisio/pgsql/raw/master/contrib/pgsql.sh && chmod +x pgsql.sh
 # PGSQL_POSTGRES_PASSWORD=1 ./pgsql.sh
 
 set -e
