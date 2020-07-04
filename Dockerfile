@@ -25,6 +25,6 @@ RUN \
         postgresql${POSTGRES_VER}-llvmjit \
         postgresql${POSTGRES_VER}-contrib \
         pg${POSTGRES_VER}-extensions
-        --nobest \
+        # --nobest \
 
 ENTRYPOINT [ "/bin/bash", "-l", "-c", "node ../bin/main.js \"$@\"", "bash" ]

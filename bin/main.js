@@ -4,4 +4,4 @@ const App = require( "../lib" );
 
 var app = new App();
 
-app.run().then( process.exit() );
+app.run();
