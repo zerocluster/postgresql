@@ -7,7 +7,7 @@ set -e
 mv /var/local/pgsql/data/db /var/local/pgsql/data/db-old
 
 # get old cluster version
-FROM=`cat /var/local/pgsql/data/db-old/PG_VERSION`
+FROM=$(cat /var/local/pgsql/data/db-old/PG_VERSION)
 
 # install old deps
 dnf -y install \

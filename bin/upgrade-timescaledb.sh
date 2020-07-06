@@ -6,7 +6,7 @@ set -e
 CLUSTER=/var/local/pgsql/data/db
 
 # get cluster version
-VER=`cat $CLUSTER/PG_VERSION`
+VER=$(cat $CLUSTER/PG_VERSION)
 
 # install old deps
 dnf -y install \
