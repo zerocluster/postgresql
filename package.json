@@ -4,6 +4,12 @@
     "private": true,
     "type": "commonjs",
     "scripts": {
-        "lint": "softvisio-cli lint *.* bin contrib lib"
-    }
+        "lint": "softvisio-cli lint"
+    },
+    "lint": [
+        "*.*",
+        "bin",
+        "contrib",
+        "lib"
+    ]
 }
