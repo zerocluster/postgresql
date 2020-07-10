@@ -1,3 +1,7 @@
+## v0.2.0 (Fri, 10 Jul 2020 21:10:36 GMT)
+
+-   lint config added to package.json
+
 ## v0.1.2 (Wed, 08 Jul 2020 16:57:13 GMT)
 
 -   .docker.yaml added
