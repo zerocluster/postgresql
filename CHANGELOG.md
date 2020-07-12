@@ -1,3 +1,7 @@
+## v0.2.1 (Sun, 12 Jul 2020 06:38:30 GMT)
+
+-   .eslintrc.yaml updated
+
 ## v0.2.0 (Fri, 10 Jul 2020 21:10:36 GMT)
 
 -   lint config added to package.json
