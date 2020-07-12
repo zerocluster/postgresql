@@ -1,15 +1,15 @@
-## v0.2.1 (Sun, 12 Jul 2020 06:38:30 GMT)
+## v0.2.1 (2020-07-12)
 
 -   .eslintrc.yaml updated
 
-## v0.2.0 (Fri, 10 Jul 2020 21:10:36 GMT)
+## v0.2.0 (2020-07-10)
 
 -   lint config added to package.json
 
-## v0.1.2 (Wed, 08 Jul 2020 16:57:13 GMT)
+## v0.1.2 (2020-07-08)
 
 -   .docker.yaml added
 
-## v0.1.1 (Wed, 08 Jul 2020 07:41:31 GMT)
+## v0.1.1 (2020-07-08)
 
 -   initial release
