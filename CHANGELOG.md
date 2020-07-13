@@ -1,3 +1,7 @@
+## 0.2.4 (2020-07-13)
+
+-   docker base image updated
+
 ## 0.2.3 (2020-07-12)
 
 -   changelog format updated
