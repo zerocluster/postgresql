@@ -1,4 +1,4 @@
-FROM softvisio/core:latest
+FROM softvisio/core:master
 
 LABEL maintainer="zdm <zdm@softvisio.net>"
 
