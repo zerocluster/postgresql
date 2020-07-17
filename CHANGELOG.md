@@ -1,3 +1,7 @@
+## 0.2.5 (2020-07-17)
+
+-   lint patterns updated
+
 ## 0.2.4 (2020-07-13)
 
 -   docker base image updated
