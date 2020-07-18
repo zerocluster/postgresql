@@ -1,19 +1,10 @@
 FROM softvisio/core:master
 
-LABEL maintainer="zdm <zdm@softvisio.net>"
-
-USER root
-
-ENV DIST_PATH="$WORKSPACE/pgsql" \
-    POSTGRES_VER=12
+ENV POSTGRES_VER=12
 
 ENV POSTGRES_HOME="/usr/pgsql-$POSTGRES_VER"
 
 ENV PATH="$POSTGRES_HOME/bin:$PATH"
-
-ADD . $DIST_PATH
-
-WORKDIR $DIST_PATH/data
 
 RUN \
     # generate additional locales
@@ -25,5 +16,3 @@ RUN \
         postgresql${POSTGRES_VER}-llvmjit \
         postgresql${POSTGRES_VER}-contrib \
         pg${POSTGRES_VER}-extensions
-
-ENTRYPOINT [ "/bin/bash", "-l", "-c", "node ../bin/main.js \"$@\"", "bash" ]

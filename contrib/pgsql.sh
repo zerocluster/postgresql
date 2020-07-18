@@ -31,7 +31,7 @@ fi
 
 export DOCKER_CONTAINER_ARGS="
     $PASSWORD \
-    -v pgsql:/var/local/pgsql/data \
+    -v pgsql:/var/local/dist/data \
     -v /var/run/postgresql:/var/run/postgresql \
     -p 5432:5432/tcp \
     --shm-size=1g \
