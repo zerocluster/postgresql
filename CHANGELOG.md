@@ -1,3 +1,7 @@
+## 0.4.1 (2020-07-18)
+
+-   .sh ext removed from docker wrapper
+
 ## 0.4.0 (2020-07-18)
 
 -   dockerfile updated
