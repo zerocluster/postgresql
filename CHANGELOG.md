@@ -1,3 +1,7 @@
+## 0.4.0 (2020-07-18)
+
+-   dockerfile updated
+
 ## 0.3.0 (2020-07-18)
 
 -   docker CONTAINER_NAME var added
