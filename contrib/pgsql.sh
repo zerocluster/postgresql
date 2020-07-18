@@ -11,6 +11,7 @@ export TAG=latest
 export NAME=pgsql
 export DOCKER_NAMESPACE=softvisio
 export SERVICE=1
+export CONTAINER_NAME=
 
 # Docker container restart policy, https://docs.docker.com/config/containers/start-containers-automatically/
 # - no             - do not automatically restart the container. (the default);
