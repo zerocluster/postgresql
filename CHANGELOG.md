@@ -1,3 +1,7 @@
+## 0.4.2 (2020-07-19)
+
+-   docker always restart unless stopped
+
 ## 0.4.1 (2020-07-18)
 
 -   .sh ext removed from docker wrapper
