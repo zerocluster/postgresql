@@ -1,3 +1,7 @@
+## 0.4.3 (2020-07-22)
+
+-   resolve db path
+
 ## 0.4.2 (2020-07-19)
 
 -   docker always restart unless stopped
