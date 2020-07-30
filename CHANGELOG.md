@@ -1,3 +1,7 @@
+## 0.5.0 (2020-07-30)
+
+-   signals handlers added
+
 ## 0.4.3 (2020-07-22)
 
 -   resolve db path
