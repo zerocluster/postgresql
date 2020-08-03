@@ -1,3 +1,7 @@
+## 0.5.2 (2020-08-03)
+
+-   npm-shrinkwrap.json version updated
+
 ## 0.5.1 (2020-08-03)
 
 -   shrinkwrap added
