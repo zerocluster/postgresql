@@ -1,3 +1,7 @@
+## 0.5.1 (2020-08-03)
+
+-   shrinkwrap added
+
 ## 0.5.0 (2020-07-30)
 
 -   signals handlers added
