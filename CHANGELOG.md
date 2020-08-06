@@ -1,3 +1,7 @@
+## 0.5.3 (2020-08-06)
+
+-   dist location updated
+
 ## 0.5.2 (2020-08-03)
 
 -   npm-shrinkwrap.json version updated
