@@ -3,7 +3,7 @@
 set -u
 set -e
 
-CLUSTER=/var/local/pgsql/data/db
+CLUSTER=/var/local/dist/data/db
 
 # get cluster version
 VER=$(cat $CLUSTER/PG_VERSION)
@@ -23,4 +23,4 @@ sudo -u postgres \
     -D $CLUSTER &
 
 # upgrade timescaledb extension for all databases
-psql -X -f /var/local/pgsql/bin/upgrade-timescaledb.sql
+psql -X -f /var/local/dist/bin/upgrade-timescaledb.sql

@@ -8,14 +8,14 @@ pgsql://username:password@/path/to/unix/socket?db=dbname&...
 
 # HOW TO UPGRADE
 
--   Make sure, that old and new cluster use the same versions of timescaledb. If not - upgrade old cluster it the new version first. Look at `upgrade-timescaledb.sh` script.
+-   Make sure, that old and new cluster use the same versions of timescaledb. If not - upgrade old cluster to the new version first. Look at `upgrade-timescaledb.sh` script.
 
 -   Migrate
 
 ```
-./pgsql.sh enter
+./pgsql enter
 
-/var/local/pgsql/bin/migrate.sh
+/var/local/dist/bin/migrate.sh
 ```
 
 -   After successful upgrade old cluster can be removed:
@@ -30,7 +30,7 @@ rm -rf /var/lib/docker/volumes/pgsql/_data/db-old
 -   Stop cluster;
 
 ```
-./pgsql.sh enter
+./pgsql enter
 
-/var/local/pgsql/bin/upgrade-timescaledb.sh
+/var/local/dist/bin/upgrade-timescaledb.sh
 ```
