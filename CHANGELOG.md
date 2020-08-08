@@ -1,3 +1,8 @@
+## 0.5.4 (2020-08-08)
+
+-   deps updated
+-   .eslintrc.yaml removed
+
 ## 0.5.3 (2020-08-06)
 
 -   dist location updated
