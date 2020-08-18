@@ -1,3 +1,7 @@
+## 0.6.0 (2020-08-18)
+
+-   default password 16 bytes b64u
+
 ## 0.5.4 (2020-08-08)
 
 -   deps updated
