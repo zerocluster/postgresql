@@ -15,4 +15,12 @@ RUN \
         postgresql${POSTGRES_VER}-server \
         postgresql${POSTGRES_VER}-llvmjit \
         postgresql${POSTGRES_VER}-contrib \
-        pg${POSTGRES_VER}-extensions
+        pg${POSTGRES_VER}-extensions \
+    \
+    # install deps
+    && pushd .. \
+    && npm i --unsafe --only=prod \
+    && popd \
+    \
+    # clean npm cache
+    && rm -rf ~/.npm-cache
