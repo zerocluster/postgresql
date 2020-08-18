@@ -1,3 +1,7 @@
+## 0.6.1 (2020-08-18)
+
+-   generated password encoded to base58
+
 ## 0.6.0 (2020-08-18)
 
 -   default password 16 bytes b64u
