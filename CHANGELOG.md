@@ -1,3 +1,7 @@
+## 0.6.2 (2020-08-18)
+
+-   Docker file install npm deps added
+
 ## 0.6.1 (2020-08-18)
 
 -   generated password encoded to base58
