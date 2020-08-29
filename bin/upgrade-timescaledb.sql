@@ -1,4 +1,5 @@
-CREATE EXTENSION IF NOT EXISTS dblink;
+DROP EXTENSION IF EXISTS "timescaledb";
+CREATE EXTENSION IF NOT EXISTS "dblink";
 
 DO
 $$
@@ -9,7 +10,7 @@ BEGIN
     conn_template = 'user=postgres password=1 dbname=';
 
     FOR database_name IN
-        SELECT "datname" FROM "pg_database" WHERE "datistemplate" = false
+        SELECT "datname" FROM "pg_database" WHERE "datistemplate" = FALSE
     LOOP
         conn_string = conn_template || database_name;
 

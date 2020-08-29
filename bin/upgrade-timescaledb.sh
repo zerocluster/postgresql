@@ -22,5 +22,7 @@ sudo -u postgres \
     -c listen_addresses="" \
     -D $CLUSTER &
 
+sleep 3
+
 # upgrade timescaledb extension for all databases
 psql -X -f /var/local/dist/bin/upgrade-timescaledb.sql
