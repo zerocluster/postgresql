@@ -1,3 +1,8 @@
+## 0.6.3 (2020-08-29)
+
+-   deps updated
+-   upgrade timescaledb script fixed
+
 ## 0.6.2 (2020-08-18)
 
 -   Docker file install npm deps added
