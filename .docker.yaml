@@ -1,2 +1,4 @@
-name: pgsql
-namespace: softvisio
+registry: softvisio/pgsql
+
+mirrors:
+  - registry.myworkforce.com/library/pgsql
