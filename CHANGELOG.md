@@ -1,3 +1,8 @@
+## 0.7.0 (2020-10-01)
+
+-   deps updated
+-   docker --init
+
 ## 0.6.7 (2020-09-19)
 
 -   docker mirrors
