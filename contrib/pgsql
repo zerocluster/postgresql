@@ -30,6 +30,7 @@ export DOCKER_CONTAINER_ARGS="
     -v pgsql:/var/local/dist/data \
     -v /var/run/postgresql:/var/run/postgresql \
     -p 5432:5432/tcp \
+    --init \
     --shm-size=1g \
 "
 
