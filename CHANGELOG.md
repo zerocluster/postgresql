@@ -1,3 +1,8 @@
+## 0.8.0 (2020-10-22)
+
+-   deps updated
+-   docker tags updated
+
 ## 0.7.0 (2020-10-01)
 
 -   deps updated
