@@ -1,4 +1,3 @@
-registry: softvisio/pgsql
-
-mirrors:
+registry:
+  - softvisio/pgsql
   - registry.myworkforce.com/nginx/pgsql
