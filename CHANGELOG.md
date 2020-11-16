@@ -1,3 +1,7 @@
+## 0.8.2 (2020-11-16)
+
+-   centos8 fix added
+
 ## 0.8.1 (2020-11-16)
 
 -   deps updated
