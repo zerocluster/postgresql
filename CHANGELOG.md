@@ -1,3 +1,7 @@
+## 0.8.4 (2020-11-24)
+
+-   dockerfile updated
+
 ## 0.8.3 (2020-11-24)
 
 -   deps updated
