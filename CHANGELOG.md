@@ -1,3 +1,8 @@
+## 0.8.3 (2020-11-24)
+
+-   deps updated
+-   dockerfile updated
+
 ## 0.8.2 (2020-11-16)
 
 -   centos8 fix added
