@@ -1,3 +1,7 @@
+## 0.8.6 (2020-12-08)
+
+-   repo-pgsql centos fix
+
 ## 0.8.5 (2020-11-26)
 
 -   deps updated
