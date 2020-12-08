@@ -7,12 +7,9 @@ ENV POSTGRES_HOME="/usr/pgsql-$POSTGRES_VER"
 ENV PATH="$POSTGRES_HOME/bin:$PATH"
 
 RUN \
-    # centos8 patch
-    dnf -qy module disable postgresql llvm-toolset rust-toolset \
-    \
     # generate additional locales
     # localedef --force -i ru_UA -f UTF-8 ru_UA.UTF-8 \
-    && dnf install -y langpacks-ru langpacks-uk \
+    dnf install -y langpacks-ru langpacks-uk \
     \
     && dnf install -y \
         postgresql${POSTGRES_VER}-server \
