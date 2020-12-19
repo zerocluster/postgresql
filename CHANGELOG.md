@@ -1,3 +1,8 @@
+## 0.9.0 (2020-12-19)
+
+-   deps updated
+-   password length increased to 24 bytes
+
 ## 0.8.7 (2020-12-08)
 
 -   deps updated
