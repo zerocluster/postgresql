@@ -9,7 +9,7 @@ mv /var/local/dist/data/db /var/local/dist/data/db-old
 # get old cluster version
 FROM=$(cat /var/local/dist/data/db-old/PG_VERSION)
 
-# install old deps
+# install old cluster
 dnf -y install \
     sudo \
     postgresql$FROM-server \
