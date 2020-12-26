@@ -1,3 +1,8 @@
+## 0.9.1 (2020-12-26)
+
+-   deps updated
+-   README updated
+
 ## 0.9.0 (2020-12-19)
 
 -   deps updated
