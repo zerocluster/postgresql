@@ -1,3 +1,7 @@
+## 0.9.2 (2020-12-26)
+
+-   docker default tag - latest
+
 ## 0.9.1 (2020-12-26)
 
 -   deps updated
