@@ -1,3 +1,5 @@
 registry:
   - softvisio/pgsql
   - registry.myworkforce.com/nginx/pgsql
+
+default_tag: latest
