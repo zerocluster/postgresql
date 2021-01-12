@@ -1,3 +1,8 @@
+## 0.10.0 (2021-01-12)
+
+-   password gen updated
+-   deps updated
+
 ## 0.9.2 (2020-12-26)
 
 -   docker default tag - latest
