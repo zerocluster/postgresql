@@ -1,3 +1,7 @@
+## 0.11.0 (2021-01-16)
+
+-   password length set to 16 bytes
+
 ## 0.10.0 (2021-01-12)
 
 -   password gen updated
