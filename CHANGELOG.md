@@ -1,3 +1,7 @@
+## 0.12.0 (2021-01-26)
+
+-   migrated to node v15
+
 ## 0.11.0 (2021-01-16)
 
 -   password length set to 16 bytes
