@@ -1,3 +1,9 @@
+## 1.0.1 (2021-02-11)
+
+### Raw commits log
+
+-   use docker-wrapper script;
+
 ## 1.0.0 (2021-02-02)
 
 -   stable release;
