@@ -1,3 +1,9 @@
+## 1.1.0 (2021-02-22)
+
+### Raw commits log
+
+-   pgsql 13;
+
 ## 1.0.1 (2021-02-11)
 
 ### Raw commits log
