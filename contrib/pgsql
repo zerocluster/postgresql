@@ -28,6 +28,7 @@ fi
 export DOCKER_CONTAINER_ARGS="
     $PASSWORD \
     -v pgsql:/var/local/dist/data \
+    -v share:/var/lib/share \
     -v /var/run/postgresql:/var/run/postgresql \
     -p 5432:5432/tcp \
     --init \
