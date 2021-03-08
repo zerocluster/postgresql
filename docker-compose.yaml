@@ -3,6 +3,7 @@ version: "3.9"
 # NOTE deploy
 # docker stack deploy --compose-file docker-compose.yaml pgsql
 # PGSQL_POSTGRES_PASSWORD=1 docker stack deploy --compose-file docker-compose.yaml pgsql
+# docker node update --label-add pgsql=true <NODE-NAME>
 
 x-build:
   default_tag: latest
