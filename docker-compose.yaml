@@ -37,7 +37,7 @@ services:
 
     volumes:
       - { type: bind, source: /var/run/postgresql, target: /var/run/postgresql }
-      - { type: volume, source: pgsql, target: /var/local/dist/data }
+      - { type: volume, source: pgsql, target: /var/lib/pgsql/data }
 
     init: true
     stop_grace_period: 5m

@@ -3,7 +3,7 @@
 set -u
 set -e
 
-CLUSTER=/var/local/dist/data/db
+CLUSTER=/var/lib/pgsql/data
 
 # get cluster version
 VER=$(cat $CLUSTER/PG_VERSION)

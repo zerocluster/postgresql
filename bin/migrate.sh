@@ -4,10 +4,10 @@ set -u
 set -e
 
 # move old cluster
-mv /var/local/dist/data/db /var/local/dist/data/db-old
+mv /var/lib/pgsql/data /var/lib/pgsql/data-old
 
 # get old cluster version
-FROM=$(cat /var/local/dist/data/db-old/PG_VERSION)
+FROM=$(cat /var/lib/pgsql/data-old/PG_VERSION)
 
 # install old cluster
 dnf -y install \
@@ -24,23 +24,23 @@ sudo -u postgres \
     --no-locale \
     -U postgres \
     --pwprompt \
-    -D /var/local/dist/data/db
+    -D /var/lib/pgsql/data
 
 # move config files
 # NOTE this can be not quite correct, because it may contains incompatible settings
-\cp --preserve /var/local/dist/data/db-old/postgresql.auto.conf /var/local/dist/data/db/postgresql.auto.conf
-\cp --preserve /var/local/dist/data/db-old/pg_hba.conf /var/local/dist/data/db
-\cp --preserve -R /var/local/dist/data/db-old/conf.d /var/local/dist/data/db
-\cp --preserve /var/local/dist/data/db/postgresql.conf /var/local/dist/data/db/conf.d/000-postgresql.conf
-\cp --preserve /var/local/dist/data/db-old/postgresql.conf /var/local/dist/data/db
+\cp --preserve /var/lib/pgsql/data-old/postgresql.auto.conf /var/lib/pgsql/data/postgresql.auto.conf
+\cp --preserve /var/lib/pgsql/data-old/pg_hba.conf /var/lib/pgsql/data
+\cp --preserve -R /var/lib/pgsql/data-old/conf.d /var/lib/pgsql/data
+\cp --preserve /var/lib/pgsql/data/postgresql.conf /var/lib/pgsql/data/conf.d/000-postgresql.conf
+\cp --preserve /var/lib/pgsql/data-old/postgresql.conf /var/lib/pgsql/data
 
 # check clusters compatibility
 sudo -u postgres \
     $POSTGRES_HOME/bin/pg_upgrade \
     -b /usr/pgsql-$FROM/bin \
     -B $POSTGRES_HOME/bin \
-    -d /var/local/dist/data/db-old \
-    -D /var/local/dist/data/db \
+    -d /var/lib/pgsql/data-old \
+    -D /var/lib/pgsql/data \
     --check
 
 # migrate
@@ -48,8 +48,8 @@ sudo -u postgres \
     $POSTGRES_HOME/bin/pg_upgrade \
     -b /usr/pgsql-$FROM/bin \
     -B $POSTGRES_HOME/bin \
-    -d /var/local/dist/data/db-old \
-    -D /var/local/dist/data/db \
+    -d /var/lib/pgsql/data-old \
+    -D /var/lib/pgsql/data \
     -O "-c timescaledb.restoring=on"
 
 # TODO perform vacuum
