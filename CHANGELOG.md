@@ -1,3 +1,10 @@
+## 1.2.0 (2021-03-08)
+
+### Raw commits log
+
+-   database moved to default location;
+-   moved to compose file;
+
 ## 1.1.1 (2021-03-03)
 
 ### Raw commits log
