@@ -14,7 +14,7 @@ networks:
   private: { external: true }
 
 volumes:
-  pgsql:
+  pgsql: { name: pgsql }
 
 services:
   pgsql:
