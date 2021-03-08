@@ -1,0 +1,48 @@
+version: "3.9"
+
+# NOTE deploy
+# docker stack deploy --compose-file docker-compose.yaml pgsql
+# PGSQL_POSTGRES_PASSWORD=1 docker stack deploy --compose-file docker-compose.yaml pgsql
+
+x-build:
+  default_tag: latest
+  # auto_tags: [main, devel, latest]
+  # tags_mapping: { main: latest }
+
+networks:
+  private: { external: true }
+
+volumes:
+  pgsql:
+
+services:
+  pgsql:
+    image: softvisio/pgsql
+    hostname: pgsql
+
+    deploy:
+      replicas: 1
+      placement:
+        max_replicas_per_node: 1
+        constraints:
+          - "node.labels.pgsql == true"
+
+    environment:
+      PGSQL_POSTGRES_PASSWORD: $PGSQL_POSTGRES_PASSWORD
+
+    networks: [private]
+
+    ports:
+      - { published: 5432, target: 5432 }
+
+    volumes:
+      - { type: bind, source: /var/run/postgresql, target: /var/run/postgresql }
+      - { type: volume, source: pgsql, target: /var/local/dist/data }
+
+    init: true
+    stop_grace_period: 5m
+    shm_size: 1g
+
+    build:
+      labels:
+        x-additional-image: registry.myworkforce.com/nginx/pgsql
