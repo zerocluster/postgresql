@@ -1,3 +1,9 @@
+## 1.2.3 (2021-03-09)
+
+### Raw commits log
+
+-   unlinkSync replaced with rmSync;
+
 ## 1.2.2 (2021-03-08)
 
 ### Raw commits log
