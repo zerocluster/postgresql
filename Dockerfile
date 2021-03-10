@@ -6,6 +6,8 @@ ENV POSTGRES_HOME="/usr/pgsql-$POSTGRES_VER"
 
 ENV PATH="$POSTGRES_HOME/bin:$PATH"
 
+HEALTHCHECK NONE
+
 RUN \
     # generate additional locales
     # localedef --force -i ru_UA -f UTF-8 ru_UA.UTF-8 \
