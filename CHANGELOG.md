@@ -1,3 +1,10 @@
+## 1.2.5 (2021-03-10)
+
+### Raw commits log
+
+-   disable healthcheck;
+-   docker stack updated;
+
 ## 1.2.4 (2021-03-10)
 
 ### Raw commits log
