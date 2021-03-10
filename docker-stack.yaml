@@ -1,10 +1,10 @@
-#!/usr/bin/env -S docker stack deploy pgsql -c
+#!/usr/bin/env -S docker stack deploy --with-registry-auth pgsql -c
 
 version: "3.9"
 
 # NOTE deploy
-# docker stack deploy -c docker-stack.yaml pgsql
-# PGSQL_POSTGRES_PASSWORD=1 docker stack deploy -c docker-stack.yaml pgsql
+# docker stack deploy --with-registry-auth -c docker-stack.yaml pgsql
+# PGSQL_POSTGRES_PASSWORD=1 docker stack deploy --with-registry-auth -c docker-stack.yaml pgsql
 # docker node update --label-add pgsql=true <NODE-NAME>
 
 x-build:
