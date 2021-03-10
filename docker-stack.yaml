@@ -1,10 +1,10 @@
-#!/usr/bin/env -S docker stack deploy pgsql --compose-file
+#!/usr/bin/env -S docker stack deploy pgsql -c
 
 version: "3.9"
 
 # NOTE deploy
-# docker stack deploy --compose-file docker-compose.yaml pgsql
-# PGSQL_POSTGRES_PASSWORD=1 docker stack deploy --compose-file docker-compose.yaml pgsql
+# docker stack deploy -c docker-stack.yaml pgsql
+# PGSQL_POSTGRES_PASSWORD=1 docker stack deploy -c docker-stack.yaml pgsql
 # docker node update --label-add pgsql=true <NODE-NAME>
 
 x-build:
@@ -39,7 +39,6 @@ services:
       - { published: 5432, target: 5432 }
 
     volumes:
-      - { type: bind, source: /var/run/postgresql, target: /var/run/postgresql }
       - { type: volume, source: pgsql, target: /var/lib/pgsql }
 
     init: true
