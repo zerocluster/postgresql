@@ -7,17 +7,6 @@ version: "3.9"
 # PGSQL_POSTGRES_PASSWORD=1 docker stack deploy --with-registry-auth -c docker-stack.yaml pgsql
 # docker node update --label-add pgsql=true <NODE-NAME>
 
-x-build:
-  default_tag: latest
-  # auto_tags: [main, devel, latest]
-  # tags_mapping: { main: latest }
-
-networks:
-  private: { external: true }
-
-volumes:
-  pgsql: { name: pgsql }
-
 services:
   pgsql:
     image: softvisio/pgsql
@@ -48,3 +37,14 @@ services:
     build:
       labels:
         x-additional-image: registry.myworkforce.com/nginx/pgsql
+
+networks:
+  private: { external: true }
+
+volumes:
+  pgsql: { name: pgsql }
+
+x-build:
+  default_tag: latest
+  # auto_tags: [main, devel, latest]
+  # tags_mapping: { main: latest }
