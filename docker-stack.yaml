@@ -10,7 +10,6 @@ version: "3.9"
 services:
   pgsql:
     image: softvisio/pgsql
-    hostname: pgsql
 
     deploy:
       replicas: 1
