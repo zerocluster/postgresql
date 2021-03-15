@@ -10,6 +10,8 @@ version: "3.9"
 services:
   pgsql:
     image: softvisio/pgsql
+    init: true
+    stop_grace_period: 5m
 
     deploy:
       replicas: 1
@@ -27,11 +29,8 @@ services:
       - { published: 5432, target: 5432 }
 
     volumes:
+      - { type: tmpfs, target: /dev/shm, tmpfs: { size: 1024000000 } }
       - { type: volume, source: pgsql, target: /var/lib/pgsql }
-
-    init: true
-    stop_grace_period: 5m
-    shm_size: 1g
 
     build:
       labels:
