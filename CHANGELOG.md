@@ -1,3 +1,9 @@
+## 1.4.2 (2021-03-15)
+
+### Raw commits log
+
+-   package renamed;
+
 ## 1.4.1 (2021-03-15)
 
 ### Raw commits log
