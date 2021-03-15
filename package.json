@@ -1,5 +1,5 @@
 {
-    "name": "pgsql",
+    "name": "@applications/pgsql",
     "version": "1.4.1",
     "private": true,
     "scripts": {
