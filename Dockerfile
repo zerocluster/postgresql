@@ -20,7 +20,7 @@ RUN \
         pg${POSTGRES_VER}-extensions \
     \
     # install deps
-    && npm i --no-fund --omit=dev \
+    && npm i --omit=dev \
     \
     # clean npm cache
     && rm -rf ~/.npm-cache
