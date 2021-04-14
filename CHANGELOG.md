@@ -1,3 +1,9 @@
+## 1.4.5 (2021-04-14)
+
+### Raw commits log
+
+-   npmrc fund false;
+
 ## 1.4.4 (2021-03-31)
 
 ### Raw commits log
