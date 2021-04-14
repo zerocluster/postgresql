@@ -27,7 +27,7 @@ pgsql://username:password@/path/to/unix/socket/dbname?option1=val
 
 # UPGRADE TIMESCALEDB
 
--   Upgrade docker container to the latest version, contained new `timescaledb` version.
+-   Upgrade docker container to the latest version, contained new `timescaledb` extension version.
 
 -   From `psql` execute:
 
@@ -38,6 +38,6 @@ pgsql://username:password@/path/to/unix/socket/dbname?option1=val
     CREATE EXTENSION IF NOT EXISTS "softvisio" CASCADE;
     ALTER EXTENSION "softvisio" UPDATE;
 
-    # update extensions for all databases to the latest versions
-    SELECT update_extensions();
+    # update all extensions for all databases to the latest available versions
+    CALL update_extensions();
     ```
