@@ -7,9 +7,6 @@
         "#index": "./lib/index.js",
         "#resources/*": "./resources/*"
     },
-    "scripts": {
-        "lint": "softvisio-cli lint"
-    },
     "engines": {
         "node": ">=15.7.0",
         "npm": ">=7.4.3"
