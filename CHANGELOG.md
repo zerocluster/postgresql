@@ -1,3 +1,9 @@
+## 1.4.9 (2021-06-01)
+
+### Raw commits log
+
+-   lint config removed;
+
 ## 1.4.8 (2021-05-19)
 
 ### Raw commits log
