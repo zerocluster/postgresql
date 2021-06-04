@@ -1,142 +1,142 @@
 ## 1.4.9 (2021-06-01)
 
-### Raw commits log
+**Raw commits log**
 
 -   lint config removed;
 
 ## 1.4.8 (2021-05-19)
 
-### Raw commits log
+**Raw commits log**
 
 -   lint script removed;
 
 ## 1.4.7 (2021-04-17)
 
-### Raw commits log
+**Raw commits log**
 
 -   ported to modules;
 
 ## 1.4.6 (2021-04-14)
 
-### Raw commits log
+**Raw commits log**
 
 -   readme updated;
 
 ## 1.4.5 (2021-04-14)
 
-### Raw commits log
+**Raw commits log**
 
 -   npmrc fund false;
 
 ## 1.4.4 (2021-03-31)
 
-### Raw commits log
+**Raw commits log**
 
 -   configs updated;
 
 ## 1.4.3 (2021-03-31)
 
-### Raw commits log
+**Raw commits log**
 
 -   lint pattern updated;
 
 ## 1.4.2 (2021-03-15)
 
-### Raw commits log
+**Raw commits log**
 
 -   package renamed;
 
 ## 1.4.1 (2021-03-15)
 
-### Raw commits log
+**Raw commits log**
 
 -   docker tags updated;
 
 ## 1.4.0 (2021-03-15)
 
-### Raw commits log
+**Raw commits log**
 
 -   config files renamed;
 
 ## 1.3.2 (2021-03-15)
 
-### Raw commits log
+**Raw commits log**
 
 -   shared memory fix;
 
 ## 1.3.1 (2021-03-14)
 
-### Raw commits log
+**Raw commits log**
 
 -   contrib dir removed;
 
 ## 1.3.0 (2021-03-14)
 
-### Raw commits log
+**Raw commits log**
 
 -   env updated;
 -   docker stack hostname removed;
 
 ## 1.2.6 (2021-03-13)
 
-### Raw commits log
+**Raw commits log**
 
 -   docker stack updated;
 
 ## 1.2.5 (2021-03-10)
 
-### Raw commits log
+**Raw commits log**
 
 -   disable healthcheck;
 -   docker stack updated;
 
 ## 1.2.4 (2021-03-10)
 
-### Raw commits log
+**Raw commits log**
 
 -   docker-compose.yaml renamed to docker-stack.yaml;
 
 ## 1.2.3 (2021-03-09)
 
-### Raw commits log
+**Raw commits log**
 
 -   unlinkSync replaced with rmSync;
 
 ## 1.2.2 (2021-03-08)
 
-### Raw commits log
+**Raw commits log**
 
 -   permissions fixed;
 
 ## 1.2.1 (2021-03-08)
 
-### Raw commits log
+**Raw commits log**
 
 -   volume name fixed;
 -   deploy instructions added;
 
 ## 1.2.0 (2021-03-08)
 
-### Raw commits log
+**Raw commits log**
 
 -   database moved to default location;
 -   moved to compose file;
 
 ## 1.1.1 (2021-03-03)
 
-### Raw commits log
+**Raw commits log**
 
 -   docker share path added;
 
 ## 1.1.0 (2021-02-22)
 
-### Raw commits log
+**Raw commits log**
 
 -   pgsql 13;
 
 ## 1.0.1 (2021-02-11)
 
-### Raw commits log
+**Raw commits log**
 
 -   use docker-wrapper script;
 
