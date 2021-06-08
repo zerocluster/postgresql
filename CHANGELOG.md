@@ -1,333 +1,335 @@
-## 1.4.9 (2021-06-01)
+# Changelog
 
-**Raw commits log**
+### 1.4.9 (2021-06-01)
+
+Changed:
 
 -   lint config removed;
 
-## 1.4.8 (2021-05-19)
+### 1.4.8 (2021-05-19)
 
-**Raw commits log**
+Changed:
 
 -   lint script removed;
 
-## 1.4.7 (2021-04-17)
+### 1.4.7 (2021-04-17)
 
-**Raw commits log**
+Changed:
 
 -   ported to modules;
 
-## 1.4.6 (2021-04-14)
+### 1.4.6 (2021-04-14)
 
-**Raw commits log**
+Changed:
 
 -   readme updated;
 
-## 1.4.5 (2021-04-14)
+### 1.4.5 (2021-04-14)
 
-**Raw commits log**
+Changed:
 
 -   npmrc fund false;
 
-## 1.4.4 (2021-03-31)
+### 1.4.4 (2021-03-31)
 
-**Raw commits log**
+Changed:
 
 -   configs updated;
 
-## 1.4.3 (2021-03-31)
+### 1.4.3 (2021-03-31)
 
-**Raw commits log**
+Changed:
 
 -   lint pattern updated;
 
-## 1.4.2 (2021-03-15)
+### 1.4.2 (2021-03-15)
 
-**Raw commits log**
+Changed:
 
 -   package renamed;
 
-## 1.4.1 (2021-03-15)
+### 1.4.1 (2021-03-15)
 
-**Raw commits log**
+Changed:
 
 -   docker tags updated;
 
-## 1.4.0 (2021-03-15)
+### 1.4.0 (2021-03-15)
 
-**Raw commits log**
+Changed:
 
 -   config files renamed;
 
-## 1.3.2 (2021-03-15)
+### 1.3.2 (2021-03-15)
 
-**Raw commits log**
+Changed:
 
 -   shared memory fix;
 
-## 1.3.1 (2021-03-14)
+### 1.3.1 (2021-03-14)
 
-**Raw commits log**
+Changed:
 
 -   contrib dir removed;
 
-## 1.3.0 (2021-03-14)
+### 1.3.0 (2021-03-14)
 
-**Raw commits log**
+Changed:
 
 -   env updated;
 -   docker stack hostname removed;
 
-## 1.2.6 (2021-03-13)
+### 1.2.6 (2021-03-13)
 
-**Raw commits log**
+Changed:
 
 -   docker stack updated;
 
-## 1.2.5 (2021-03-10)
+### 1.2.5 (2021-03-10)
 
-**Raw commits log**
+Changed:
 
 -   disable healthcheck;
 -   docker stack updated;
 
-## 1.2.4 (2021-03-10)
+### 1.2.4 (2021-03-10)
 
-**Raw commits log**
+Changed:
 
 -   docker-compose.yaml renamed to docker-stack.yaml;
 
-## 1.2.3 (2021-03-09)
+### 1.2.3 (2021-03-09)
 
-**Raw commits log**
+Changed:
 
 -   unlinkSync replaced with rmSync;
 
-## 1.2.2 (2021-03-08)
+### 1.2.2 (2021-03-08)
 
-**Raw commits log**
+Changed:
 
 -   permissions fixed;
 
-## 1.2.1 (2021-03-08)
+### 1.2.1 (2021-03-08)
 
-**Raw commits log**
+Changed:
 
 -   volume name fixed;
 -   deploy instructions added;
 
-## 1.2.0 (2021-03-08)
+### 1.2.0 (2021-03-08)
 
-**Raw commits log**
+Changed:
 
 -   database moved to default location;
 -   moved to compose file;
 
-## 1.1.1 (2021-03-03)
+### 1.1.1 (2021-03-03)
 
-**Raw commits log**
+Changed:
 
 -   docker share path added;
 
-## 1.1.0 (2021-02-22)
+### 1.1.0 (2021-02-22)
 
-**Raw commits log**
+Changed:
 
 -   pgsql 13;
 
-## 1.0.1 (2021-02-11)
+### 1.0.1 (2021-02-11)
 
-**Raw commits log**
+Changed:
 
 -   use docker-wrapper script;
 
-## 1.0.0 (2021-02-02)
+### 1.0.0 (2021-02-02)
 
 -   stable release;
 
-## 0.12.2 (2021-01-27)
+### 0.12.2 (2021-01-27)
 
 -   deps updated
 
-## 0.12.1 (2021-01-27)
+### 0.12.1 (2021-01-27)
 
 -   deps updated
 -   use buffer base65url encoding
 
-## 0.12.0 (2021-01-26)
+### 0.12.0 (2021-01-26)
 
 -   migrated to node v15
 
-## 0.11.0 (2021-01-16)
+### 0.11.0 (2021-01-16)
 
 -   password length set to 16 bytes
 
-## 0.10.0 (2021-01-12)
+### 0.10.0 (2021-01-12)
 
 -   password gen updated
 -   deps updated
 
-## 0.9.2 (2020-12-26)
+### 0.9.2 (2020-12-26)
 
 -   docker default tag - latest
 
-## 0.9.1 (2020-12-26)
+### 0.9.1 (2020-12-26)
 
 -   deps updated
 -   README updated
 
-## 0.9.0 (2020-12-19)
+### 0.9.0 (2020-12-19)
 
 -   deps updated
 -   password length increased to 24 bytes
 
-## 0.8.7 (2020-12-08)
+### 0.8.7 (2020-12-08)
 
 -   deps updated
 
-## 0.8.6 (2020-12-08)
+### 0.8.6 (2020-12-08)
 
 -   repo-pgsql centos fix
 
-## 0.8.5 (2020-11-26)
+### 0.8.5 (2020-11-26)
 
 -   deps updated
 -   centos 8 patch
 
-## 0.8.4 (2020-11-24)
+### 0.8.4 (2020-11-24)
 
 -   dockerfile updated
 
-## 0.8.3 (2020-11-24)
+### 0.8.3 (2020-11-24)
 
 -   deps updated
 -   dockerfile updated
 
-## 0.8.2 (2020-11-16)
+### 0.8.2 (2020-11-16)
 
 -   centos8 fix added
 
-## 0.8.1 (2020-11-16)
+### 0.8.1 (2020-11-16)
 
 -   deps updated
 -   docker mirrors updated
 
-## 0.8.0 (2020-10-22)
+### 0.8.0 (2020-10-22)
 
 -   deps updated
 -   docker tags updated
 
-## 0.7.0 (2020-10-01)
+### 0.7.0 (2020-10-01)
 
 -   deps updated
 -   docker --init
 
-## 0.6.7 (2020-09-19)
+### 0.6.7 (2020-09-19)
 
 -   docker mirrors
 
-## 0.6.6 (2020-09-18)
+### 0.6.6 (2020-09-18)
 
 -   deps updated
 -   docker mirrors added
 
-## 0.6.5 (2020-09-11)
+### 0.6.5 (2020-09-11)
 
 -   deps updated
 
-## 0.6.4 (2020-09-05)
+### 0.6.4 (2020-09-05)
 
 -   deps updated
 
-## 0.6.3 (2020-08-29)
+### 0.6.3 (2020-08-29)
 
 -   deps updated
 -   upgrade timescaledb script fixed
 
-## 0.6.2 (2020-08-18)
+### 0.6.2 (2020-08-18)
 
 -   Docker file install npm deps added
 
-## 0.6.1 (2020-08-18)
+### 0.6.1 (2020-08-18)
 
 -   generated password encoded to base58
 
-## 0.6.0 (2020-08-18)
+### 0.6.0 (2020-08-18)
 
 -   default password 16 bytes b64u
 
-## 0.5.4 (2020-08-08)
+### 0.5.4 (2020-08-08)
 
 -   deps updated
 -   .eslintrc.yaml removed
 
-## 0.5.3 (2020-08-06)
+### 0.5.3 (2020-08-06)
 
 -   dist location updated
 
-## 0.5.2 (2020-08-03)
+### 0.5.2 (2020-08-03)
 
 -   npm-shrinkwrap.json version updated
 
-## 0.5.1 (2020-08-03)
+### 0.5.1 (2020-08-03)
 
 -   shrinkwrap added
 
-## 0.5.0 (2020-07-30)
+### 0.5.0 (2020-07-30)
 
 -   signals handlers added
 
-## 0.4.3 (2020-07-22)
+### 0.4.3 (2020-07-22)
 
 -   resolve db path
 
-## 0.4.2 (2020-07-19)
+### 0.4.2 (2020-07-19)
 
 -   docker always restart unless stopped
 
-## 0.4.1 (2020-07-18)
+### 0.4.1 (2020-07-18)
 
 -   .sh ext removed from docker wrapper
 
-## 0.4.0 (2020-07-18)
+### 0.4.0 (2020-07-18)
 
 -   dockerfile updated
 
-## 0.3.0 (2020-07-18)
+### 0.3.0 (2020-07-18)
 
 -   docker CONTAINER_NAME var added
 
-## 0.2.6 (2020-07-17)
+### 0.2.6 (2020-07-17)
 
 -   typo
 
-## 0.2.5 (2020-07-17)
+### 0.2.5 (2020-07-17)
 
 -   lint patterns updated
 
-## 0.2.4 (2020-07-13)
+### 0.2.4 (2020-07-13)
 
 -   docker base image updated
 
-## 0.2.3 (2020-07-12)
+### 0.2.3 (2020-07-12)
 
 -   changelog format updated
 
-## 0.2.2 (2020-07-12)
+### 0.2.2 (2020-07-12)
 
 -   changelog format updated
 
-## 0.2.1 (2020-07-12)
+### 0.2.1 (2020-07-12)
 
 -   .eslintrc.yaml updated
 
-## 0.2.0 (2020-07-10)
+### 0.2.0 (2020-07-10)
 
 -   lint config added to package.json
 
-## 0.1.2 (2020-07-08)
+### 0.1.2 (2020-07-08)
 
 -   .docker.yaml added
 
-## 0.1.1 (2020-07-08)
+### 0.1.1 (2020-07-08)
 
 -   initial release
