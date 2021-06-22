@@ -1,5 +1,12 @@
 # Changelog
 
+### 1.4.10 (2021-06-22)
+
+Changed:
+
+-   changelog updated;
+-   moved to github;
+
 ### 1.4.9 (2021-06-01)
 
 Changed:
