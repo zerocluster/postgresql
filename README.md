@@ -4,7 +4,7 @@
 
 # HOW TO CONNECT
 
-```txt
+```text
 pgsql://username:password@host:port/dbname?option1=val
 
 pgsql://username:password@/path/to/unix/socket/dbname?option1=val
@@ -16,7 +16,7 @@ pgsql://username:password@/path/to/unix/socket/dbname?option1=val
 
 -   Migrate
 
-    ```sh
+    ```shell
     ./pgsql enter
 
     /var/local/dist/bin/migrate.sh
@@ -24,7 +24,7 @@ pgsql://username:password@/path/to/unix/socket/dbname?option1=val
 
 -   After successful upgrade old cluster can be removed:
 
-    ```sh
+    ```shell
     # remove old cluster
     rm -rf /var/lib/docker/volumes/pgsql/_data/db-old
     ```
