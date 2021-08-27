@@ -19,6 +19,7 @@ RUN \
         postgresql${POSTGRES_VER}-contrib \
         pg${POSTGRES_VER}-extensions \
         citus_${POSTGRES_VER} \
+        timescaledb_${POSTGRES_VER} \
     \
     # install deps
     && npm i --omit=dev \
