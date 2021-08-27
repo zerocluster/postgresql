@@ -1,5 +1,11 @@
 # Changelog
 
+### 1.5.1 (2021-08-27)
+
+Changed:
+
+-   use community timescaledb build
+
 ### 1.5.0 (2021-08-12)
 
 Added:
