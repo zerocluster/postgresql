@@ -1,5 +1,11 @@
 # Changelog
 
+### 1.5.3 (2021-09-03)
+
+Fixes:
+
+-   fix: dockerfile cleanup
+
 ### 1.5.2 (2021-08-30)
 
 Changed:
