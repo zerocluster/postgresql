@@ -1,6 +1,6 @@
 {
     "name": "services/pgsql",
-    "version": "1.5.6",
+    "version": "1.5.7",
     "private": true,
     "description": "Postgresql service",
     "keywords": [

@@ -1,5 +1,11 @@
 # Changelog
 
+### 1.5.7 (2021-09-22)
+
+Fixes:
+
+-   fix: timescaledb
+
 ### 1.5.6 (2021-09-17)
 
 Fixes:
