@@ -1,5 +1,11 @@
 # Changelog
 
+### 1.5.8 (2021-09-22)
+
+Fixes:
+
+-   fix: dockerfile
+
 ### 1.5.7 (2021-09-22)
 
 Fixes:
