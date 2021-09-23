@@ -1,5 +1,9 @@
 # Changelog
 
+### 1.5.9 (2021-09-23)
+
+No notable changes since the previous release.
+
 ### 1.5.8 (2021-09-22)
 
 Fixes:
