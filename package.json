@@ -2,7 +2,7 @@
     "name": "services/pgsql",
     "version": "1.5.8",
     "private": true,
-    "description": "Postgresql service",
+    "description": "PostgreSQL service",
     "keywords": [
         "softvisio",
         "postgresql"
