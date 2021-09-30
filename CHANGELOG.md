@@ -1,5 +1,11 @@
 # Changelog
 
+### 1.5.10 (2021-09-30)
+
+Fixes:
+
+-   fix: config files renamed
+
 ### 1.5.9 (2021-09-23)
 
 No notable changes since the previous release.
