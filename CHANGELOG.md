@@ -1,5 +1,11 @@
 # Changelog
 
+### 1.6.0 (2021-10-02)
+
+Features:
+
+-   feat: moved to the zerocluster namespace
+
 ### 1.5.11 (2021-10-02)
 
 No notable changes since the previous release.
