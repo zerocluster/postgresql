@@ -9,7 +9,7 @@ version: "3.9"
 
 services:
   pgsql:
-    image: softvisio/pgsql
+    image: zerocluster/pgsql
     init: true
     stop_grace_period: 5m
 

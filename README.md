@@ -1,6 +1,6 @@
 <!-- !!! DO NOT EDIT, THIS FILE IS GENERATED AUTOMATICALLY !!!  -->
 
-> :information_source: Please, see the full project documentation here: [https://softvisio.github.io/pgsql/](https://softvisio.github.io/pgsql/).
+> :information_source: Please, see the full project documentation here: [https://zerocluster.github.io/pgsql/](https://zerocluster.github.io/pgsql/).
 
 # HOW TO CONNECT
 

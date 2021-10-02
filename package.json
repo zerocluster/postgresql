@@ -1,20 +1,20 @@
 {
-    "name": "pgsql",
+    "name": "@zerocluster/pgsql",
     "version": "1.5.11",
     "private": true,
     "description": "PostgreSQL service",
     "keywords": [
-        "softvisio",
+        "zerocluster",
         "postgresql"
     ],
-    "homepage": "https://github.com/softvisio/pgsql",
+    "homepage": "https://github.com/zerocluster/pgsql",
     "bugs": {
-        "url": "https://github.com/softvisio/pgsql/issues",
+        "url": "https://github.com/zerocluster/pgsql/issues",
         "email": "zdm@softvisio.net"
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/softvisio/pgsql.git"
+        "url": "https://github.com/zerocluster/pgsql.git"
     },
     "license": "ISC",
     "author": "zdm <zdm@softvisio.net>",
