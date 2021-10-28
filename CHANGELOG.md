@@ -1,5 +1,13 @@
 # Changelog
 
+### 2.0.0 (2021-10-28)
+
+Fixes:
+
+-   fix: docs
+
+Migration:
+
 ### 2.0.0-alpha.0 (2021-10-28)
 
 Breaking changes:
