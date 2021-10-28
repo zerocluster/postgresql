@@ -1,5 +1,11 @@
 # Changelog
 
+### 1.7.0 (2021-10-28)
+
+Features:
+
+-   feat: pg14
+
 ### 1.6.1 (2021-10-04)
 
 No notable changes since the previous release.
