@@ -1,6 +1,6 @@
 FROM zerocluster/node
 
-ENV POSTGRES_VER=14
+ENV POSTGRES_VER=13
 
 ENV POSTGRES_HOME="/usr/pgsql-$POSTGRES_VER"
 
