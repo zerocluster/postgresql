@@ -1,6 +1,6 @@
 FROM zerocluster/node
 
-ENV POSTGRES_VER=13
+ENV POSTGRES_VER=14
 
 ENV POSTGRES_HOME="/usr/pgsql-$POSTGRES_VER"
 
@@ -9,13 +9,9 @@ ENV PATH="$POSTGRES_HOME/bin:$PATH"
 HEALTHCHECK NONE
 
 RUN \
-    dnf remove -y repo-pgsql \
-    && dnf install -y https://download.postgresql.org/pub/repos/yum/reporpms/EL-8-x86_64/pgdg-redhat-repo-latest.noarch.rpm \
-    && dnf -qy module disable postgresql llvm-toolset rust-toolset && dnf config-manager --set-enabled pgdg-centos8-sysupdates \
-    && dnf -qy module disable postgresql \
     # generate additional locales
     # localedef --force -i ru_UA -f UTF-8 ru_UA.UTF-8 \
-    && dnf install -y langpacks-ru langpacks-uk \
+    dnf install -y langpacks-ru langpacks-uk \
     \
     && dnf install -y \
         postgresql${POSTGRES_VER}-server \
