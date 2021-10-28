@@ -9,9 +9,11 @@ ENV PATH="$POSTGRES_HOME/bin:$PATH"
 HEALTHCHECK NONE
 
 RUN \
+    dnf install -y https://download.postgresql.org/pub/repos/yum/reporpms/EL-8-x86_64/pgdg-redhat-repo-latest.noarch.rpm \
+    && dnf -qy module disable postgresql \
     # generate additional locales
     # localedef --force -i ru_UA -f UTF-8 ru_UA.UTF-8 \
-    dnf install -y langpacks-ru langpacks-uk \
+    && dnf install -y langpacks-ru langpacks-uk \
     \
     && dnf install -y \
         postgresql${POSTGRES_VER}-server \
