@@ -10,6 +10,8 @@
     docker stack rm pgsql
 
     docker run --rm -it -v pgsql:/var/lib/pgsql --entrypoint bash zerocluster/pgsql
+
+    /var/local/package/bin/migrate.sh
     ```
 
 -   After successful upgrade old cluster can be removed:
