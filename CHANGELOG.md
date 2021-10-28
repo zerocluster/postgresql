@@ -1,5 +1,13 @@
 # Changelog
 
+### 2.0.0-alpha.0 (2021-10-28)
+
+Breaking changes:
+
+-   feat!: pg14
+
+Migration:
+
 ### 1.7.7 (2021-10-28)
 
 Fixes:
