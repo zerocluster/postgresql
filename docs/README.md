@@ -1,31 +1,25 @@
-# HOW TO CONNECT
+# PosrgreSQL
 
-```text
-pgsql://username:password@host:port/dbname?option1=val
-
-pgsql://username:password@/path/to/unix/socket/dbname?option1=val
-```
-
-# HOW TO UPGRADE
+# Upgrade cluster
 
 -   Make sure, that old and new clusters use the same versions of timescaledb. If not - upgrade old cluster to the new version first.
 
 -   Migrate
 
     ```shell
-    ./pgsql enter
+    docker stack rm pgsql
 
-    /var/local/dist/bin/migrate.sh
+    docker run --rm -it -v pgsql:/var/lib/pgsql --entrypoint bash zerocluster/pgsql
     ```
 
 -   After successful upgrade old cluster can be removed:
 
     ```shell
     # remove old cluster
-    rm -rf /var/lib/docker/volumes/pgsql/_data/db-old
+    rm -rf /var/lib/docker/volumes/pgsql/_data/data-backup
     ```
 
-# UPGRADE TIMESCALEDB
+# Upgrade timescaledb
 
 -   Upgrade docker container to the latest version, contained new `timescaledb` extension version.
 

@@ -3,7 +3,9 @@
 set -u
 set -e
 
-BACKUP=/var/lib/pgsql/data-old
+pushd /var/lib/pgsql
+
+BACKUP=/var/lib/pgsql/data-backup
 
 # move old cluster
 mv /var/lib/pgsql/data $BACKUP
