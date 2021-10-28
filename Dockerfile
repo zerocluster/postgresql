@@ -11,6 +11,7 @@ HEALTHCHECK NONE
 RUN \
     dnf remove -y repo-pgsql \
     && dnf install -y https://download.postgresql.org/pub/repos/yum/reporpms/EL-8-x86_64/pgdg-redhat-repo-latest.noarch.rpm \
+    && dnf -qy module disable postgresql llvm-toolset rust-toolset dnf config-manager --set-enabled pgdg-centos8-sysupdates \
     && dnf -qy module disable postgresql \
     # generate additional locales
     # localedef --force -i ru_UA -f UTF-8 ru_UA.UTF-8 \
