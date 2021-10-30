@@ -1,5 +1,11 @@
 # Changelog
 
+### 2.0.2 (2021-10-30)
+
+Fixes:
+
+-   fix: use scram-sha-256 instaed of md5 auth
+
 ### 2.0.1 (2021-10-28)
 
 Fixes:
