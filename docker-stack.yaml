@@ -4,7 +4,6 @@ version: "3.9"
 
 # NOTE deploy
 # docker stack deploy --with-registry-auth -c docker-stack.yaml pgsql
-# PGSQL_POSTGRES_PASSWORD=1 docker stack deploy --with-registry-auth -c docker-stack.yaml pgsql
 # docker node update --label-add pgsql=true <NODE-NAME>
 
 services:
@@ -20,8 +19,8 @@ services:
         constraints:
           - "node.labels.pgsql == true"
 
-    environment:
-      PGSQL_POSTGRES_PASSWORD: $PGSQL_POSTGRES_PASSWORD
+    configs:
+      - { source: env.yaml, target: /var/local/package/env.yaml }
 
     networks: [private]
 
@@ -34,6 +33,9 @@ services:
 
     build:
       context: .
+
+configs:
+  env.yaml: { file: env.yaml }
 
 networks:
   private: { external: true }

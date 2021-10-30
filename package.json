@@ -21,9 +21,10 @@
     "type": "module",
     "imports": {
         "#core/*": "@softvisio/core/*",
-        "#index": "./lib/index.js",
-        "#lib/*": "./lib/*.js",
-        "#resources/*": "./resources/*"
+        "#lib/*": "./lib/*.js"
+    },
+    "dependencies": {
+        "@softvisio/core": "^6.11.1"
     },
     "engines": {
         "node": ">=15.7.0",
