@@ -1,5 +1,11 @@
 # Changelog
 
+### 2.1.2 (2021-10-30)
+
+Fixes:
+
+-   fix: config generation
+
 ### 2.1.1 (2021-10-30)
 
 Fixes:
