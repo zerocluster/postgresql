@@ -41,7 +41,7 @@ sudo -u postgres \
 \cp --preserve $BACKUP/postgresql.auto.conf /var/lib/pgsql/data/postgresql.auto.conf
 \cp --preserve $BACKUP/pg_hba.conf /var/lib/pgsql/data
 \cp --preserve -R $BACKUP/conf.d /var/lib/pgsql/data
-\cp --preserve /var/lib/pgsql/data/postgresql.conf /var/lib/pgsql/data/conf.d/000-postgresql.conf
+\cp --preserve /var/lib/pgsql/data/postgresql.conf /var/lib/pgsql/data/conf.d/0-postgresql.conf
 \cp --preserve $BACKUP/postgresql.conf /var/lib/pgsql/data
 
 # check clusters compatibility
