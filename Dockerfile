@@ -1,9 +1,7 @@
 FROM zerocluster/node
 
-ENV POSTGRES_VER=14
-
-ENV POSTGRES_HOME="/usr/pgsql-$POSTGRES_VER"
-
+ENV POSTGRES_VERSION=14
+ENV POSTGRES_HOME="/usr/pgsql-$POSTGRES_VERSION"
 ENV PATH="$POSTGRES_HOME/bin:$PATH"
 
 HEALTHCHECK NONE
@@ -14,11 +12,11 @@ RUN \
     dnf install -y langpacks-ru langpacks-uk \
     \
     && dnf install -y \
-        postgresql${POSTGRES_VER}-server \
-        postgresql${POSTGRES_VER}-llvmjit \
-        postgresql${POSTGRES_VER}-contrib \
-        pg${POSTGRES_VER}-extensions \
-        citus_${POSTGRES_VER} \
+        postgresql${POSTGRES_VERSION}-server \
+        postgresql${POSTGRES_VERSION}-llvmjit \
+        postgresql${POSTGRES_VERSION}-contrib \
+        pg${POSTGRES_VERSION}-extensions \
+        citus_${POSTGRES_VERSION} \
     \
     # install deps
     && npm i --omit=dev \
