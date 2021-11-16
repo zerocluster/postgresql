@@ -11,7 +11,7 @@ RUN \
     # localedef --force -i ru_UA -f UTF-8 ru_UA.UTF-8 \
     # apt install -y langpacks-ru langpacks-uk \
     \
-    apt install -y \
+    apt update && apt install -y \
         postgresql-$POSTGRES_VERSION \
         postgresql-contrib \
         pg$POSTGRES_VERSION-extensions \
