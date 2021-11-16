@@ -7,14 +7,13 @@ ENV PATH="$POSTGRES_HOME/bin:$PATH"
 HEALTHCHECK NONE
 
 RUN \
-    # generate additional locales
-    # localedef --force -i ru_UA -f UTF-8 ru_UA.UTF-8 \
-    # apt install -y langpacks-ru langpacks-uk \
-    \
     apt update && apt install -y \
         postgresql-$POSTGRES_VERSION \
         postgresql-contrib \
         pg$POSTGRES_VERSION-extensions \
+    \
+    # add locales
+    && localedef --force -i ru_UA -f UTF-8 ru_UA.UTF-8 \
     \
     # install deps
     && npm i --omit=dev \
