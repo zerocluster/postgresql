@@ -1,5 +1,15 @@
 # Changelog
 
+### 2.2.0 (2021-11-16)
+
+Features:
+
+-   feat: ubuntu
+
+Fixes:
+
+-   fix: dockerfile
+
 ### 2.1.6 (2021-10-30)
 
 Fixes:
