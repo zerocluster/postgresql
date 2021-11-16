@@ -9,9 +9,9 @@ HEALTHCHECK NONE
 RUN \
     # generate additional locales
     # localedef --force -i ru_UA -f UTF-8 ru_UA.UTF-8 \
-    # dnf install -y langpacks-ru langpacks-uk \
+    # apt install -y langpacks-ru langpacks-uk \
     \
-    dnf install -y \
+    apt install -y \
         postgresql-$POSTGRES_VERSION \
         postgresql-contrib \
         pg$POSTGRES_VERSION-extensions \
