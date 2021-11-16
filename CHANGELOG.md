@@ -1,5 +1,11 @@
 # Changelog
 
+### 2.2.1 (2021-11-16)
+
+Fixes:
+
+-   fix: dockerfile
+
 ### 2.2.0 (2021-11-16)
 
 Features:
