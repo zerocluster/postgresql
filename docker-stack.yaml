@@ -29,7 +29,7 @@ services:
 
     volumes:
       - { type: tmpfs, target: /dev/shm, tmpfs: { size: 1073741824 } }
-      - { type: volume, source: pgsql, target: /var/lib/pgsql }
+      - { type: volume, source: pgsql, target: /var/lib/postgresql }
 
     build:
       context: .
