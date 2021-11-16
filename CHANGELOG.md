@@ -1,5 +1,11 @@
 # Changelog
 
+### 2.2.3 (2021-11-16)
+
+Fixes:
+
+-   fix: chown data root
+
 ### 2.2.2 (2021-11-16)
 
 Fixes:
