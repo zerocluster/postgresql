@@ -1,5 +1,11 @@
 # Changelog
 
+### 2.2.4 (2021-11-16)
+
+Fixes:
+
+-   fix: migration script
+
 ### 2.2.3 (2021-11-16)
 
 Fixes:
