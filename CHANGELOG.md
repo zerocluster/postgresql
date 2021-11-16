@@ -1,5 +1,11 @@
 # Changelog
 
+### 2.2.5 (2021-11-16)
+
+Fixes:
+
+-   fix: locale
+
 ### 2.2.4 (2021-11-16)
 
 Fixes:
