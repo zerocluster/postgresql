@@ -1,5 +1,11 @@
 # Changelog
 
+### 2.3.3 (2021-11-19)
+
+Fixes:
+
+-   fix: socket location
+
 ### 2.3.2 (2021-11-19)
 
 Fixes:
