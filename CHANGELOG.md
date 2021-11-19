@@ -1,5 +1,11 @@
 # Changelog
 
+### 2.3.1 (2021-11-19)
+
+Fixes:
+
+-   fix: database moved to docker volume location
+
 ### 2.3.0 (2021-11-19)
 
 Features:
