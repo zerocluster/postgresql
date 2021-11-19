@@ -3,27 +3,22 @@
 set -u
 set -e
 
-pushd /var/lib/postgresql
+# XXX take old and new versions from command list args
 
-BACKUP=/var/lib/postgresql/data-backup
+OLD_VERSION=14 # FROM=$(cat $BACKUP/PG_VERSION)
+OLD_CLUSTER=/var/lib/docker/volumes/pgsql/_data/$OLD_VERSION
 
-# move old cluster
-mv /var/lib/postgresql/data $BACKUP
+NEW_VERSION=15
+NEW_CLUSTER=/var/lib/docker/volumes/pgsql/_data/$NEW_VERSION
 
-# get old cluster version
-FROM=$(cat $BACKUP/PG_VERSION)
-
-dnf remove -y repo-pgsql
-dnf install -y https://download.postgresql.org/pub/repos/yum/reporpms/EL-8-x86_64/pgdg-redhat-repo-latest.noarch.rpm
+apt update
 
 # install old cluster
-dnf install -y \
+apt install -y \
     sudo \
-    postgresql$FROM-server \
-    postgresql$FROM-contrib \
-    pg$FROM-extensions
-
-dnf install -y citus_$FROM
+    postgresql-$OLD_VERSION \
+    postgresql-contrib \
+    pg$OLD_VERSION-extensions
 
 # create new cluster, will ask for postgres superuser password
 sudo -u postgres \
@@ -32,34 +27,34 @@ sudo -u postgres \
     --no-locale \
     -U postgres \
     --pwprompt \
-    -D /var/lib/postgresql/data
+    -D $NEW_CLUSTER
 
 # move config files
 # NOTE this can be not quite correct, because it may contains incompatible settings
-\cp --preserve $BACKUP/server.crt /var/lib/postgresql/data/server.crt
-\cp --preserve $BACKUP/server.key /var/lib/postgresql/data/server.key
-\cp --preserve $BACKUP/postgresql.auto.conf /var/lib/postgresql/data/postgresql.auto.conf
-\cp --preserve $BACKUP/pg_hba.conf /var/lib/postgresql/data
-\cp --preserve -R $BACKUP/conf.d /var/lib/postgresql/data
-\cp --preserve /var/lib/postgresql/data/postgresql.conf /var/lib/postgresql/data/conf.d/0-postgresql.conf
-\cp --preserve $BACKUP/postgresql.conf /var/lib/postgresql/data
+\cp --preserve $OLD_CLUSTER/server.crt $NEW_CLUSTER/server.crt
+\cp --preserve $OLD_CLUSTER/server.key $NEW_CLUSTER/server.key
+\cp --preserve $OLD_CLUSTER/postgresql.auto.conf $NEW_CLUSTER/postgresql.auto.conf
+\cp --preserve $OLD_CLUSTER/pg_hba.conf $NEW_CLUSTER
+\cp --preserve -R $OLD_CLUSTER/conf.d $NEW_CLUSTER
+\cp --preserve $NEW_CLUSTER/postgresql.conf $NEW_CLUSTER/conf.d/0-postgresql.conf
+\cp --preserve $OLD_CLUSTER/postgresql.conf $NEW_CLUSTER
 
 # check clusters compatibility
 sudo -u postgres \
     $POSTGRES_HOME/bin/pg_upgrade \
-    -b /usr/pgsql-$FROM/bin \
-    -B $POSTGRES_HOME/bin \
-    -d $BACKUP \
-    -D /var/lib/postgresql/data \
+    -b /usr/lib/postgresql/$OLD_VERSION/bin \
+    -B /usr/lib/postgresql/$NEW_VERSION/bin \
+    -d $OLD_CLUSTER \
+    -D $NEW_CLUSTER \
     --check
 
 # migrate
 sudo -u postgres \
     $POSTGRES_HOME/bin/pg_upgrade \
-    -b /usr/pgsql-$FROM/bin \
-    -B $POSTGRES_HOME/bin \
-    -d $BACKUP \
-    -D /var/lib/postgresql/data \
+    -b /usr/lib/postgresql/$OLD_VERSION/bin \
+    -B /usr/lib/postgresql/$NEW_VERSION/bin \
+    -d $OLD_CLUSTER \
+    -D $NEW_CLUSTER \
     -O "-c timescaledb.restoring=on"
 
 # TODO perform vacuum
