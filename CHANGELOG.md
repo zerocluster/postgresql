@@ -1,5 +1,11 @@
 # Changelog
 
+### 2.3.2 (2021-11-19)
+
+Fixes:
+
+-   fix: db mount point
+
 ### 2.3.1 (2021-11-19)
 
 Fixes:
