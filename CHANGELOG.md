@@ -1,5 +1,11 @@
 # Changelog
 
+### 2.3.0 (2021-11-19)
+
+Features:
+
+-   feat: share unix socket
+
 ### 2.2.5 (2021-11-16)
 
 Fixes:
