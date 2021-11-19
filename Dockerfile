@@ -15,6 +15,8 @@ RUN \
     # add locales
     && localedef --force -i ru_UA -f UTF-8 ru_UA.UTF-8 \
     \
+    # share socket
+    && ln -fs /var/run/postgresql /var/lib/postgresql/sock \
     # install deps
     && npm i --omit=dev \
     \
