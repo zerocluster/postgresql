@@ -1,5 +1,11 @@
 # Changelog
 
+### 2.3.4 (2021-12-03)
+
+Fixes:
+
+-   fix: extensions
+
 ### 2.3.3 (2021-11-19)
 
 Fixes:
