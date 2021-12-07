@@ -10,9 +10,8 @@ RUN \
     apt update && apt install -y \
         postgresql-$POSTGRES_VERSION \
         postgresql-contrib \
-        pg$POSTGRES_VERSION-softvisio \
-        postgresql-$POSTGRES_VERSION-cron \
-        pg$POSTGRES_VERSION-timescaledb \
+        postgresql-$POSTGRES_VERSION-softvisio \
+        postgresql-$POSTGRES_VERSION-timescaledb \
     \
     # add locales
     && localedef --force -i ru_UA -f UTF-8 ru_UA.UTF-8 \
