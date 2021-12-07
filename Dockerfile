@@ -11,6 +11,7 @@ RUN \
         postgresql-$POSTGRES_VERSION \
         postgresql-contrib \
         pg$POSTGRES_VERSION-softvisio \
+        postgresql-$POSTGRES_VERSION-cron \
         pg$POSTGRES_VERSION-timescaledb \
     \
     # add locales
