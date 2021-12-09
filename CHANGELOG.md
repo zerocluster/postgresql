@@ -1,5 +1,11 @@
 # Changelog
 
+### 2.4.3 (2021-12-09)
+
+Fixes:
+
+-   fix: default connection params for docker
+
 ### 2.4.2 (2021-12-08)
 
 Fixes:
