@@ -2,7 +2,9 @@ FROM zerocluster/node
 
 ENV POSTGRES_VERSION=14
 ENV POSTGRES_HOME="/usr/lib/postgresql/$POSTGRES_VERSION"
-ENV PATH="$POSTGRES_HOME/bin:$PATH"
+ENV PATH="$POSTGRES_HOME/bin:$PATH" \
+    PGUSER=postgres \
+    PGHOST=/var/run/postgresql
 
 HEALTHCHECK NONE
 
