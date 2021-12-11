@@ -1,5 +1,15 @@
 # Changelog
 
+### 2.5.0 (2021-12-11)
+
+Features:
+
+-   feat: bind unix sockets
+
+Fixes:
+
+-   fix: PGHOST removed
+
 ### 2.4.3 (2021-12-09)
 
 Fixes:
