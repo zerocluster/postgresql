@@ -5,8 +5,6 @@ ENV POSTGRES_HOME="/usr/lib/postgresql/$POSTGRES_VERSION"
 ENV PATH="$POSTGRES_HOME/bin:$PATH" \
     PGUSER=postgres
 
-HEALTHCHECK NONE
-
 RUN \
     apt update && apt install -y \
         postgresql-$POSTGRES_VERSION \
