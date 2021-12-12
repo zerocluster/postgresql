@@ -1,5 +1,11 @@
 # Changelog
 
+### 2.5.1 (2021-12-12)
+
+Fixes:
+
+-   fix: docker healthcheck
+
 ### 2.5.0 (2021-12-11)
 
 Features:
