@@ -9,7 +9,8 @@ RUN \
     apt update && apt install -y \
         postgresql-$POSTGRES_VERSION \
         postgresql-contrib \
-        postgresql-$POSTGRES_VERSION-softvisio \
+        postgresql-$POSTGRES_VERSION-softvisio-admin \
+        postgresql-$POSTGRES_VERSION-softvisio-locks \
         postgresql-$POSTGRES_VERSION-timescaledb \
     \
     # add locales
