@@ -1,5 +1,11 @@
 # Changelog
 
+### 2.6.0 (2021-12-23)
+
+Features:
+
+-   feat: softvisio_locks extension
+
 ### 2.5.2 (2021-12-12)
 
 Fixes:
