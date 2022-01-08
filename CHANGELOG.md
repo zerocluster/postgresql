@@ -1,5 +1,11 @@
 # Changelog
 
+### 2.7.0 (2022-01-08)
+
+Features:
+
+-   feat: app refactor
+
 ### 2.6.0 (2021-12-23)
 
 Features:
