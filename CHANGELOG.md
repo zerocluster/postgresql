@@ -1,5 +1,11 @@
 # Changelog
 
+### 2.7.3 (2022-01-08)
+
+Fixes:
+
+-   fix: healthcheck
+
 ### 2.7.2 (2022-01-08)
 
 Fixes:
