@@ -1,5 +1,11 @@
 # Changelog
 
+### 2.7.4 (2022-01-08)
+
+Fixes:
+
+-   fix: cron api
+
 ### 2.7.3 (2022-01-08)
 
 Fixes:
