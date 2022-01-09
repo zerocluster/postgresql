@@ -1,5 +1,11 @@
 # Changelog
 
+### 2.9.0 (2022-01-09)
+
+Features:
+
+-   feat: cron last_run_error
+
 ### 2.8.0 (2022-01-09)
 
 Features:
