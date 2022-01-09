@@ -1,5 +1,11 @@
 # Changelog
 
+### 2.7.9 (2022-01-09)
+
+Fixes:
+
+-   fix: cron error handler
+
 ### 2.7.8 (2022-01-09)
 
 Fixes:
