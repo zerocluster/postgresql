@@ -1,5 +1,11 @@
 # Changelog
 
+### 2.8.0 (2022-01-09)
+
+Features:
+
+-   feat: schedule error
+
 ### 2.7.9 (2022-01-09)
 
 Fixes:
