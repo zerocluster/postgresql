@@ -1,5 +1,11 @@
 # Changelog
 
+### 2.7.8 (2022-01-09)
+
+Fixes:
+
+-   fix: sql cron
+
 ### 2.7.7 (2022-01-08)
 
 Fixes:
