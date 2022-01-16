@@ -1,5 +1,12 @@
 # Changelog
 
+### 2.9.1 (2022-01-16)
+
+Fixes:
+
+-   fix: cron macro removed
+-   fix: run each cron query in own connection
+
 ### 2.9.0 (2022-01-09)
 
 Features:
