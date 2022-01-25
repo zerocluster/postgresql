@@ -1,5 +1,15 @@
 # Changelog
 
+### 2.10.0 (2022-01-25)
+
+Features:
+
+-   feat: app.const renamed to app.config
+
+Fixes:
+
+-   fix: app config
+
 ### 2.9.1 (2022-01-16)
 
 Fixes:
