@@ -1,5 +1,11 @@
 # Changelog
 
+### 2.10.1 (2022-02-01)
+
+Fixes:
+
+-   fix: image 14
+
 ### 2.10.0 (2022-01-25)
 
 Features:
