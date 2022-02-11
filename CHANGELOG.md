@@ -1,5 +1,11 @@
 # Changelog
 
+### 2.10.3 (2022-02-11)
+
+Fixes:
+
+-   fix: app env schema added
+
 ### 2.10.2 (2022-02-08)
 
 Fixes:
