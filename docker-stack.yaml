@@ -19,12 +19,12 @@ services:
         constraints:
           - "node.labels.pgsql == true"
 
-    healthcheck:
-      test: curl -f http://127.0.0.1/api/healthcheck || exit 1
-      start_period: 60s
-      interval: 15s
-      timeout: 10s
-      retries: 3
+    # healthcheck:
+    #   test: curl -f http://127.0.0.1/api/healthcheck || exit 1
+    #   start_period: 60s
+    #   interval: 15s
+    #   timeout: 10s
+    #   retries: 3
 
     # environment:
     #   NODE_ENV: development
