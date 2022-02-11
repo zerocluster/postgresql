@@ -1,5 +1,11 @@
 # Changelog
 
+### 2.10.4 (2022-02-11)
+
+Fixes:
+
+-   fix: docker healthckeck disabled
+
 ### 2.10.3 (2022-02-11)
 
 Fixes:
