@@ -1,5 +1,11 @@
 # Changelog
 
+### 2.11.1 (2022-03-29)
+
+Fixes:
+
+-   fix: nginx proxy
+
 ### 2.11.0 (2022-03-29)
 
 Features:
