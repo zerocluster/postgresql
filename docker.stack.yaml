@@ -34,10 +34,8 @@ services:
     configs:
       - { source: env.yaml, target: /var/local/package/env.yaml }
 
-    networks: [private]
-
-    # ports:
-    #   - { published: 5432, target: 5432 }
+    ports:
+      - { published: 5432, target: 5432 }
 
     volumes:
       - { type: tmpfs, target: /dev/shm, tmpfs: { size: 1073741824 } }
@@ -49,9 +47,6 @@ services:
 
 configs:
   env.yaml: { file: env.yaml }
-
-networks:
-  private: { external: true }
 
 volumes:
   pgsql: { name: pgsql }
