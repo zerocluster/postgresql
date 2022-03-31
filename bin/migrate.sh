@@ -1,6 +1,5 @@
 #!/bin/bash
 
-set -u
 set -e
 
 # XXX take old and new versions from command list args
