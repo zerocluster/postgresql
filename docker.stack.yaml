@@ -34,6 +34,8 @@ services:
     configs:
       - { source: env.yaml, target: /var/local/package/env.yaml }
 
+    networks: [swarm]
+
     ports:
       - { published: 5432, target: 5432 }
 
@@ -47,6 +49,9 @@ services:
 
 configs:
   env.yaml: { file: env.yaml }
+
+networks:
+  swarm: { external: true }
 
 volumes:
   pgsql: { name: pgsql }
