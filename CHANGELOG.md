@@ -1,5 +1,11 @@
 # Changelog
 
+### 2.11.4 (2022-03-31)
+
+Fixes:
+
+-   fix: sh set -u removed
+
 ### 2.11.3 (2022-03-31)
 
 Fixes:
