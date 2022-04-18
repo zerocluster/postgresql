@@ -1,5 +1,11 @@
 # Changelog
 
+### 2.11.8 (2022-04-18)
+
+Fixes:
+
+-   fix: dockerfile label
+
 ### 2.11.7 (2022-04-18)
 
 Fixes:
