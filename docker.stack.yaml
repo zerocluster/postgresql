@@ -8,7 +8,7 @@ version: "3.9"
 
 services:
   pgsql:
-    image: zerocluster/pgsql-14
+    image: ghcr.io/zerocluster/pgsql-14
     init: true
     stop_grace_period: 5m
 
