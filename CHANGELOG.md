@@ -1,5 +1,11 @@
 # Changelog
 
+### 2.11.7 (2022-04-18)
+
+Fixes:
+
+-   fix: docker migrated to github
+
 ### 2.11.6 (2022-04-08)
 
 Fixes:
