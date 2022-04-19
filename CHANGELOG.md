@@ -1,5 +1,11 @@
 # Changelog
 
+### 2.11.9 (2022-04-19)
+
+Fixes:
+
+-   fix: docker github label removed
+
 ### 2.11.8 (2022-04-18)
 
 Fixes:
