@@ -1,7 +1,5 @@
 FROM ghcr.io/zerocluster/node
 
-LABEL org.opencontainers.image.source="https://github.com/zerocluster/pgsql"
-
 ENV POSTGRES_VERSION=14
 ENV POSTGRES_HOME="/usr/lib/postgresql/$POSTGRES_VERSION"
 ENV PATH="$POSTGRES_HOME/bin:$PATH" \
