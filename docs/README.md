@@ -9,7 +9,7 @@
     ```shell
     docker stack rm pgsql
 
-    docker run --rm -it -v pgsql:/var/lib/postgresql --entrypoint bash zerocluster/pgsql
+    docker run --rm -it -v pgsql:/var/lib/postgresql --entrypoint bash ghcr.io/zerocluster/pgsql
 
     /var/local/package/bin/migrate.sh
     ```
