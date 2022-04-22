@@ -1,5 +1,12 @@
 # Changelog
 
+### 2.11.10 (2022-04-22)
+
+Fixes:
+
+-   fix: app refactor
+-   fix: spawn server
+
 ### 2.11.9 (2022-04-19)
 
 Fixes:
