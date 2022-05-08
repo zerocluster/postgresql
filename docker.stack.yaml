@@ -18,8 +18,8 @@ services:
         max_replicas_per_node: 1
         constraints:
           - "node.labels.pgsql == true"
-      labels:
-        nginx.stream.port: 5432
+      # labels:
+      #   nginx.stream.port: 5432
 
     # healthcheck:
     #   test: curl -f http://127.0.0.1/api/healthcheck || exit 1
