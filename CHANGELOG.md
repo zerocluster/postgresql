@@ -1,5 +1,11 @@
 # Changelog
 
+### 2.11.14 (2022-05-09)
+
+Fixes:
+
+-   fix: stream port disabled
+
 ### 2.11.13 (2022-04-22)
 
 Fixes:
