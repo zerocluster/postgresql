@@ -1,5 +1,11 @@
 # Changelog
 
+### 2.11.15 (2022-05-11)
+
+Fixes:
+
+-   fix: docker config
+
 ### 2.11.14 (2022-05-09)
 
 Fixes:
