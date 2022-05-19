@@ -6,7 +6,7 @@ ENV PATH="$POSTGRES_HOME/bin:$PATH" \
     PGUSER=postgres
 
 RUN \
-    apt update && apt install -y \
+    apt-get update && apt-get install -y \
         postgresql-$POSTGRES_VERSION \
         postgresql-contrib \
         postgresql-$POSTGRES_VERSION-softvisio-admin \
