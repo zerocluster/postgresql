@@ -1,5 +1,11 @@
 # Changelog
 
+### 2.11.17 (2022-05-19)
+
+Fixes:
+
+-   fix: apt replaced with apt-get
+
 ### 2.11.16 (2022-05-11)
 
 Fixes:
