@@ -1,5 +1,11 @@
 # Changelog
 
+### 2.12.1 (2022-05-21)
+
+Fixes:
+
+-   fix: shutdown
+
 ### 2.12.0 (2022-05-21)
 
 Features:
