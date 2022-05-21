@@ -1,5 +1,11 @@
 # Changelog
 
+### 2.12.4 (2022-05-21)
+
+Fixes:
+
+-   fix: publish port
+
 ### 2.12.3 (2022-05-21)
 
 Fixes:
