@@ -1,5 +1,11 @@
 # Changelog
 
+### 2.12.6 (2022-06-14)
+
+Fixes:
+
+-   fix: update extensions on startup
+
 ### 2.12.5 (2022-06-13)
 
 Fixes:
