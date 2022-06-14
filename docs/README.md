@@ -36,9 +36,9 @@ docker run --rm -it --network main -p 5432:5432 -v /var/local/@zerocluster/pgsql
     ```sql
     psql -h <HOST>
 
-    # install and update "softvisio_admin" extension
-    CREATE EXTENSION IF NOT EXISTS "softvisio_admin" CASCADE;
-    ALTER EXTENSION "softvisio_admin" UPDATE;
+    # install and update softvisio_admin extension
+    CREATE EXTENSION IF NOT EXISTS softvisio_admin CASCADE;
+    ALTER EXTENSION softvisio_admin UPDATE;
 
     # update all extensions for all databases to the latest available versions
     CALL update_extensions();
