@@ -1,6 +1,12 @@
 # PosrgreSQL
 
-# Upgrade cluster
+### Debug
+
+```shell
+docker run --rm -it --network main -p 5432:5432 -v /var/local/@zerocluster/pgsql:/var/local/package -v /var/run/postgresql:/var/run/postgresql -v pgsql:/var/lib/docker/volumes/pgsql/_data --entrypoint bash ghcr.io/zerocluster/pgsql-14
+```
+
+### Upgrade cluster
 
 -   Make sure, that old and new clusters use the same versions of timescaledb. If not - upgrade old cluster to the new version first.
 
@@ -21,7 +27,7 @@
     rm -rf /var/lib/docker/volumes/pgsql/_data/data-backup
     ```
 
-# Upgrade timescaledb
+### Upgrade timescaledb
 
 -   Upgrade docker container to the latest version, contained new `timescaledb` extension version.
 
