@@ -1,5 +1,11 @@
 # Changelog
 
+### 2.12.7 (2022-08-26)
+
+Fixes:
+
+-   fix: todo removed
+
 ### 2.12.6 (2022-06-14)
 
 Fixes:
