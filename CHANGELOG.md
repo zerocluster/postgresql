@@ -1,5 +1,11 @@
 # Changelog
 
+### 2.12.8 (2022-09-14)
+
+Fixes:
+
+-   fix: scripts urls
+
 ### 2.12.7 (2022-08-26)
 
 Fixes:
