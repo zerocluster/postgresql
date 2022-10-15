@@ -1,6 +1,6 @@
 FROM ghcr.io/zerocluster/node
 
-ENV POSTGRES_VERSION=14
+ENV POSTGRES_VERSION=15
 ENV POSTGRES_HOME="/usr/lib/postgresql/$POSTGRES_VERSION"
 ENV PATH="$POSTGRES_HOME/bin:$PATH" \
     PGUSER=postgres
