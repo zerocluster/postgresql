@@ -11,6 +11,7 @@ RUN \
         postgresql-contrib \
         postgresql-$POSTGRES_VERSION-softvisio-admin \
         postgresql-$POSTGRES_VERSION-softvisio-cron \
+        postgresql-$POSTGRES_VERSION-softvisio-int53 \
         postgresql-$POSTGRES_VERSION-softvisio-locks \
         postgresql-$POSTGRES_VERSION-timescaledb \
     \
