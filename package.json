@@ -29,7 +29,7 @@
         "docker": "node bin/main.js"
     },
     "dependencies": {
-        "@softvisio/core": "^6.11.1"
+        "@softvisio/core": "^7.0.0"
     },
     "engines": {
         "node": ">=15.7.0",
