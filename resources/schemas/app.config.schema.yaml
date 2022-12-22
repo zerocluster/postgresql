@@ -1,6 +1,6 @@
 type: object
 properties:
-  pg_hba.conf:
+  access:
     type: array
     items:
       type: object
@@ -17,5 +17,5 @@ properties:
   settings:
     type: ["null", object]
 
-required: [pg_hba.conf]
+required: [access]
 additionalProperties: false
