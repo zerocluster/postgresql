@@ -1,5 +1,11 @@
 # Changelog
 
+### 2.13.2 (2022-12-23)
+
+Fixes:
+
+-   fix: settings generator
+
 ### 2.13.1 (2022-12-23)
 
 Fixes:
