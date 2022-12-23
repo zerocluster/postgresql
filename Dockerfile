@@ -12,7 +12,7 @@ RUN \
         postgresql-$POSTGRES_VERSION-softvisio-admin \
         postgresql-$POSTGRES_VERSION-softvisio-cron \
         postgresql-$POSTGRES_VERSION-softvisio-int53 \
-        postgresql-$POSTGRES_VERSION-softvisio-locks
+        postgresql-$POSTGRES_VERSION-softvisio-locks \
     \
     # add locales
     && localedef --force -i ru_UA -f UTF-8 ru_UA.UTF-8 \
