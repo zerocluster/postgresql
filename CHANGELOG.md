@@ -1,5 +1,11 @@
 # Changelog
 
+### 2.13.1 (2022-12-23)
+
+Fixes:
+
+-   fix: dockerfile
+
 ### 2.13.0 (2022-12-23)
 
 Features:
