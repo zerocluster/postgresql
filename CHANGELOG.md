@@ -1,5 +1,20 @@
 # Changelog
 
+### 2.13.0 (2022-12-23)
+
+Features:
+
+-   feat: postgresql 15
+
+Fixes:
+
+-   fix: app refactored
+-   fix: deps
+-   fix: healthcheck
+-   fix: int53 extension added
+-   fix: pg_hba.conf
+-   fix: timescaledb removed
+
 ### 2.12.8 (2022-09-14)
 
 Fixes:
