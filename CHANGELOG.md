@@ -1,5 +1,11 @@
 # Changelog
 
+### 2.15.1 (2023-04-15)
+
+Fixes:
+
+-   fix: shutdown
+
 ### 2.15.0 (2023-04-15)
 
 Features:
