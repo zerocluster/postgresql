@@ -1,5 +1,11 @@
 # Changelog
 
+### 2.15.6 (2023-06-04)
+
+Fixes:
+
+-   fix: health check
+
 ### 2.15.5 (2023-06-04)
 
 Fixes:
