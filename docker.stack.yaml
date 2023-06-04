@@ -22,7 +22,7 @@ services:
       #   nginx.stream.port: 5432
 
     # healthcheck:
-    #   test: curl -f http://127.0.0.1/api/healthcheck || exit 1
+    #   test: curl -f http://127.0.0.1/api/check-health || exit 1
     #   start_period: 60s
     #   interval: 15s
     #   timeout: 10s
