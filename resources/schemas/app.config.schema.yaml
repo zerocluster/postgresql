@@ -1,21 +1,32 @@
-type: object
-properties:
-  access:
-    type: array
-    items:
-      type: object
-      properties:
-        host: { enum: [local, host, hostssl, hostnossl, hostgssenc, hostnogssenc] }
-        database: { type: string }
-        user: { type: string }
-        address: { type: ["null", string] }
-        auth-method: { enum: [trust, reject, scram-sha-256, md5, password, gss, sspi, ident, peer, ldap, radius, cert, pam, bsd] }
-        auth-options: { type: ["null", string] }
-      required: [host, database, user, address, auth-method, auth-options]
-      additionalProperties: false
+- $id: env
+  type: object
+  properties: {}
+  required: []
 
-  settings:
-    type: ["null", object]
+- $id: public-config
+  type: object
+  properties: {}
 
-required: [access]
-additionalProperties: false
+- $id: config1
+  type: object
+  properties:
+    access:
+      type: array
+      items:
+        type: object
+        properties:
+          host: { enum: [local, host, hostssl, hostnossl, hostgssenc, hostnogssenc] }
+          database: { type: string }
+          user: { type: string }
+          address: { type: ["null", string] }
+          auth-method: { enum: [trust, reject, scram-sha-256, md5, password, gss, sspi, ident, peer, ldap, radius, cert, pam, bsd] }
+          auth-options: { type: ["null", string] }
+
+        additionalProperties: false
+        required: [host, database, user, address, auth-method, auth-options]
+
+    settings:
+      type: ["null", object]
+
+  additionalProperties: false
+  required: [access]
