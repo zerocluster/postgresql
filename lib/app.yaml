@@ -17,3 +17,5 @@ config:
   settings:
     # shared_preload_libraries: ~ # timescaledb
     # primary_conninfo: host=pgsql port=5432 user=replication password=1
+    synchronous_standby_names: FIRST 2 ( standby-1 )
+    cluster_name: standby-1 # used as standby instance name for synchronous replication
