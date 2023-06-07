@@ -30,6 +30,16 @@
         additionalProperties: false
         required: [host, database, user, address, auth-method, auth-options]
 
+    replication:
+      type: object
+      properties:
+        host: { type: string }
+        port: { type: string, format: ip-port }
+        username: { type: string }
+        password: { type: string }
+      additionalProperties: false
+      required: [host, port, username, password]
+
     settings:
       type: ["null", object]
 
