@@ -14,7 +14,7 @@ config:
     - { host: host, database: replication, user: replication, address: 0.0.0.0/0, auth-method: scram-sha-256, auth-options: ~ }
     - { host: host, database: all, user: all, address: 0.0.0.0/0, auth-method: scram-sha-256, auth-options: ~ }
 
-  replications:
+  replication1:
     host: pgsql
     port: 5432
     username: replication
@@ -23,5 +23,4 @@ config:
   settings:
     cluster_name: standby-1 # used as standby instance name for synchronous replication
     synchronous_standby_names: FIRST 2 ( standby-1 )
-    # primary_conninfo: host=pgsql port=5432 user=replication password=1 # XXX gnerate
     # shared_preload_libraries: ~ # timescaledb
