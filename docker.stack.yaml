@@ -41,8 +41,8 @@ services:
       context: .
 
   pgsql1:
-    depends_on: pgsql
     image: ghcr.io/zerocluster/pgsql-15
+    depends_on: [pgsql]
     init: true
     stop_grace_period: 5m
 
