@@ -10,6 +10,8 @@
 - $id: config
   type: object
   properties:
+    dataRoot: { type: string }
+
     access:
       type: array
       items:
@@ -74,4 +76,4 @@
       type: ["null", object]
 
   additionalProperties: false
-  required: [access, backup]
+  required: [dataRoot, access, backup]

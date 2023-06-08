@@ -4,6 +4,8 @@ dependencies:
 components: ~
 
 config:
+  dataRoot: /var/lib/docker/volumes/pgsql/_data
+
   access:
     - { host: local, database: all, user: all, address: ~, auth-method: trust, auth-options: ~ }
     - { host: host, database: replication, user: replication, address: 0.0.0.0/0, auth-method: scram-sha-256, auth-options: ~ }
