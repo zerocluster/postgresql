@@ -19,10 +19,20 @@ config:
     numnerOfBackups: 3
 
   replication:
-    host: pgsql
     port: 5432
     username: replication
     password: ~
+
+    primary:
+      hostname: pgsql
+
+    level1:
+      hostname: pgsql
+      maxNumberOfSyncStanbdbuys: 2
+
+    leve21:
+      hostname: pgsql
+      maxNumberOfSyncStanbdbuys: 0
 
   settings:
     # shared_preload_libraries: ~ # timescaledb
