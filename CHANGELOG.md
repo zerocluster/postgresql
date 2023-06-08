@@ -1,5 +1,15 @@
 # Changelog
 
+### 2.16.0 (2023-06-08)
+
+Features:
+
+-   feat: sql.ID()
+
+Fixes:
+
+-   fix: schema path
+
 ### 2.15.12 (2023-06-08)
 
 Fixes:
