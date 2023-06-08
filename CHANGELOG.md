@@ -1,5 +1,11 @@
 # Changelog
 
+### 2.16.7 (2023-06-08)
+
+Fixes:
+
+-   fix: replication
+
 ### 2.16.6 (2023-06-08)
 
 Fixes:
