@@ -31,7 +31,6 @@ config:
       maxNumberOfSyncStanbdbuys: 2
 
     leve21:
-      hostname: pgsql
       maxNumberOfSyncStanbdbuys: 0
 
   settings:

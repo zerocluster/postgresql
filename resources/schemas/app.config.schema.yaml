@@ -41,12 +41,34 @@
     replication:
       type: object
       properties:
-        host: { type: string }
         port: { type: string, format: ip-port }
         username: { type: string }
         password: { type: string }
+
+        primary:
+          type: object
+          properties:
+            hostname: { type: string }
+          additionalProperties: false
+          required: [hostname]
+
+        level1:
+          type: object
+          properties:
+            hostname: { type: string }
+            maxNumberOfSyncStanbdbuys: { type: integer, minimum: 0 }
+          additionalProperties: false
+          required: [hostname, maxNumberOfSyncStanbdbuys]
+
+        level2:
+          type: object
+          properties:
+            maxNumberOfSyncStanbdbuys: { type: integer, minimum: 0 }
+          additionalProperties: false
+          required: [maxNumberOfSyncStanbdbuys]
+
       additionalProperties: false
-      required: [host, port, username, password]
+      required: [port, username, password]
 
     settings:
       type: ["null", object]
