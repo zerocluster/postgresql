@@ -1,5 +1,12 @@
 # Changelog
 
+### 2.15.12 (2023-06-08)
+
+Fixes:
+
+-   fix: replication
+-   fix: schema path
+
 ### 2.15.11 (2023-06-07)
 
 Fixes:
