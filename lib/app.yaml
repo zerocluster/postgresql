@@ -4,7 +4,7 @@ dependencies:
 components: ~
 
 config:
-  dataRoot: data/pgsql
+  dataRoot: /var/lib/postgresql/cluster
 
   access:
     - { host: local, database: all, user: all, address: ~, auth-method: trust, auth-options: ~ }
