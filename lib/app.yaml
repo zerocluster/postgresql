@@ -16,6 +16,7 @@ config:
 
   backup:
     cron: ~
+    numnerOfBackups: 3
 
   replication:
     host: pgsql
