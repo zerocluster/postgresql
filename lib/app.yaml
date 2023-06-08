@@ -21,6 +21,4 @@ config:
     password: ~
 
   settings:
-    # cluster_name: standby-1 # used as standby instance name for synchronous replication
-    # synchronous_standby_names: FIRST 2 ( standby-1 )
     # shared_preload_libraries: ~ # timescaledb
