@@ -56,12 +56,15 @@ services:
     environment:
       NODE_ENV: production
 
-    command: --level 1
+    command: --standby-level=1
 
     # configs:
     #   - { source: env.yaml, target: /var/local/package/env.yaml }
 
     networks: [main]
+
+    # ports:
+    # - { published: 5433, target: 5432 }
 
     volumes:
       - { type: tmpfs, target: /dev/shm, tmpfs: { size: 1073741824 } }
