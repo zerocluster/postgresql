@@ -34,7 +34,7 @@ services:
 
     volumes:
       - { type: tmpfs, target: /dev/shm, tmpfs: { size: 1073741824 } }
-      - { type: volume, source: pgsql, target: /var/local/package/data }
+      - { type: volume, source: pgsql, target: /var/lib/postgresql }
       - { type: bind, source: /var/run/postgresql, target: /var/run/postgresql }
 
     build:
@@ -68,7 +68,7 @@ services:
 
     volumes:
       - { type: tmpfs, target: /dev/shm, tmpfs: { size: 1073741824 } }
-      - { type: volume, source: pgsql1, target: /var/local/package/data }
+      - { type: volume, source: pgsql1, target: /var/lib/postgresql }
       - { type: bind, source: /var/run/postgresql, target: /var/run/postgresql }
 
     build:
