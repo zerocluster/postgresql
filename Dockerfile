@@ -18,7 +18,7 @@ RUN \
     && localedef --force -i ru_UA -f UTF-8 ru_UA.UTF-8 \
     \
     # remove default database
-    && rm -rf /var/lib/postgresql/$POSTGRES_VERSION/main \
+    && rm -rf /var/lib/postgresql/$POSTGRES_VERSION/* \
     \
     # install deps
     && npm i --omit=dev \
