@@ -17,6 +17,8 @@ RUN \
     # add locales
     && localedef --force -i ru_UA -f UTF-8 ru_UA.UTF-8 \
     \
+    && rm -rf /var/lib/postgresql \
+    \
     # install deps
     && npm i --omit=dev \
     \
