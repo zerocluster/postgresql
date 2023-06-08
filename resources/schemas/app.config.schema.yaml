@@ -30,6 +30,13 @@
         additionalProperties: false
         required: [host, database, user, address, auth-method, auth-options]
 
+    backup:
+      type: object
+      properties:
+        cron: { type: ["null", sring] }
+      additionalProperties: false
+      required: []
+
     replication:
       type: object
       properties:

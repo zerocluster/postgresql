@@ -14,6 +14,9 @@ config:
     - { host: host, database: replication, user: replication, address: 0.0.0.0/0, auth-method: scram-sha-256, auth-options: ~ }
     - { host: host, database: all, user: all, address: 0.0.0.0/0, auth-method: scram-sha-256, auth-options: ~ }
 
+  backup:
+    cron: ~
+
   replication:
     host: pgsql
     port: 5432
