@@ -18,20 +18,11 @@ services:
         max_replicas_per_node: 1
         constraints:
           - "node.labels.pgsql == true"
-      # labels:
-      #   nginx.stream.port: 5432
-
-    # healthcheck:
-    #   test: curl -f http://127.0.0.1/api/check-health || exit 1
-    #   start_period: 60s
-    #   interval: 15s
-    #   timeout: 10s
-    #   retries: 3
 
     environment:
       NODE_ENV: production
 
-    command: --service default
+    command: ""
 
     # configs:
     #   - { source: env.yaml, target: /var/local/package/env.yaml }
@@ -49,6 +40,37 @@ services:
     build:
       context: .
 
+  pgsql1:
+    depends_on: pgsql
+    image: ghcr.io/zerocluster/pgsql-15
+    init: true
+    stop_grace_period: 5m
+
+    deploy:
+      replicas: 1
+      placement:
+        max_replicas_per_node: 1
+        constraints:
+          - "node.labels.pgsql1 == true"
+
+    environment:
+      NODE_ENV: production
+
+    command: --level 1
+
+    # configs:
+    #   - { source: env.yaml, target: /var/local/package/env.yaml }
+
+    networks: [main]
+
+    volumes:
+      - { type: tmpfs, target: /dev/shm, tmpfs: { size: 1073741824 } }
+      - { type: volume, source: pgsql1, target: /var/lib/docker/volumes/pgsql/_data }
+      - { type: bind, source: /var/run/postgresql, target: /var/run/postgresql }
+
+    build:
+      context: .
+
 # configs:
 #   env.yaml: { file: env.yaml }
 
@@ -57,6 +79,7 @@ networks:
 
 volumes:
   pgsql: { name: pgsql }
+  pgsql1: { name: pgsql1 }
 
 x-build:
   default_tag: latest
