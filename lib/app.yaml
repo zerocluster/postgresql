@@ -23,7 +23,7 @@ config:
 
     level1:
       hostname: pgsql
-      maxNumberOfSyncStanbdbuys: 2
+      maxNumberOfSyncStanbdbuys: 0
 
     level2:
       maxNumberOfSyncStanbdbuys: 0
