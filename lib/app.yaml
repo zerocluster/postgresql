@@ -4,13 +4,13 @@ dependencies:
 services:
   default: ~
   standby: ~
-  backup: ~
 
 components: ~
 
 config:
   access:
     - { host: local, database: all, user: all, address: ~, auth-method: trust, auth-options: ~ }
+    - { host: local, database: replication, user: replication, address: ~, auth-method: trust, auth-options: ~ }
     - { host: host, database: replication, user: replication, address: 0.0.0.0/0, auth-method: scram-sha-256, auth-options: ~ }
     - { host: host, database: all, user: all, address: 0.0.0.0/0, auth-method: scram-sha-256, auth-options: ~ }
 
