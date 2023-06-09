@@ -1,5 +1,11 @@
 # Changelog
 
+### 2.16.19 (2023-06-09)
+
+Fixes:
+
+-   fix: replication
+
 ### 2.16.18 (2023-06-09)
 
 Fixes:
