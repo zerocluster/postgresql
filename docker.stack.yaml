@@ -4,7 +4,9 @@ version: "3.9"
 
 # NOTE deploy
 # docker stack deploy --with-registry-auth -c docker-stack.yaml pgsql
-# docker node update --label-add pgsql=true <NODE-NAME>
+# docker node update --label-add pgsql=primary <NODE-NAME>
+# docker node update --label-add pgsql=level1 <NODE-NAME>
+# docker node update --label-add pgsql=level2 <NODE-NAME>
 
 services:
   pgsql:
@@ -17,7 +19,7 @@ services:
       placement:
         max_replicas_per_node: 1
         constraints:
-          - "node.labels.pgsql == true"
+          - "node.labels.pgsql == primary"
 
     environment:
       NODE_ENV: production
@@ -29,8 +31,8 @@ services:
 
     networks: [main]
 
-    ports:
-      - { published: 5432, target: 5432 }
+    # ports:
+    #   - { published: 5432, target: 5432 }
 
     volumes:
       - { type: tmpfs, target: /dev/shm, tmpfs: { size: 1073741824 } }
@@ -47,11 +49,11 @@ services:
     stop_grace_period: 5m
 
     deploy:
-      replicas: 1
+      replicas: 0
       placement:
         max_replicas_per_node: 1
         constraints:
-          - "node.labels.pgsql1 == true"
+          - "node.labels.pgsql == level1"
 
     environment:
       NODE_ENV: production
@@ -68,7 +70,41 @@ services:
 
     volumes:
       - { type: tmpfs, target: /dev/shm, tmpfs: { size: 1073741824 } }
-      - { type: volume, source: pgsql1, target: /var/lib/postgresql }
+      - { type: volume, source: pgsql, target: /var/lib/postgresql }
+      - { type: bind, source: /var/run/postgresql, target: /var/run/postgresql }
+
+    build:
+      context: .
+
+  pgsql2:
+    image: ghcr.io/zerocluster/pgsql-15
+    depends_on: [pgsql1]
+    init: true
+    stop_grace_period: 5m
+
+    deploy:
+      replicas: 0
+      placement:
+        max_replicas_per_node: 1
+        constraints:
+          - "node.labels.pgsql == level2"
+
+    environment:
+      NODE_ENV: production
+
+    command: --standby-level=2
+
+    # configs:
+    #   - { source: env.yaml, target: /var/local/package/env.yaml }
+
+    networks: [main]
+
+    # ports:
+    # - { published: 5433, target: 5432 }
+
+    volumes:
+      - { type: tmpfs, target: /dev/shm, tmpfs: { size: 1073741824 } }
+      - { type: volume, source: pgsql, target: /var/lib/postgresql }
       - { type: bind, source: /var/run/postgresql, target: /var/run/postgresql }
 
     build:
@@ -82,7 +118,6 @@ networks:
 
 volumes:
   pgsql: { name: pgsql }
-  pgsql1: { name: pgsql1 }
 
 x-build:
   default_tag: latest
