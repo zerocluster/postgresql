@@ -1,5 +1,11 @@
 # Changelog
 
+### 2.16.23 (2023-06-09)
+
+Fixes:
+
+-   fix: docker schema
+
 ### 2.16.22 (2023-06-09)
 
 Fixes:
