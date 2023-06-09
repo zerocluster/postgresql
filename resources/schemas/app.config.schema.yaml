@@ -78,4 +78,4 @@
       type: ["null", object]
 
   additionalProperties: false
-  required: [postgresVersion, dataRoot, clusterName, access, backup]
+  required: [postgresVersion, postgresClusterName, dataRoot, access, backup]
