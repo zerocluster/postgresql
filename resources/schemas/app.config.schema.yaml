@@ -67,7 +67,7 @@
         async:
           type: object
           properties:
-            replicateFrom: { enum: [primary, synd] }
+            replicateFrom: { enum: [primary, sync] }
           additionalProperties: false
           required: [replicateFrom]
 
@@ -78,4 +78,4 @@
       type: ["null", object]
 
   additionalProperties: false
-  required: [postgresVersion, postgresClusterName, dataRoot, access, backup]
+  required: [postgresVersion, postgresClusterName, dataRoot, access]
