@@ -37,7 +37,10 @@
     backup:
       type: object
       properties:
-        cron: { type: ["null", string] }
+        cron:
+          anyOf:
+            - type: "null"
+            - { type: string, format: cron }
         numnerOfBackups: { type: integer, minimum: 0 }
       additionalProperties: false
       required: [numnerOfBackups]
