@@ -4,9 +4,10 @@ version: "3.9"
 
 # NOTE deploy
 # docker stack deploy --with-registry-auth -c docker-stack.yaml pgsql
-# docker node update --label-add pgsql=primary <NODE-NAME>
-# docker node update --label-add pgsql=sync <NODE-NAME>
-# docker node update --label-add pgsql=async <NODE-NAME>
+#
+# docker node update --label-add pgsql=primary `docker node inspect self --format "{{ .ID }}"`
+# docker node update --label-add pgsql=sync `docker node inspect self --format "{{ .ID }}"`
+# docker node update --label-add pgsql=async `docker node inspect self --format "{{ .ID }}"`
 
 services:
   pgsql:
@@ -49,7 +50,7 @@ services:
     stop_grace_period: 5m
 
     deploy:
-      replicas: 0
+      replicas: 0 # must be equal to the replication.sync.numberOfStandbys in app config
       placement:
         max_replicas_per_node: 1
         constraints:
@@ -78,7 +79,7 @@ services:
 
   pgsql2:
     image: ghcr.io/zerocluster/pgsql-15
-    depends_on: [pgsql1]
+    depends_on: [pgsql]
     init: true
     stop_grace_period: 5m
 
