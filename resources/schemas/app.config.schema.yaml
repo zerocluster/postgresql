@@ -10,6 +10,8 @@
 - $id: config
   type: object
   properties:
+    postgresVersion: { type: integer, minimum: 15 }
+    postgresClusterName: { type: string }
     dataRoot: { type: string }
 
     access:
@@ -76,4 +78,4 @@
       type: ["null", object]
 
   additionalProperties: false
-  required: [dataRoot, access, backup]
+  required: [postgresVersion, dataRoot, clusterName, access, backup]

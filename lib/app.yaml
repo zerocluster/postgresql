@@ -4,6 +4,8 @@ dependencies:
 components: ~
 
 config:
+  postgresVersion: 15
+  postgresClusterName: main
   dataRoot: /var/lib/postgresql
 
   access:
