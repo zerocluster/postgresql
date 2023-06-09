@@ -26,7 +26,7 @@ config:
       hostname: pgsql
 
     sync:
-      hostname: pgsql1
+      hostname: pgsql-sync
       numberOfStandbys: 0
 
     async:

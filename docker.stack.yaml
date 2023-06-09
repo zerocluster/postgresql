@@ -43,7 +43,7 @@ services:
     build:
       context: .
 
-  pgsql1:
+  pgsql-sync:
     image: ghcr.io/zerocluster/pgsql-15
     depends_on: [pgsql]
     init: true
@@ -77,7 +77,7 @@ services:
     build:
       context: .
 
-  pgsql2:
+  pgsql-async:
     image: ghcr.io/zerocluster/pgsql-15
     depends_on: [pgsql]
     init: true
