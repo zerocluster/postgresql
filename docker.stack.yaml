@@ -5,8 +5,8 @@ version: "3.9"
 # NOTE deploy
 # docker stack deploy --with-registry-auth -c docker-stack.yaml pgsql
 # docker node update --label-add pgsql=primary <NODE-NAME>
-# docker node update --label-add pgsql=level1 <NODE-NAME>
-# docker node update --label-add pgsql=level2 <NODE-NAME>
+# docker node update --label-add pgsql=sync <NODE-NAME>
+# docker node update --label-add pgsql=async <NODE-NAME>
 
 services:
   pgsql:
@@ -53,12 +53,12 @@ services:
       placement:
         max_replicas_per_node: 1
         constraints:
-          - "node.labels.pgsql == level1"
+          - "node.labels.pgsql == sync"
 
     environment:
       NODE_ENV: production
 
-    command: --standby-level=1
+    command: --standby=sync
 
     # configs:
     #   - { source: env.yaml, target: /var/local/package/env.yaml }
@@ -87,12 +87,12 @@ services:
       placement:
         max_replicas_per_node: 1
         constraints:
-          - "node.labels.pgsql == level2"
+          - "node.labels.pgsql == async"
 
     environment:
       NODE_ENV: production
 
-    command: --standby-level=2
+    command: --standby=async
 
     # configs:
     #   - { source: env.yaml, target: /var/local/package/env.yaml }

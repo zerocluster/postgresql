@@ -25,12 +25,12 @@ config:
     primary:
       hostname: pgsql
 
-    level1:
+    sync:
       hostname: pgsql1
-      maxNumberOfSyncStanbdbuys: 0
+      numberOfStandbys: 0
 
-    level2:
-      maxNumberOfSyncStanbdbuys: 0
+    async:
+      replicateFrom: sync
 
   settings:
     # shared_preload_libraries: ~ # timescaledb

@@ -56,20 +56,20 @@
           additionalProperties: false
           required: [hostname]
 
-        level1:
+        sync:
           type: object
           properties:
             hostname: { type: string }
-            maxNumberOfSyncStanbdbuys: { type: integer, minimum: 0 }
+            numberOfStandbys: { type: integer, minimum: 0 }
           additionalProperties: false
-          required: [hostname, maxNumberOfSyncStanbdbuys]
+          required: [hostname, numberOfStandbys]
 
-        level2:
+        async:
           type: object
           properties:
-            maxNumberOfSyncStanbdbuys: { type: integer, minimum: 0 }
+            replicateFrom: { enum: [primary, synd] }
           additionalProperties: false
-          required: [maxNumberOfSyncStanbdbuys]
+          required: [replicateFrom]
 
       additionalProperties: false
       required: [port, username, password]
