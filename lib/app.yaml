@@ -3,7 +3,8 @@ dependencies:
 
 cli:
   options:
-    reset-root: ~
+    reset-root-password: ~
+
     standby:
       short: ~
       description: Standby mode
