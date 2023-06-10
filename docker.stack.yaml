@@ -8,6 +8,7 @@ version: "3.9"
 # docker node update --label-add pgsql=primary `docker node inspect self --format "{{ .ID }}"`
 # docker node update --label-add pgsql=sync `docker node inspect self --format "{{ .ID }}"`
 # docker node update --label-add pgsql=async `docker node inspect self --format "{{ .ID }}"`
+# docker node update --label-add pgsql=backup `docker node inspect self --format "{{ .ID }}"`
 
 services:
   pgsql:
@@ -102,6 +103,40 @@ services:
 
     # ports:
     #   - { published: 5434, target: 5432 }
+
+    volumes:
+      - { type: tmpfs, target: /dev/shm, tmpfs: { size: 1073741824 } }
+      - { type: volume, source: pgsql, target: /var/lib/postgresql }
+      - { type: bind, source: /var/run/postgresql, target: /var/run/postgresql }
+
+    build:
+      context: .
+
+  pgsql-backup:
+    image: ghcr.io/zerocluster/pgsql-15
+    depends_on: [pgsql]
+    init: true
+    stop_grace_period: 5m
+
+    deploy:
+      replicas: 0
+      placement:
+        max_replicas_per_node: 1
+        constraints:
+          - "node.labels.pgsql == backup"
+
+    environment:
+      NODE_ENV: production
+
+    command: --standby=backup
+
+    # configs:
+    #   - { source: env.yaml, target: /var/local/package/env.yaml }
+
+    networks: [main]
+
+    # ports:
+    #   - { published: 5435, target: 5432 }
 
     volumes:
       - { type: tmpfs, target: /dev/shm, tmpfs: { size: 1073741824 } }
