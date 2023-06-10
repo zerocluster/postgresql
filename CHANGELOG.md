@@ -1,5 +1,12 @@
 # Changelog
 
+### 2.16.33 (2023-06-10)
+
+Fixes:
+
+-   fix: backup
+-   fix: healthcheck
+
 ### 2.16.32 (2023-06-10)
 
 Fixes:
