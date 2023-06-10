@@ -1,5 +1,11 @@
 # Changelog
 
+### 2.16.32 (2023-06-10)
+
+Fixes:
+
+-   fix: healthcheck
+
 ### 2.16.31 (2023-06-10)
 
 Fixes:
