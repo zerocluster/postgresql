@@ -28,8 +28,8 @@ services:
 
     command: ""
 
-    # configs:
-    #   - { source: env.yaml, target: /var/local/package/env.yaml }
+    configs:
+      - { source: env.yaml, target: /var/local/package/env.yaml }
 
     networks: [main]
 
@@ -62,8 +62,8 @@ services:
 
     command: --standby=sync
 
-    # configs:
-    #   - { source: env.yaml, target: /var/local/package/env.yaml }
+    configs:
+      - { source: env.yaml, target: /var/local/package/env.yaml }
 
     networks: [main]
 
@@ -96,8 +96,8 @@ services:
 
     command: --standby=async
 
-    # configs:
-    #   - { source: env.yaml, target: /var/local/package/env.yaml }
+    configs:
+      - { source: env.yaml, target: /var/local/package/env.yaml }
 
     networks: [main]
 
@@ -130,8 +130,8 @@ services:
 
     command: --standby=backup
 
-    # configs:
-    #   - { source: env.yaml, target: /var/local/package/env.yaml }
+    configs:
+      - { source: env.yaml, target: /var/local/package/env.yaml }
 
     networks: [main]
 
@@ -143,8 +143,8 @@ services:
     build:
       context: .
 
-# configs:
-#   env.yaml: { file: env.yaml }
+configs:
+  env.yaml: { file: env.yaml }
 
 networks:
   main: { external: true }
