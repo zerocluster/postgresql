@@ -42,8 +42,9 @@
             - type: "null"
             - { type: string, format: cron }
         numnerOfBackups: { type: integer, minimum: 0 }
+        backupOn: { enum: [primary, backup] }
       additionalProperties: false
-      required: [numnerOfBackups]
+      required: [cron, numnerOfBackups, backupOn]
 
     replication:
       type: object

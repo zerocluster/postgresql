@@ -10,7 +10,7 @@ cli:
       description: Standby mode
       schema:
         type: string
-        enum: [sync, async]
+        enum: [sync, async, backup]
 
 components: ~
 
@@ -28,6 +28,7 @@ config:
   backup:
     cron: "0 5 * * *" # 05:00 everyday
     numnerOfBackups: 3
+    backupOn: primary
 
   replication:
     port: 5432
