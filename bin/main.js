@@ -2,8 +2,8 @@
 
 import App from "#lib/app";
 
-await App.Cli.parse( App );
-
 const app = new App();
+
+await app.cli();
 
 app.run();
