@@ -1,5 +1,12 @@
 # Changelog
 
+### 2.16.29 (2023-06-10)
+
+Fixes:
+
+-   fix: app cli
+-   fix: backup
+
 ### 2.16.28 (2023-06-10)
 
 Fixes:
