@@ -1,6 +1,16 @@
 dependencies:
   - "@softvisio/core"
 
+cli:
+  options:
+    reset-root: ~
+    standby:
+      short: ~
+      description: Standby mode
+      schema:
+        type: string
+        enum: [sync, async]
+
 components: ~
 
 config:
