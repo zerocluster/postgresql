@@ -1,5 +1,11 @@
 # Changelog
 
+### 2.17.1 (2023-06-13)
+
+Fixes:
+
+-   fix: backup path
+
 ### 2.17.0 (2023-06-13)
 
 Features:
