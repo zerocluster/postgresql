@@ -1,5 +1,11 @@
 # Changelog
 
+### 2.17.4 (2023-07-01)
+
+Fixes:
+
+-   fix: data location
+
 ### 2.17.3 (2023-06-29)
 
 Fixes:
