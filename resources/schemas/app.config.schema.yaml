@@ -12,7 +12,7 @@
   properties:
     postgresVersion: { type: integer, minimum: 15 }
     postgresClusterName: { type: string }
-    dataRoot: { type: string }
+    dataRoot: { type: ["null", string] }
 
     access:
       type: array

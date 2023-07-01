@@ -12,12 +12,18 @@ cli:
         type: string
         enum: [sync, async, backup]
 
+services:
+  server:
+    env: true
+
+defaultService: server
+
 components: ~
 
 config:
   postgresVersion: 15
   postgresClusterName: main
-  dataRoot: /var/lib/postgresql
+  dataRoot: ~
 
   access:
     - { host: local, database: all, user: all, address: ~, auth-method: trust, auth-options: ~ }

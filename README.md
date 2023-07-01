@@ -19,7 +19,7 @@ docker run --rm -it --network main -p 5432:5432 -v /var/local/zerocluster/pgsql:
     ```shell
     docker stack rm pgsql
 
-    docker run --rm -it -v pgsql:/var/lib/postgresql --entrypoint bash ghcr.io/zerocluster/pgsql
+    docker run --rm -it -v pgsql:/var/local/package/data --entrypoint bash ghcr.io/zerocluster/pgsql
 
     /var/local/package/bin/migrate.sh
     ```
