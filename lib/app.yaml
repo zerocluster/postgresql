@@ -13,8 +13,7 @@ cli:
         enum: [sync, async, backup]
 
 services:
-  server:
-    env: true
+  server: ~
 
 defaultService: server
 
