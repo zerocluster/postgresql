@@ -10,7 +10,6 @@ RUN \
         postgresql-$POSTGRES_VERSION \
         postgresql-contrib \
         postgresql-$POSTGRES_VERSION-softvisio-admin \
-        postgresql-$POSTGRES_VERSION-softvisio-cron \
         postgresql-$POSTGRES_VERSION-softvisio-types \
         postgresql-$POSTGRES_VERSION-softvisio-locks \
     \
