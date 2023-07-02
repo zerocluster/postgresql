@@ -1,5 +1,11 @@
 # Changelog
 
+### 2.17.6 (2023-07-02)
+
+Fixes:
+
+-   fix: cron removed
+
 ### 2.17.5 (2023-07-01)
 
 Fixes:
