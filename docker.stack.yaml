@@ -23,9 +23,6 @@ services:
         constraints:
           - "node.labels.pgsql == primary"
 
-    environment:
-      NODE_ENV: production
-
     command: ""
 
     configs:
@@ -56,9 +53,6 @@ services:
         max_replicas_per_node: 1
         constraints:
           - "node.labels.pgsql == sync"
-
-    environment:
-      NODE_ENV: production
 
     command: --standby=sync
 
@@ -91,9 +85,6 @@ services:
         constraints:
           - "node.labels.pgsql == async"
 
-    environment:
-      NODE_ENV: production
-
     command: --standby=async
 
     configs:
@@ -124,9 +115,6 @@ services:
         max_replicas_per_node: 1
         constraints:
           - "node.labels.pgsql == backup"
-
-    environment:
-      NODE_ENV: production
 
     command: --standby=backup
 
