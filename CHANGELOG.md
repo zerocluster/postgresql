@@ -1,5 +1,11 @@
 # Changelog
 
+### 2.17.10 (2023-07-26)
+
+Fixes:
+
+-   fix: package renamed
+
 ### 2.17.9 (2023-07-25)
 
 Fixes:
