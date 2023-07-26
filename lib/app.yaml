@@ -6,7 +6,7 @@ cli:
     reset-root-password: ~
 
 services:
-  promary:
+  primary:
     components:
       postgresql:
         mode: primary
