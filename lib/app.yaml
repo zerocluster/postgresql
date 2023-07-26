@@ -41,10 +41,10 @@ config:
     password: ~
 
     primary:
-      hostname: pgsql
+      hostname: postgresql
 
     sync:
-      hostname: pgsql-sync
+      hostname: postgresql-sync
       numberOfStandbys: 0
 
     async:
