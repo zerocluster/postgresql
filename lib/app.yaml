@@ -5,50 +5,26 @@ cli:
   options:
     reset-root-password: ~
 
-    standby:
-      short: ~
-      description: Standby mode
-      schema:
-        type: string
-        enum: [sync, async, backup]
-
 services:
-  server: ~
+  promary:
+    compoents:
+      postgresql:
+        mode: primary
+  standby-sync:
+    compoents:
+      postgresql:
+        mode: standby-sync
+  standby-async:
+    compoents:
+      postgresql:
+        mode: standby-async
+  standby-backup:
+    compoents:
+      postgresql:
+        mode: standby-backup
 
-defaultService: server
+defaultService: primary
 
 components: ~
 
-config:
-  postgresVersion: 15
-  postgresClusterName: main
-  dataRoot: ~
-
-  access:
-    - { host: local, database: all, user: all, address: ~, auth-method: trust, auth-options: ~ }
-    - { host: local, database: replication, user: replication, address: ~, auth-method: trust, auth-options: ~ }
-    - { host: host, database: replication, user: replication, address: 0.0.0.0/0, auth-method: scram-sha-256, auth-options: ~ }
-    - { host: host, database: all, user: all, address: 0.0.0.0/0, auth-method: scram-sha-256, auth-options: ~ }
-
-  backup:
-    cron: "0 5 * * *" # 05:00 everyday
-    numnerOfBackups: 3
-    backupOn: primary
-
-  replication:
-    port: 5432
-    username: replication
-    password: ~
-
-    primary:
-      hostname: postgresql
-
-    sync:
-      hostname: postgresql-sync
-      numberOfStandbys: 0
-
-    async:
-      replicateFrom: sync
-
-  settings:
-    # shared_preload_libraries: ~ # timescaledb
+config: ~
