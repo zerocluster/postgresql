@@ -7,19 +7,22 @@ cli:
 
 services:
   promary:
-    compoents:
+    components:
       postgresql:
         mode: primary
+
   standby-sync:
-    compoents:
+    components:
       postgresql:
         mode: standby-sync
+
   standby-async:
-    compoents:
+    components:
       postgresql:
         mode: standby-async
+
   standby-backup:
-    compoents:
+    components:
       postgresql:
         mode: standby-backup
 
