@@ -1,5 +1,11 @@
 # Changelog
 
+### 2.18.0 (2023-07-26)
+
+Features:
+
+-   feat: postgresql component
+
 ### 2.17.10 (2023-07-26)
 
 Fixes:
