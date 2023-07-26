@@ -1,18 +1,18 @@
-#!/usr/bin/env -S docker stack deploy --with-registry-auth pgsql -c
+#!/usr/bin/env -S docker stack deploy --with-registry-auth postgresql -c
 
 version: "3.9"
 
 # NOTE deploy
-# docker stack deploy --with-registry-auth -c docker-stack.yaml pgsql
+# docker stack deploy --with-registry-auth -c docker-stack.yaml postgresql
 #
-# docker node update --label-add pgsql=primary `docker node inspect self --format "{{ .ID }}"`
-# docker node update --label-add pgsql=sync `docker node inspect self --format "{{ .ID }}"`
-# docker node update --label-add pgsql=async `docker node inspect self --format "{{ .ID }}"`
-# docker node update --label-add pgsql=backup `docker node inspect self --format "{{ .ID }}"`
+# docker node update --label-add postgresql=primary `docker node inspect self --format "{{ .ID }}"`
+# docker node update --label-add postgresql=sync `docker node inspect self --format "{{ .ID }}"`
+# docker node update --label-add postgresql=async `docker node inspect self --format "{{ .ID }}"`
+# docker node update --label-add postgresql=backup `docker node inspect self --format "{{ .ID }}"`
 
 services:
-  pgsql:
-    image: ghcr.io/zerocluster/pgsql-15
+  postgresql:
+    image: ghcr.io/zerocluster/postgresql-15
     init: true
     stop_grace_period: 5m
 
@@ -21,7 +21,7 @@ services:
       placement:
         max_replicas_per_node: 1
         constraints:
-          - "node.labels.pgsql == primary"
+          - "node.labels.postgresql == primary"
 
     command: ""
 
@@ -35,15 +35,15 @@ services:
 
     volumes:
       - { type: tmpfs, target: /dev/shm, tmpfs: { size: 1073741824 } }
-      - { type: volume, source: pgsql, target: /var/local/package/data }
+      - { type: volume, source: postgresql, target: /var/local/package/data }
       - { type: bind, source: /var/run/postgresql, target: /var/run/postgresql }
 
     build:
       context: .
 
-  pgsql-sync:
-    image: ghcr.io/zerocluster/pgsql-15
-    depends_on: [pgsql]
+  postgresql-sync:
+    image: ghcr.io/zerocluster/postgresql-15
+    depends_on: [postgresql]
     init: true
     stop_grace_period: 5m
 
@@ -52,7 +52,7 @@ services:
       placement:
         max_replicas_per_node: 1
         constraints:
-          - "node.labels.pgsql == sync"
+          - "node.labels.postgresql == sync"
 
     command: --standby=sync
 
@@ -66,15 +66,15 @@ services:
 
     volumes:
       - { type: tmpfs, target: /dev/shm, tmpfs: { size: 1073741824 } }
-      - { type: volume, source: pgsql, target: /var/local/package/data }
+      - { type: volume, source: postgresql, target: /var/local/package/data }
       - { type: bind, source: /var/run/postgresql, target: /var/run/postgresql }
 
     build:
       context: .
 
-  pgsql-async:
-    image: ghcr.io/zerocluster/pgsql-15
-    depends_on: [pgsql]
+  postgresql-async:
+    image: ghcr.io/zerocluster/postgresql-15
+    depends_on: [postgresql]
     init: true
     stop_grace_period: 5m
 
@@ -83,7 +83,7 @@ services:
       placement:
         max_replicas_per_node: 1
         constraints:
-          - "node.labels.pgsql == async"
+          - "node.labels.postgresql == async"
 
     command: --standby=async
 
@@ -97,15 +97,15 @@ services:
 
     volumes:
       - { type: tmpfs, target: /dev/shm, tmpfs: { size: 1073741824 } }
-      - { type: volume, source: pgsql, target: /var/local/package/data }
+      - { type: volume, source: postgresql, target: /var/local/package/data }
       - { type: bind, source: /var/run/postgresql, target: /var/run/postgresql }
 
     build:
       context: .
 
-  pgsql-backup:
-    image: ghcr.io/zerocluster/pgsql-15
-    depends_on: [pgsql]
+  postgresql-backup:
+    image: ghcr.io/zerocluster/postgresql-15
+    depends_on: [postgresql]
     init: true
     stop_grace_period: 5m
 
@@ -114,7 +114,7 @@ services:
       placement:
         max_replicas_per_node: 1
         constraints:
-          - "node.labels.pgsql == backup"
+          - "node.labels.postgresql == backup"
 
     command: --standby=backup
 
@@ -125,7 +125,7 @@ services:
 
     volumes:
       - { type: tmpfs, target: /dev/shm, tmpfs: { size: 1073741824 } }
-      - { type: volume, source: pgsql, target: /var/local/package/data }
+      - { type: volume, source: postgresql, target: /var/local/package/data }
       - { type: bind, source: /var/run/postgresql, target: /var/run/postgresql }
 
     build:
@@ -138,7 +138,7 @@ networks:
   main: { external: true }
 
 volumes:
-  pgsql: { name: pgsql }
+  postgresql: { name: postgresql }
 
 x-build:
   default_tag: latest
