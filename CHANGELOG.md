@@ -1,5 +1,11 @@
 # Changelog
 
+### 2.18.1 (2023-07-27)
+
+Fixes:
+
+-   fix: docs
+
 ### 2.18.0 (2023-07-26)
 
 Features:
