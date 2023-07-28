@@ -1,5 +1,11 @@
 # Changelog
 
+### 2.18.2 (2023-07-28)
+
+Fixes:
+
+-   fix: docker build refactored
+
 ### 2.18.1 (2023-07-27)
 
 Fixes:
