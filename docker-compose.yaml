@@ -12,7 +12,7 @@ version: "3.9"
 
 services:
   postgresql:
-    image: ghcr.io/zerocluster/postgresql-15
+    image: ghcr.io/zerocluster/postgresql/15
     init: true
     stop_grace_period: 5m
 
@@ -41,7 +41,7 @@ services:
     build: .
 
   postgresql-sync:
-    image: ghcr.io/zerocluster/postgresql-15
+    image: ghcr.io/zerocluster/postgresql/15
     depends_on: [postgresql]
     init: true
     stop_grace_period: 5m
@@ -71,7 +71,7 @@ services:
     build: .
 
   postgresql-async:
-    image: ghcr.io/zerocluster/postgresql-15
+    image: ghcr.io/zerocluster/postgresql/15
     depends_on: [postgresql]
     init: true
     stop_grace_period: 5m
@@ -101,7 +101,7 @@ services:
     build: .
 
   postgresql-backup:
-    image: ghcr.io/zerocluster/postgresql-15
+    image: ghcr.io/zerocluster/postgresql/15
     depends_on: [postgresql]
     init: true
     stop_grace_period: 5m
