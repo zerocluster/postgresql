@@ -1,4 +1,4 @@
-FROM ghcr.io/zerocluster/node
+FROM ghcr.io/zerocluster/node/app
 
 ENV POSTGRES_VERSION=15
 ENV POSTGRES_HOME="/usr/lib/postgresql/$POSTGRES_VERSION"
