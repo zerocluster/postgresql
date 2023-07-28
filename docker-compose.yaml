@@ -38,8 +38,7 @@ services:
       - { type: volume, source: postgresql, target: /var/local/package/data }
       - { type: bind, source: /var/run/postgresql, target: /var/run/postgresql }
 
-    build:
-      context: .
+    build: .
 
   postgresql-sync:
     image: ghcr.io/zerocluster/postgresql-15
@@ -69,8 +68,7 @@ services:
       - { type: volume, source: postgresql, target: /var/local/package/data }
       - { type: bind, source: /var/run/postgresql, target: /var/run/postgresql }
 
-    build:
-      context: .
+    build: .
 
   postgresql-async:
     image: ghcr.io/zerocluster/postgresql-15
@@ -100,8 +98,7 @@ services:
       - { type: volume, source: postgresql, target: /var/local/package/data }
       - { type: bind, source: /var/run/postgresql, target: /var/run/postgresql }
 
-    build:
-      context: .
+    build: .
 
   postgresql-backup:
     image: ghcr.io/zerocluster/postgresql-15
@@ -128,8 +125,7 @@ services:
       - { type: volume, source: postgresql, target: /var/local/package/data }
       - { type: bind, source: /var/run/postgresql, target: /var/run/postgresql }
 
-    build:
-      context: .
+    build: .
 
 configs:
   env.yaml: { file: env.yaml }
