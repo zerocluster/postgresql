@@ -68,8 +68,6 @@ services:
       - { type: volume, source: postgresql, target: /var/local/package/data }
       - { type: bind, source: /var/run/postgresql, target: /var/run/postgresql }
 
-    build: .
-
   postgresql-async:
     image: ghcr.io/zerocluster/postgresql/15
     depends_on: [postgresql]
@@ -98,8 +96,6 @@ services:
       - { type: volume, source: postgresql, target: /var/local/package/data }
       - { type: bind, source: /var/run/postgresql, target: /var/run/postgresql }
 
-    build: .
-
   postgresql-backup:
     image: ghcr.io/zerocluster/postgresql/15
     depends_on: [postgresql]
@@ -124,8 +120,6 @@ services:
       - { type: tmpfs, target: /dev/shm, tmpfs: { size: 1073741824 } }
       - { type: volume, source: postgresql, target: /var/local/package/data }
       - { type: bind, source: /var/run/postgresql, target: /var/run/postgresql }
-
-    build: .
 
 configs:
   env.yaml: { file: env.yaml }
