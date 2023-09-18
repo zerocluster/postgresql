@@ -35,8 +35,8 @@ sudo -u postgres \
 
 # move config files
 # NOTE this can be not quite correct, because it may contains incompatible settings
-\cp --preserve $OLD_CLUSTER/server.crt $NEW_CLUSTER/server.crt
-\cp --preserve $OLD_CLUSTER/server.key $NEW_CLUSTER/server.key
+# \cp --preserve $OLD_CLUSTER/server.crt $NEW_CLUSTER/server.crt
+# \cp --preserve $OLD_CLUSTER/server.key $NEW_CLUSTER/server.key
 \cp --preserve $OLD_CLUSTER/postgresql.auto.conf $NEW_CLUSTER/postgresql.auto.conf
 \cp --preserve $OLD_CLUSTER/pg_hba.conf $NEW_CLUSTER
 \cp --preserve -R $OLD_CLUSTER/conf.d $NEW_CLUSTER
