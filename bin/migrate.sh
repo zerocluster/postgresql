@@ -17,9 +17,7 @@ apt install -y \
     sudo \
     postgresql-contrib \
     postgresql-$OLD_VERSION \
-    pg$OLD_VERSION-extensions \
-    postgresql-$NEW_VERSION \
-    pg$NEW_VERSION-extensions
+    postgresql-$NEW_VERSION
 
 # create new cluster, will ask for postgres superuser password
 sudo -u postgres \
