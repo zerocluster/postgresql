@@ -5,9 +5,9 @@ cli:
   options:
     reset-root-password: ~
 
-    migrate-from:
+    upgrade-from:
       short: ~
-      description: Migrate cluster. Pass old cluster version as option value.
+      description: Upgrade cluster. Pass old cluster version as option value.
       schema:
         type: integer
 
