@@ -7,7 +7,7 @@ set -e
 OLD_VERSION=14 # FROM=$(cat $BACKUP/PG_VERSION)
 OLD_CLUSTER=/var/lib/docker/volumes/pgsql/_data/$OLD_VERSION
 
-NEW_VERSION=15
+NEW_VERSION=16
 NEW_CLUSTER=/var/lib/docker/volumes/pgsql/_data/$NEW_VERSION
 
 apt update
