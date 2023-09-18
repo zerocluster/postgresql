@@ -10,7 +10,7 @@
 docker run --rm -it --network main -p 5432:5432 -v /var/local/zerocluster/postgresql:/var/local/package -v /var/run/postgresql:/var/run/postgresql -v postgresql:/var/local/package/data --entrypoint bash ghcr.io/zerocluster/postgresql/16
 ```
 
-### Upgrade cluster
+### Migrate cluster
 
 -   Make sure, that old and new clusters use the same versions of timescaledb. If not - upgrade old cluster to the new version first.
 
@@ -21,10 +21,7 @@ docker stack rm postgresql
 
 docker run --rm -it -v postgresql:/var/local/package/data --entrypoint bash ghcr.io/zerocluster/postgresql/16
 
-/var/local/package/bin/migrate.sh
-
-# test run
-/var/local/package/bin/main.js
+/var/local/package/bin/main.js --migrate-from 15
 ```
 
 -   After successful upgrade old cluster can be removed:
@@ -50,3 +47,13 @@ ALTER EXTENSION softvisio_admin UPDATE;
 # update all extensions for all databases to the latest available versions
 CALL update_extensions();
 ```
+
+### Restore from backup
+
+-   Remove everything from the cluster data dir;
+
+-   unpack `base.tar.gz` to the cluster data dir;
+
+-   copy `backup_manifest` to the cluster data dir;
+
+-   unpack `pg_wal.tar.gz` to the `pg_wal` directory in the cluster data dir;
