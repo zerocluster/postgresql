@@ -1,5 +1,11 @@
 # Changelog
 
+### 2.20.2 (2023-09-18)
+
+Fixes:
+
+-   fix: postgresql 16
+
 ### 2.20.1 (2023-09-18)
 
 Fixes:
