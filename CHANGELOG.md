@@ -1,5 +1,15 @@
 # Changelog
 
+### 2.20.0 (2023-09-18)
+
+Features:
+
+-   feat: postgresql 16
+
+Fixes:
+
+-   fix: postgresql 16
+
 ### 2.19.0 (2023-09-18)
 
 Features:
