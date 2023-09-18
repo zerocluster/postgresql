@@ -4,11 +4,11 @@ set -e
 
 # XXX take old and new versions from command list args
 
-OLD_VERSION=14 # FROM=$(cat $BACKUP/PG_VERSION)
-OLD_CLUSTER=/var/lib/docker/volumes/pgsql/_data/$OLD_VERSION
+OLD_VERSION=15 # FROM=$(cat $BACKUP/PG_VERSION)
+OLD_CLUSTER=/var/local/package/data/postgresql/$OLD_VERSION
 
 NEW_VERSION=16
-NEW_CLUSTER=/var/lib/docker/volumes/pgsql/_data/$NEW_VERSION
+NEW_CLUSTER=/var/local/package/data/postgresql/$NEW_VERSION
 
 apt update
 
