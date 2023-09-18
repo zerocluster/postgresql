@@ -18,6 +18,9 @@ docker stack rm postgresql
 docker run --rm -it -v postgresql:/var/local/package/data --entrypoint bash ghcr.io/zerocluster/postgresql/16
 
 /var/local/package/bin/migrate.sh
+
+# test run
+/var/local/package/bin/main.js
 ```
 
 -   After successful upgrade old cluster can be removed:
