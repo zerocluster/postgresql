@@ -3,7 +3,7 @@
 ### Debug
 
 ```shell
-docker run --rm -it --network main -p 5432:5432 -v /var/local/zerocluster/postgresql:/var/local/package -v /var/run/postgresql:/var/run/postgresql -v postgresql:/var/llocal/packagedata --entrypoint bash ghcr.io/zerocluster/postgresql/15
+docker run --rm -it --network main -p 5432:5432 -v /var/local/zerocluster/postgresql:/var/local/package -v /var/run/postgresql:/var/run/postgresql -v postgresql:/var/llocal/packagedata --entrypoint bash ghcr.io/zerocluster/postgresql/16
 ```
 
 ### Upgrade cluster
