@@ -29,9 +29,5 @@
     },
     "dependencies": {
         "@softvisio/core": "^7.0.0"
-    },
-    "engines": {
-        "node": ">=15.7.0",
-        "npm": ">=7.4.3"
     }
 }
