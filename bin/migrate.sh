@@ -12,6 +12,9 @@ OLD_CLUSTER=/var/local/package/data/postgresql/$OLD_VERSION/$CLUSTER_NAME
 NEW_VERSION=16
 NEW_CLUSTER=/var/local/package/data/postgresql/$NEW_VERSION/$CLUSTER_NAME
 
+POSTGRES_HOME=/usr/lib/postgresql/$NEW_VERSION
+PATH=$POSTGRES_HOME/bin:$PATH
+
 apt update
 
 # install old cluster
@@ -23,7 +26,7 @@ apt install -y \
 
 # create new cluster, will ask for postgres superuser password
 sudo -u postgres \
-    $POSTGRES_HOME/bin/initdb \
+    /usr/lib/postgresql/$NEW_VERSION/bin/initdb \
     --encoding UTF8 \
     --no-locale \
     -U postgres \
@@ -42,7 +45,7 @@ sudo -u postgres \
 
 # check clusters compatibility
 sudo -u postgres \
-    $POSTGRES_HOME/bin/pg_upgrade \
+    /usr/lib/postgresql/$NEW_VERSION/bin/pg_upgrade \
     -b /usr/lib/postgresql/$OLD_VERSION/bin \
     -B /usr/lib/postgresql/$NEW_VERSION/bin \
     -d $OLD_CLUSTER \
@@ -51,7 +54,7 @@ sudo -u postgres \
 
 # migrate
 sudo -u postgres \
-    $POSTGRES_HOME/bin/pg_upgrade \
+    /usr/lib/postgresql/$NEW_VERSION/bin/pg_upgrade \
     -b /usr/lib/postgresql/$OLD_VERSION/bin \
     -B /usr/lib/postgresql/$NEW_VERSION/bin \
     -d $OLD_CLUSTER \
