@@ -19,7 +19,7 @@ docker run --rm -it --network main -p 5432:5432 -v /var/local/zerocluster/postgr
 ```shell
 docker stack rm postgresql
 
-docker run --rm -it -v postgresql:/var/local/package/data --entrypoint bash ghcr.io/zerocluster/postgresql/16
+docker run --rm -it --pull=never -v postgresql:/var/local/package/data --entrypoint bash ghcr.io/zerocluster/postgresql/16
 
 /var/local/package/bin/main.js --migrate-from 15
 ```
