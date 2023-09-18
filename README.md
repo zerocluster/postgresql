@@ -10,25 +10,16 @@
 docker run --rm -it --network main -p 5432:5432 -v /var/local/zerocluster/postgresql:/var/local/package -v /var/run/postgresql:/var/run/postgresql -v postgresql:/var/local/package/data --entrypoint bash ghcr.io/zerocluster/postgresql/16
 ```
 
-### Migrate cluster
+### Upgrade cluster
 
 -   Make sure, that old and new clusters use the same versions of timescaledb. If not - upgrade old cluster to the new version first.
-
--   Migrate
 
 ```shell
 docker stack rm postgresql
 
 docker run --rm -it --pull=never -v postgresql:/var/local/package/data --entrypoint bash ghcr.io/zerocluster/postgresql/16
 
-/var/local/package/bin/main.js --migrate-from 15
-```
-
--   After successful upgrade old cluster can be removed:
-
-```shell
-# remove old cluster
-rm -rf /var/lib/docker/volumes/postgresql/_data/data-backup
+/var/local/package/bin/main.js --upgrade-from 15
 ```
 
 ### Upgrade timescaledb

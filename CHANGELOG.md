@@ -1,5 +1,11 @@
 # Changelog
 
+### 2.20.8 (2023-09-18)
+
+Fixes:
+
+-   fix: postgresql
+
 ### 2.20.7 (2023-09-18)
 
 Fixes:
