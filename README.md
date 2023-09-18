@@ -16,20 +16,20 @@ docker run --rm -it --network main -p 5432:5432 -v /var/local/zerocluster/postgr
 
 -   Migrate
 
-    ```shell
-    docker stack rm postgresql
+```shell
+docker stack rm postgresql
 
-    docker run --rm -it -v postgresql:/var/local/package/data --entrypoint bash ghcr.io/zerocluster/postgresql/16
+docker run --rm -it -v postgresql:/var/local/package/data --entrypoint bash ghcr.io/zerocluster/postgresql/16
 
-    /var/local/package/bin/migrate.sh
-    ```
+/var/local/package/bin/migrate.sh
+```
 
 -   After successful upgrade old cluster can be removed:
 
-    ```shell
-    # remove old cluster
-    rm -rf /var/lib/docker/volumes/postgresql/_data/data-backup
-    ```
+```shell
+# remove old cluster
+rm -rf /var/lib/docker/volumes/postgresql/_data/data-backup
+```
 
 ### Upgrade timescaledb
 
@@ -37,13 +37,13 @@ docker run --rm -it --network main -p 5432:5432 -v /var/local/zerocluster/postgr
 
 -   From `psql` execute:
 
-    ```sql
-    psql -h <HOST>
+```sql
+psql -h <HOST>
 
-    # install and update softvisio_admin extension
-    CREATE EXTENSION IF NOT EXISTS softvisio_admin CASCADE;
-    ALTER EXTENSION softvisio_admin UPDATE;
+# install and update softvisio_admin extension
+CREATE EXTENSION IF NOT EXISTS softvisio_admin CASCADE;
+ALTER EXTENSION softvisio_admin UPDATE;
 
-    # update all extensions for all databases to the latest available versions
-    CALL update_extensions();
-    ```
+# update all extensions for all databases to the latest available versions
+CALL update_extensions();
+```
