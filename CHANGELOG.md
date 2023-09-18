@@ -1,5 +1,11 @@
 # Changelog
 
+### 2.20.4 (2023-09-18)
+
+Fixes:
+
+-   fix: postgresql migration
+
 ### 2.20.3 (2023-09-18)
 
 Fixes:
