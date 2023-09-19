@@ -1,5 +1,12 @@
 # Changelog
 
+### 2.20.10 (2023-09-19)
+
+Fixes:
+
+-   fix: docker build
+-   fix: postgres
+
 ### 2.20.9 (2023-09-19)
 
 Fixes:
