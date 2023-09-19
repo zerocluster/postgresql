@@ -36,6 +36,6 @@ defaultService: primary
 
 components:
   postgresql:
-    postgresVersion: 16
+    clusterVersion: 16
 
 config: ~
