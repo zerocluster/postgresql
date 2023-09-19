@@ -1,5 +1,11 @@
 # Changelog
 
+### 2.20.11 (2023-09-19)
+
+Fixes:
+
+-   fix: docker build
+
 ### 2.20.10 (2023-09-19)
 
 Fixes:
