@@ -6,7 +6,7 @@ services:
 
     build:
       args:
-        POSTGRESQL_VERSION: 16
+        POSTGRESQL_VERSION: 15
 
   postgresql-16:
     depends_on: [node]
