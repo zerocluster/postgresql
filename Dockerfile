@@ -4,9 +4,6 @@ ARG POSTGRESQL_VERSION
 
 ENV POSTGRES_HOME="/usr/lib/postgresql/$POSTGRESQL_VERSION"
 ENV PATH="$POSTGRES_HOME/bin:$PATH" \
-    PGUSER=postgres
-
-RUN echo "----------- $POSTGRESQL_VERSION" && false
 
 RUN \
     apt-get update && apt-get install -y \
