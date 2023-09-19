@@ -1,13 +1,6 @@
 version: "3.9"
 
 services:
-  postgresql-15:
-    image: ghcr.io/zerocluster/postgresql/15
-
-    build:
-      args:
-        POSTGRESQL_VERSION: 15
-
   postgresql-16:
     depends_on: [node]
     image: ghcr.io/zerocluster/postgresql/16
