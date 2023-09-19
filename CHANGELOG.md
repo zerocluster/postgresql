@@ -1,5 +1,11 @@
 # Changelog
 
+### 2.20.9 (2023-09-19)
+
+Fixes:
+
+-   fix: docker build
+
 ### 2.20.8 (2023-09-18)
 
 Fixes:
