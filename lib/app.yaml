@@ -5,7 +5,7 @@ cli:
   options:
     reset-root-password: ~
 
-    upgrade-from:
+    upgrade:
       short: ~
       description: Upgrade cluster. Pass old cluster version as option value.
       schema:
