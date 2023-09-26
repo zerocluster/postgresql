@@ -1,5 +1,11 @@
 # Changelog
 
+### 2.20.16 (2023-09-26)
+
+Fixes:
+
+-   fix: POSTGRES_HOME removed
+
 ### 2.20.15 (2023-09-26)
 
 Fixes:
