@@ -3,8 +3,7 @@ FROM ghcr.io/zerocluster/node/app
 ARG POSTGRESQL_VERSION
 
 ENV POSTGRESQL_VERSION=$POSTGRESQL_VERSION \
-    POSTGRES_HOME="/usr/lib/postgresql/$POSTGRESQL_VERSION"
-ENV PATH="$POSTGRES_HOME/bin:$PATH" \
+    PATH="/usr/lib/postgresql/$POSTGRESQL_VERSION:\$PATH" \
     PGUSER=postgres
 
 RUN \
