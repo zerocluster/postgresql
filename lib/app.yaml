@@ -27,11 +27,6 @@ services:
       postgresql:
         mode: standby-async
 
-  standby-backup:
-    components:
-      postgresql:
-        mode: standby-backup
-
 defaultService: primary
 
 components: ~

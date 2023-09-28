@@ -8,7 +8,6 @@ version: "3.9"
 # docker node update --label-add postgresql=primary `docker node inspect self --format "{{ .ID }}"`
 # docker node update --label-add postgresql=sync `docker node inspect self --format "{{ .ID }}"`
 # docker node update --label-add postgresql=async `docker node inspect self --format "{{ .ID }}"`
-# docker node update --label-add postgresql=backup `docker node inspect self --format "{{ .ID }}"`
 
 services:
   postgresql:
@@ -90,31 +89,6 @@ services:
 
     # ports:
     #   - { published: 5434, target: 5432 }
-
-    volumes:
-      - { type: tmpfs, target: /dev/shm, tmpfs: { size: 1073741824 } }
-      - { type: volume, source: postgresql, target: /var/local/package/data }
-      - { type: bind, source: /var/run/postgresql, target: /var/run/postgresql }
-
-  postgresql-backup:
-    image: ghcr.io/zerocluster/postgresql/16
-    depends_on: [postgresql]
-    init: true
-    stop_grace_period: 5m
-
-    deploy:
-      replicas: 0
-      placement:
-        max_replicas_per_node: 1
-        constraints:
-          - "node.labels.postgresql == backup"
-
-    command: --service=standby-backup
-
-    configs:
-      - { source: env.yaml, target: /var/local/package/env.yaml }
-
-    networks: [main]
 
     volumes:
       - { type: tmpfs, target: /dev/shm, tmpfs: { size: 1073741824 } }
