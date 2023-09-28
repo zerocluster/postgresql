@@ -41,6 +41,4 @@ CALL update_extensions();
 
 -   unpack `base.tar.gz` to the cluster data dir;
 
--   copy `backup_manifest` to the cluster data dir;
-
 -   unpack `pg_wal.tar.gz` to the `pg_wal` directory in the cluster data dir;
