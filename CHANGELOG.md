@@ -1,5 +1,11 @@
 # Changelog
 
+### 2.20.17 (2023-09-28)
+
+Fixes:
+
+-   fix: pg backups
+
 ### 2.20.16 (2023-09-26)
 
 Fixes:
