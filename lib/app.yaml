@@ -4,6 +4,11 @@ dependencies:
 cli:
   commands:
     reset-root-password: ~
+    run:
+      options:
+        cluster:
+          description: "PostgreSQL cluster name. Example: ,main."
+          schema: { type: string }
     postgresql:
       title: PostgreSQL management
       commands:
