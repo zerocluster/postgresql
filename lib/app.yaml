@@ -3,11 +3,9 @@ dependencies:
 
 cli:
   commands:
-    run:
-      options:
-        reset-root-password: ~
+    reset-root-password: ~
     postgresql:
-      totle: PostgreSQL management
+      title: PostgreSQL management
       commands:
         upgrade:
           title: Upgrade PostgreSQL cluster
