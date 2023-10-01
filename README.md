@@ -19,7 +19,7 @@ docker stack rm postgresql
 
 docker run --rm -it --pull=never -v postgresql:/var/local/package/data --entrypoint bash ghcr.io/zerocluster/postgresql/16
 
-/var/local/package/bin/main.js postgresql upgrade 16/main
+/var/local/package/bin/main.js postgresql upgrade 16 main
 ```
 
 ### Upgrade timescaledb
