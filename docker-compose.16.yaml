@@ -22,7 +22,7 @@ services:
         constraints:
           - "node.labels.postgresql == primary"
 
-    command: --service=primary
+    command: run --service=primary
 
     configs:
       - { source: env.yaml, target: /var/local/package/env.yaml }
@@ -52,7 +52,7 @@ services:
         constraints:
           - "node.labels.postgresql == sync"
 
-    command: --service=standby-sync
+    command: run --service=standby-sync
 
     configs:
       - { source: env.yaml, target: /var/local/package/env.yaml }
@@ -80,7 +80,7 @@ services:
         constraints:
           - "node.labels.postgresql == async"
 
-    command: --service=standby-async
+    command: run --service=standby-async
 
     configs:
       - { source: env.yaml, target: /var/local/package/env.yaml }
