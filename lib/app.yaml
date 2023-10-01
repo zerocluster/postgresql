@@ -15,9 +15,12 @@ cli:
         upgrade:
           title: Upgrade PostgreSQL cluster
           arguments:
-            cluster:
-              description: "Cluster to upgrade. Example: 15/main."
+            cluster-version:
+              description: Old cluster version to upgrage from.
               required: true
+              schema: { type: integer }
+            cluster-name:
+              description: old cluster name to upgrage from
               schema: { type: string }
 
 services:
