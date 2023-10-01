@@ -2,14 +2,20 @@ dependencies:
   - "@softvisio/core"
 
 cli:
-  options:
-    reset-root-password: ~
-
-    upgrade:
-      short: ~
-      description: Upgrade cluster. Pass old cluster version as option value.
-      schema:
-        type: integer
+  commands:
+    run:
+      options:
+        reset-root-password: ~
+    postgresql:
+      totle: PostgreSQL management
+      commands:
+        upgrade:
+          title: Upgrade PostgreSQL cluster
+          arguments:
+            cluster:
+              description: "Cluster to upgrade. Example: 15/main."
+              required: true
+              schema: { type: string }
 
 services:
   primary:
