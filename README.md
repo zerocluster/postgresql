@@ -46,3 +46,22 @@ CALL update_extensions();
 -   unpack `base.tar.gz` to the cluster data dir;
 
 -   unpack `pg_wal.tar.gz` to the `pg_wal` directory in the cluster data dir;
+
+### Replication and failover
+
+When cluster configuration chanhed you need to remove unused replication slits.
+
+List replication slots:
+
+```sql
+SELECT * FROM pg_replication_slots;
+```
+
+Delete non-active slots:
+
+```sql
+WITH slots AS (
+    SELECT slot_name FROM pg_replication_slots WHERE NOT active
+)
+SELECT pg_drop_replication_slot( slot_name ) FROM slots;
+```
