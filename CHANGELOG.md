@@ -1,5 +1,11 @@
 # Changelog
 
+### 2.21.0 (2023-11-11)
+
+Features:
+
+-   feat: postgis
+
 ### 2.20.26 (2023-11-08)
 
 Fixes:
