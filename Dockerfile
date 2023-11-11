@@ -13,6 +13,7 @@ RUN \
         postgresql-$POSTGRESQL_VERSION-softvisio-admin \
         postgresql-$POSTGRESQL_VERSION-softvisio-types \
         postgresql-$POSTGRESQL_VERSION-softvisio-locks \
+        postgresql-$POSTGRESQL_VERSION-postgis-3 \
     \
     # add locales
     && localedef --force -i ru_UA -f UTF-8 ru_UA.UTF-8 \
