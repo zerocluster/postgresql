@@ -28,6 +28,7 @@ services:
     components:
       postgresql:
         mode: primary
+      storage: true
 
   standby-sync:
     components:
@@ -41,6 +42,8 @@ services:
 
 defaultService: primary
 
-components: ~
+components:
+  dbh:
+    uri: postgresql://
 
 config: ~
