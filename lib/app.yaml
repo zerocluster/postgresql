@@ -45,6 +45,9 @@ services:
 defaultService: primary
 
 components:
+  healthcheck:
+    enabled: false
+
   storage:
     buckets:
       /postgresql:
