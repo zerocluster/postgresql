@@ -1,5 +1,15 @@
 # Changelog
 
+### 2.22.0 (2023-12-08)
+
+Features:
+
+-   feat: storage
+
+Fixes:
+
+-   fix: deps
+
 ### 2.21.2 (2023-11-11)
 
 Fixes:
