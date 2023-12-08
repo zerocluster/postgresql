@@ -46,4 +46,10 @@ components:
   dbh:
     uri: postgresql://
 
+  storage:
+    buckets:
+      /postgresql:
+        type: local
+        deduplicate: false
+
 config: ~
