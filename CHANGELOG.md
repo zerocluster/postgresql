@@ -1,5 +1,11 @@
 # Changelog
 
+### 2.22.1 (2023-12-08)
+
+Fixes:
+
+-   fix: storage config
+
 ### 2.22.0 (2023-12-08)
 
 Features:
