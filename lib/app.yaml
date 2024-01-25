@@ -52,6 +52,5 @@ components:
     buckets:
       /postgresql:
         type: local
-        deduplicate: false
 
 config: ~
