@@ -24,7 +24,7 @@ services:
 
     command: run --service=primary
 
-    configs:
+    secrets:
       - { source: env.yaml, target: /var/local/package/env.yaml }
 
     networks: [main]
@@ -54,7 +54,7 @@ services:
 
     command: run --service=standby-sync
 
-    configs:
+    secrets:
       - { source: env.yaml, target: /var/local/package/env.yaml }
 
     networks: [main]
@@ -82,7 +82,7 @@ services:
 
     command: run --service=standby-async
 
-    configs:
+    secrets:
       - { source: env.yaml, target: /var/local/package/env.yaml }
 
     networks: [main]
@@ -95,7 +95,7 @@ services:
       - { type: volume, source: postgresql, target: /var/local/package/data }
       - { type: bind, source: /var/run/postgresql, target: /var/run/postgresql }
 
-configs:
+secrets:
   env.yaml: { file: env.yaml }
 
 networks:
