@@ -1,5 +1,11 @@
 # Changelog
 
+### 2.22.5 (2024-01-26)
+
+Fixes:
+
+-   fix: docker config secrets
+
 ### 2.22.4 (2024-01-25)
 
 Fixes:
