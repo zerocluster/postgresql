@@ -1,5 +1,11 @@
 # Changelog
 
+### 2.22.6 (2024-02-09)
+
+Fixes:
+
+-   fix: softvisio lockes removed
+
 ### 2.22.5 (2024-01-26)
 
 Fixes:
