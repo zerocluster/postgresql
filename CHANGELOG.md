@@ -1,5 +1,11 @@
 # Changelog
 
+### 2.22.7 (2024-03-28)
+
+Fixes:
+
+-   fix: cli commands path
+
 ### 2.22.6 (2024-02-09)
 
 Fixes:
