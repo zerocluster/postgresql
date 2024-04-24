@@ -1,8 +1,7 @@
 docker:
-  build:
-    composeFile: docker-compose.16.yaml
-    defaultTag: latest
-    autoTags: [main, latest, next]
+  composeFile: docker-compose.16.yaml
+  defaultTag: latest
+  autoTags: [main, latest, next]
 
 docs:
   location: docs
