@@ -61,3 +61,16 @@ WITH slots AS (
 )
 SELECT pg_drop_replication_slot( slot_name ) FROM slots;
 ```
+
+### PostGIs
+
+#### Update extension
+
+```sql
+SELECT postgis_full_version();
+
+SELECT * FROM pg_available_extensions WHERE name = 'postgis';
+
+SELECT postgis_extensions_upgrade();
+
+```
