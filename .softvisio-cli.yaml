@@ -1,5 +1,6 @@
 docker:
   build:
+    composeFile: docker-compose.16.yaml
     defaultTag: latest
     autoTags: [main, latest, next]
 

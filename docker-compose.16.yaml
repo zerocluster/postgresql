@@ -37,7 +37,10 @@ services:
       - { type: volume, source: postgresql, target: /var/local/package/data }
       - { type: bind, source: /var/run/postgresql, target: /var/run/postgresql }
 
-    build: .
+    build:
+      args:
+        POSTGRESQL_VERSION: 16
+        POSTGIS_VERSION: 3
 
   postgresql-sync:
     image: ghcr.io/zerocluster/postgresql/16
