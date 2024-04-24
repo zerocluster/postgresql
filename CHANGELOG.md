@@ -1,5 +1,11 @@
 # Changelog
 
+### 2.22.9 (2024-04-24)
+
+Fixes:
+
+-   fix: docker builder
+
 ### 2.22.8 (2024-04-15)
 
 Fixes:
