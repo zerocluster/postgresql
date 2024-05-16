@@ -1,5 +1,11 @@
 # Changelog
 
+### 2.22.12 (2024-05-16)
+
+Fixes:
+
+-   fix: nginx label
+
 ### 2.22.11 (2024-04-24)
 
 Fixes:
