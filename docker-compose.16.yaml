@@ -1,13 +1,13 @@
 #!/usr/bin/env -S docker stack deploy --with-registry-auth postgresql -c
 
-version: "3.9"
-
 # NOTE deploy
 # docker stack deploy --with-registry-auth -c docker-stack.yaml postgresql
 #
 # docker node update --label-add postgresql=primary `docker node inspect self --format "{{ .ID }}"`
 # docker node update --label-add postgresql=sync `docker node inspect self --format "{{ .ID }}"`
 # docker node update --label-add postgresql=async `docker node inspect self --format "{{ .ID }}"`
+
+version: "3.9"
 
 services:
   postgresql:
@@ -29,7 +29,7 @@ services:
     secrets:
       - { source: postgresql, target: /var/local/package/env.yaml }
 
-    networks: [main]
+    networks: [network]
 
     # ports:
     #   - { published: 5432, target: 5432 }
@@ -62,7 +62,7 @@ services:
     secrets:
       - { source: postgresql, target: /var/local/package/env.yaml }
 
-    networks: [main]
+    networks: [network]
 
     # ports:
     #   - { published: 5433, target: 5432 }
@@ -90,7 +90,7 @@ services:
     secrets:
       - { source: postgresql, target: /var/local/package/env.yaml }
 
-    networks: [main]
+    networks: [network]
 
     # ports:
     #   - { published: 5434, target: 5432 }
@@ -104,7 +104,9 @@ secrets:
   postgresql: { file: env.yaml }
 
 networks:
-  main: { external: true }
+  network:
+    name: ${DOCKER_STACK_NETWORK_NAME:-ingress}
+    external: true
 
 volumes:
   postgresql: { name: postgresql }
