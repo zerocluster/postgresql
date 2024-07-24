@@ -7,8 +7,6 @@
 # docker node update --label-add postgresql=sync `docker node inspect self --format "{{ .ID }}"`
 # docker node update --label-add postgresql=async `docker node inspect self --format "{{ .ID }}"`
 
-version: "3.9"
-
 services:
   postgresql:
     image: ghcr.io/zerocluster/postgresql/16
