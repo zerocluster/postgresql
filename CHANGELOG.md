@@ -1,5 +1,11 @@
 # Changelog
 
+### 2.22.17 (2024-07-25)
+
+Fixes:
+
+-   fix: docker compose schema
+
 ### 2.22.16 (2024-07-24)
 
 Fixes:
