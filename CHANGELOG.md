@@ -1,5 +1,12 @@
 # Changelog
 
+### 2.22.19 (2024-07-28)
+
+Fixes:
+
+-   fix: cli
+-   fix: deps
+
 ### 2.22.18 (2024-07-26)
 
 Fixes:
