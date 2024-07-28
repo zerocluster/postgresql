@@ -3,7 +3,6 @@ dependencies:
 
 cli:
   commands:
-    reset-root-password: ~
     run:
       options:
         cluster:
