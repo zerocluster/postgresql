@@ -1,5 +1,12 @@
 # Changelog
 
+### 2.22.20 (2024-07-30)
+
+Fixes:
+
+-   fix: deps
+-   fix: docker stack network
+
 ### 2.22.19 (2024-07-28)
 
 Fixes:
