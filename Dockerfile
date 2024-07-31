@@ -11,6 +11,7 @@ ENV POSTGRESQL_VERSION=$POSTGRESQL_VERSION \
 RUN \
     apt-get update && apt-get install -y \
         postgresql-$POSTGRESQL_VERSION \
+        postgresql-$POSTGRESQL_VERSION-pgvector \
         postgresql-contrib \
         postgresql-$POSTGRESQL_VERSION-postgis-$POSTGIS_VERSION \
         postgresql-$POSTGRESQL_VERSION-softvisio-admin \
