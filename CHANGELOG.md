@@ -1,5 +1,11 @@
 # Changelog
 
+### 2.23.0 (2024-07-31)
+
+Features:
+
+-   feat: pgvector
+
 ### 2.22.20 (2024-07-30)
 
 Fixes:
