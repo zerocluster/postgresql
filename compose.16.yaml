@@ -40,9 +40,7 @@ services:
 
   postgresql-sync:
     image: ghcr.io/zerocluster/postgresql/16
-    depends_on:
-      postgresql:
-        condition: service_started
+    depends_on: [postgresql]
     init: true
     stop_grace_period: 5m
 
@@ -70,9 +68,7 @@ services:
 
   postgresql-async:
     image: ghcr.io/zerocluster/postgresql/16
-    depends_on:
-      postgresql:
-        condition: service_started
+    depends_on: [postgresql]
     init: true
     stop_grace_period: 5m
 
