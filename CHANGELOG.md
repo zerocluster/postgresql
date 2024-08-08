@@ -1,5 +1,11 @@
 # Changelog
 
+### 2.23.3 (2024-08-08)
+
+Fixes:
+
+-   fix: dependencies update
+
 ### 2.23.2 (2024-08-01)
 
 Fixes:
