@@ -1,5 +1,9 @@
 # Changelog
 
+### 2.23.8 (2024-08-31)
+
+No notable changes since the previous release.
+
 ### 2.23.7 (2024-08-23)
 
 No notable changes since the previous release.
