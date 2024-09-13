@@ -1,5 +1,11 @@
 # Changelog
 
+### 2.24.0 (2024-09-13)
+
+Features:
+
+-   feat: postgres 17 added
+
 ### 2.23.10 (2024-09-07)
 
 Fixes:
