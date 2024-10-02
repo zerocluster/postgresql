@@ -1,5 +1,11 @@
 # Changelog
 
+### 2.25.3 (2024-10-02)
+
+Fixes:
+
+-   fix: postgresql cluster upgrade
+
 ### 2.25.2 (2024-10-02)
 
 Fixes:
