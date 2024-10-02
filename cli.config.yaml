@@ -1,7 +1,7 @@
 docker:
   composeFile:
     - compose.16.yaml
-    # - compose.17.yaml
+    - compose.17.yaml
   defaultTag: latest
   autoTags: [main, latest, next]
 
