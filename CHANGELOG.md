@@ -1,5 +1,11 @@
 # Changelog
 
+### 2.25.0 (2024-10-02)
+
+Features:
+
+-   feat: postgresql 17
+
 ### 2.24.3 (2024-10-02)
 
 No notable changes since the previous release.
