@@ -6,16 +6,32 @@
 docker run --rm -it --network main -p 5432:5432 -v /var/local/zerocluster/postgresql:/var/local/package -v /var/run/postgresql:/var/run/postgresql -v postgresql:/var/local/package/data --entrypoint bash ghcr.io/zerocluster/postgresql/17
 ```
 
+### Upgrade client
+
+```shell
+apt remove -y postgresql-client-16
+
+apt install -y postgresql-client-17
+```
+
 ### Upgrade cluster
 
 -   Make sure, that old and new clusters use the same versions of timescaledb. If not - upgrade old cluster to the new version first.
 
 ```shell
-docker stack rm postgresql
+export OLD_POSTGRESQL_VERSION=16
+export NEW_POSTGRESQL_VERSION=17
+export STACK_NAME=devel
+export VOLUME_NAME=${STACK_NAME}_postgresql
 
-docker run --rm -it --pull=never -v postgresql:/var/local/package/data --entrypoint bash ghcr.io/zerocluster/postgresql/17
+# stop and remove stack
+docker stack rm $STACK_NAME
 
-/var/local/package/bin/main.js postgresql upgrade 17 main
+docker run \
+    --rm -it \
+    -v $VOLUME_NAME:/var/local/package/data \
+    ghcr.io/zerocluster/postgresql/$NEW_POSTGRESQL_VERSION \
+    postgresql upgrade $OLD_POSTGRESQL_VERSION main -?
 ```
 
 ### Upgrade timescaledb
