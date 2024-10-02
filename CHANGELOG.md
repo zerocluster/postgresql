@@ -1,5 +1,11 @@
 # Changelog
 
+### 2.25.1 (2024-10-02)
+
+Fixes:
+
+-   fix: upgrade command
+
 ### 2.25.0 (2024-10-02)
 
 Features:

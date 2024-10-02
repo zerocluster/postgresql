@@ -14,7 +14,6 @@ docker run --rm -it --network main -p 5432:5432 -v /var/local/zerocluster/postgr
 
 ```shell
 apt remove -y postgresql-client-16
-
 apt install -y postgresql-client-17
 ```
 
