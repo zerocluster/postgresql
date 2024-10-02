@@ -33,23 +33,6 @@ docker run \
     postgresql upgrade $OLD_POSTGRESQL_VERSION main
 ```
 
-### Upgrade timescaledb
-
--   Upgrade docker container to the latest version, contained new `timescaledb` extension version.
-
--   From `psql` execute:
-
-```sql
-psql -h <HOST>
-
-# install and update softvisio_admin extension
-CREATE EXTENSION IF NOT EXISTS softvisio_admin CASCADE;
-ALTER EXTENSION softvisio_admin UPDATE;
-
-# update all extensions for all databases to the latest available versions
-CALL update_extensions();
-```
-
 ### Restore from backup
 
 -   Remove everything from the cluster data dir;
@@ -77,9 +60,17 @@ WITH slots AS (
 SELECT pg_drop_replication_slot( slot_name ) FROM slots;
 ```
 
-### PostGIs
+### Update extensions
 
-#### Update extension
+```sql
+CREATE EXTENSION IF NOT EXISTS softvisio_admin CASCADE;
+
+SELECT * FROM outdated_extensions();
+
+CALL update_extensions();
+```
+
+Update `postgis` extension
 
 ```sql
 SELECT postgis_full_version();
