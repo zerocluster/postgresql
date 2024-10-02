@@ -30,7 +30,7 @@ docker run \
     --rm -it \
     -v $VOLUME_NAME:/var/local/package/data \
     ghcr.io/zerocluster/postgresql/$NEW_POSTGRESQL_VERSION \
-    postgresql upgrade $OLD_POSTGRESQL_VERSION main -?
+    postgresql upgrade $OLD_POSTGRESQL_VERSION main
 ```
 
 ### Upgrade timescaledb
