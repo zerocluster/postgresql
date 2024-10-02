@@ -3,7 +3,7 @@
 ### Debug
 
 ```shell
-docker run --rm -it --network main -p 5432:5432 -v /var/local/zerocluster/postgresql:/var/local/package -v /var/run/postgresql:/var/run/postgresql -v postgresql:/var/local/package/data --entrypoint bash ghcr.io/zerocluster/postgresql/16
+docker run --rm -it --network main -p 5432:5432 -v /var/local/zerocluster/postgresql:/var/local/package -v /var/run/postgresql:/var/run/postgresql -v postgresql:/var/local/package/data --entrypoint bash ghcr.io/zerocluster/postgresql/17
 ```
 
 ### Upgrade cluster
@@ -13,9 +13,9 @@ docker run --rm -it --network main -p 5432:5432 -v /var/local/zerocluster/postgr
 ```shell
 docker stack rm postgresql
 
-docker run --rm -it --pull=never -v postgresql:/var/local/package/data --entrypoint bash ghcr.io/zerocluster/postgresql/16
+docker run --rm -it --pull=never -v postgresql:/var/local/package/data --entrypoint bash ghcr.io/zerocluster/postgresql/17
 
-/var/local/package/bin/main.js postgresql upgrade 16 main
+/var/local/package/bin/main.js postgresql upgrade 17 main
 ```
 
 ### Upgrade timescaledb
