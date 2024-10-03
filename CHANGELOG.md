@@ -1,5 +1,9 @@
 # Changelog
 
+### 2.25.6 (2024-10-03)
+
+No notable changes since the previous release.
+
 ### 2.25.5 (2024-10-02)
 
 No notable changes since the previous release.
