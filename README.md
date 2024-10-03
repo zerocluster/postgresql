@@ -73,10 +73,10 @@ CREATE EXTENSION IF NOT EXISTS softvisio_admin CASCADE;
 
 SELECT * FROM outdated_extensions();
 
-CALL update_extensions();
+SELECT * FROM update_extensions();
 ```
 
-Update `postgis` extension
+Update `postgis` extension manually:
 
 ```sql
 SELECT postgis_full_version();
