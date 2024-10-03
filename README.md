@@ -35,6 +35,8 @@ docker run \
     -v $VOLUME_NAME:/var/local/package/data \
     ghcr.io/zerocluster/postgresql/$NEW_POSTGRESQL_VERSION \
     postgresql upgrade $OLD_POSTGRESQL_VERSION main
+
+vacuumdb --all --analyze-in-stages
 ```
 
 ### Restore from backup
