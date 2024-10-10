@@ -6,7 +6,7 @@ cli:
     run:
       options:
         cluster:
-          description: PostgreSQL cluster name.
+          description: PostgreSQL cluster name
           schema: { type: string }
     postgresql:
       title: PostgreSQL management
