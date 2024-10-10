@@ -6,13 +6,13 @@ cli:
     run:
       options:
         cluster:
-          description: "PostgreSQL cluster name. Example: main."
+          description: PostgreSQL cluster name.
           schema: { type: string }
     postgresql:
       title: PostgreSQL management
       commands:
         upgrade:
-          title: Upgrade PostgreSQL cluster
+          title: upgrade PostgreSQL cluster
           arguments:
             cluster-version:
               description: Old cluster version to upgrage from.
