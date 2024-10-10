@@ -23,8 +23,8 @@ RUN \
     # remove default cluster
     && rm -rf /var/lib/postgresql/$POSTGRESQL_VERSION/main \
     \
-    # install deps
-    && NODE_ENV=production npm i \
+    # install dependencies
+    && NODE_ENV=production npm install-clean \
     \
     # cleanup
     && /bin/bash <(curl -fsSL https://raw.githubusercontent.com/softvisio/scripts/main/env-build-node.sh) cleanup
