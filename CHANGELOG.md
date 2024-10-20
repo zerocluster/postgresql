@@ -1,5 +1,11 @@
 # Changelog
 
+### 2.25.9 (2024-10-20)
+
+No notable changes since the previous release.
+
+[Full list of the changes](https://github.com/zerocluster/postgresql/compare/v2.25.8...v2.25.9)
+
 ### 2.25.8 (2024-10-17)
 
 No notable changes since the previous release.
