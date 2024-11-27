@@ -15,7 +15,7 @@ apt install -y postgresql-client-17
 
 ### Upgrade cluster
 
--   Make sure, that old and new clusters use the same versions of timescaledb. If not - upgrade old cluster to the new version first.
+- Make sure, that old and new clusters use the same versions of timescaledb. If not - upgrade old cluster to the new version first.
 
 ```shell
 export OLD_POSTGRESQL_VERSION=16
@@ -37,11 +37,11 @@ vacuumdb --all --analyze-in-stages
 
 ### Restore from backup
 
--   Remove everything from the cluster data dir;
+- Remove everything from the cluster data dir;
 
--   unpack `base.tar.gz` to the cluster data dir;
+- unpack `base.tar.gz` to the cluster data dir;
 
--   unpack `pg_wal.tar.gz` to the `pg_wal` directory in the cluster data dir;
+- unpack `pg_wal.tar.gz` to the `pg_wal` directory in the cluster data dir;
 
 ### Replication and failover
 
