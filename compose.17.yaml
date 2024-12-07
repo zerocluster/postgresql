@@ -4,101 +4,101 @@
 # docker node update --label-add postgresql=async `docker node inspect self --format "{{ .ID }}"`
 
 services:
-  postgresql:
-    image: ghcr.io/zerocluster/postgresql/17
-    init: true
-    stop_grace_period: 5m
+    postgresql:
+        image: ghcr.io/zerocluster/postgresql/17
+        init: true
+        stop_grace_period: 5m
 
-    deploy:
-      replicas: 1
-      placement:
-        max_replicas_per_node: 1
-        constraints:
-          - "node.labels.postgresql == primary"
-      # labels:
-      #   nginx: upstream=5432&server=5432:ssl&serverName=postgresql.softvisio.net
+        deploy:
+            replicas: 1
+            placement:
+                max_replicas_per_node: 1
+                constraints:
+                    - "node.labels.postgresql == primary"
+            # labels:
+            #   nginx: upstream=5432&server=5432:ssl&serverName=postgresql.softvisio.net
 
-    command: run --service=primary
+        command: run --service=primary
 
-    secrets:
-      - { source: postgresql_env.yaml, target: /var/local/package/env.yaml }
+        secrets:
+            - { source: postgresql_env.yaml, target: /var/local/package/env.yaml }
 
-    networks: [network]
+        networks: [network]
 
-    # ports:
-    #   - { published: 5432, target: 5432 }
+        # ports:
+        #   - { published: 5432, target: 5432 }
 
-    volumes:
-      - { type: tmpfs, target: /dev/shm, tmpfs: { size: 1073741824 } }
-      - { type: volume, source: postgresql, target: /var/local/package/data }
-      - { type: bind, source: /var/run/postgresql, target: /var/run/postgresql }
+        volumes:
+            - { type: tmpfs, target: /dev/shm, tmpfs: { size: 1073741824 } }
+            - { type: volume, source: postgresql, target: /var/local/package/data }
+            - { type: bind, source: /var/run/postgresql, target: /var/run/postgresql }
 
-    build:
-      args:
-        POSTGRESQL_VERSION: 17
-        POSTGIS_VERSION: 3
+        build:
+            args:
+                POSTGRESQL_VERSION: 17
+                POSTGIS_VERSION: 3
 
-  postgresql-sync:
-    image: ghcr.io/zerocluster/postgresql/17
-    depends_on: [postgresql]
-    init: true
-    stop_grace_period: 5m
+    postgresql-sync:
+        image: ghcr.io/zerocluster/postgresql/17
+        depends_on: [postgresql]
+        init: true
+        stop_grace_period: 5m
 
-    deploy:
-      replicas: 0 # must be equal to the replication.sync.numberOfStandbys in app config
-      placement:
-        max_replicas_per_node: 1
-        constraints:
-          - "node.labels.postgresql == sync"
+        deploy:
+            replicas: 0 # must be equal to the replication.sync.numberOfStandbys in app config
+            placement:
+                max_replicas_per_node: 1
+                constraints:
+                    - "node.labels.postgresql == sync"
 
-    command: run --service=standby-sync
+        command: run --service=standby-sync
 
-    secrets:
-      - { source: postgresql_env.yaml, target: /var/local/package/env.yaml }
+        secrets:
+            - { source: postgresql_env.yaml, target: /var/local/package/env.yaml }
 
-    networks: [network]
+        networks: [network]
 
-    # ports:
-    #   - { published: 5433, target: 5432 }
+        # ports:
+        #   - { published: 5433, target: 5432 }
 
-    volumes:
-      - { type: tmpfs, target: /dev/shm, tmpfs: { size: 1073741824 } }
-      - { type: volume, source: postgresql, target: /var/local/package/data }
-      - { type: bind, source: /var/run/postgresql, target: /var/run/postgresql }
+        volumes:
+            - { type: tmpfs, target: /dev/shm, tmpfs: { size: 1073741824 } }
+            - { type: volume, source: postgresql, target: /var/local/package/data }
+            - { type: bind, source: /var/run/postgresql, target: /var/run/postgresql }
 
-  postgresql-async:
-    image: ghcr.io/zerocluster/postgresql/17
-    depends_on: [postgresql]
-    init: true
-    stop_grace_period: 5m
+    postgresql-async:
+        image: ghcr.io/zerocluster/postgresql/17
+        depends_on: [postgresql]
+        init: true
+        stop_grace_period: 5m
 
-    deploy:
-      replicas: 0
-      placement:
-        max_replicas_per_node: 1
-        constraints:
-          - "node.labels.postgresql == async"
+        deploy:
+            replicas: 0
+            placement:
+                max_replicas_per_node: 1
+                constraints:
+                    - "node.labels.postgresql == async"
 
-    command: run --service=standby-async
+        command: run --service=standby-async
 
-    secrets:
-      - { source: postgresql_env.yaml, target: /var/local/package/env.yaml }
+        secrets:
+            - { source: postgresql_env.yaml, target: /var/local/package/env.yaml }
 
-    networks: [network]
+        networks: [network]
 
-    # ports:
-    #   - { published: 5434, target: 5432 }
+        # ports:
+        #   - { published: 5434, target: 5432 }
 
-    volumes:
-      - { type: tmpfs, target: /dev/shm, tmpfs: { size: 1073741824 } }
-      - { type: volume, source: postgresql, target: /var/local/package/data }
-      - { type: bind, source: /var/run/postgresql, target: /var/run/postgresql }
+        volumes:
+            - { type: tmpfs, target: /dev/shm, tmpfs: { size: 1073741824 } }
+            - { type: volume, source: postgresql, target: /var/local/package/data }
+            - { type: bind, source: /var/run/postgresql, target: /var/run/postgresql }
 
 secrets:
-  postgresql_env.yaml: { file: env.yaml }
+    postgresql_env.yaml: { file: env.yaml }
 
 networks:
-  network: ~
+    network: ~
 
 volumes:
-  postgresql: ~
+    postgresql: ~

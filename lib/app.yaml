@@ -1,55 +1,55 @@
 dependencies:
-  - "@softvisio/core"
+    - "@softvisio/core"
 
 cli:
-  commands:
-    run:
-      options:
-        cluster:
-          description: PostgreSQL cluster name
-          schema: { type: string }
-    postgresql:
-      title: PostgreSQL management
-      commands:
-        upgrade:
-          title: upgrade PostgreSQL cluster
-          arguments:
-            cluster-version:
-              description: Old cluster version to upgrage from.
-              required: true
-              schema: { type: integer }
-            cluster-name:
-              description: old cluster name to upgrage from
-              schema: { type: string }
+    commands:
+        run:
+            options:
+                cluster:
+                    description: PostgreSQL cluster name
+                    schema: { type: string }
+        postgresql:
+            title: PostgreSQL management
+            commands:
+                upgrade:
+                    title: upgrade PostgreSQL cluster
+                    arguments:
+                        cluster-version:
+                            description: Old cluster version to upgrage from.
+                            required: true
+                            schema: { type: integer }
+                        cluster-name:
+                            description: old cluster name to upgrage from
+                            schema: { type: string }
 
 services:
-  primary:
-    components:
-      postgresql:
-        mode: primary
-      dbh:
-        uri: postgresql://
-      storage: true
+    primary:
+        components:
+            postgresql:
+                mode: primary
+            dbh:
+                uri: postgresql://
+            storage: true
 
-  standby-sync:
-    components:
-      postgresql:
-        mode: standby-sync
+    standby-sync:
+        components:
+            postgresql:
+                mode: standby-sync
 
-  standby-async:
-    components:
-      postgresql:
-        mode: standby-async
+    standby-async:
+        components:
+            postgresql:
+                mode: standby-async
 
 defaultService: primary
 
 components:
-  healthcheck:
-    enabled: false
+    healthcheck:
+        enabled: false
 
-  storage:
-    buckets:
-      /postgresql:
-        type: local
+    storage:
+        buckets:
+            /postgresql:
+                type: local
 
 config: ~
