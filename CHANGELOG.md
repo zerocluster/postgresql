@@ -1,5 +1,14 @@
 # Changelog
 
+### 2.25.17 (2024-12-07)
+
+Other changes:
+
+- chore: set yaml indent to 4 spaces
+- chore: update package dependencies
+
+[Compare with the previous release: v2.25.16 ... v2.25.17](https://github.com/zerocluster/postgresql/compare/v2.25.16...v2.25.17)
+
 ### 2.25.16 (2024-12-06)
 
 Other changes:
