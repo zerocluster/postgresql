@@ -1,5 +1,13 @@
 # Changelog
 
+### 2.25.21 (2024-12-30)
+
+Other changes:
+
+- chore: update postgeresql config generator
+
+[Compare with the previous release: v2.25.20 ... v2.25.21](https://github.com/zerocluster/postgresql/compare/v2.25.20...v2.25.21)
+
 ### 2.25.20 (2024-12-30)
 
 Other changes:
