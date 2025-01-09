@@ -1,5 +1,13 @@
 # Changelog
 
+### 2.25.25 (2025-01-09)
+
+Fixes:
+
+- fix: fix tar create
+
+[Compare with the previous release: v2.25.24 ... v2.25.25](https://github.com/zerocluster/postgresql/compare/v2.25.24...v2.25.25)
+
 ### 2.25.24 (2025-01-08)
 
 Other changes:
