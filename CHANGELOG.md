@@ -1,5 +1,13 @@
 # Changelog
 
+### 2.25.31 (2025-01-22)
+
+Other changes:
+
+- chore: healthcheck enabled
+
+Compare with the previous release: [`v2.25.30...v2.25.31`](https://github.com/zerocluster/postgresql/compare/v2.25.30...v2.25.31)
+
 ### 2.25.30 (2025-01-21)
 
 Other changes:
