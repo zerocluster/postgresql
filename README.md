@@ -6,13 +6,13 @@
 
 ### Debug
 
-```shell
+```sh
 docker run --rm -it --network main -p 5432:5432 -v /var/local/zerocluster/postgresql:/var/local/package -v /var/run/postgresql:/var/run/postgresql -v postgresql:/var/local/package/data --entrypoint bash ghcr.io/zerocluster/postgresql/17
 ```
 
 ### Upgrade client
 
-```shell
+```sh
 apt remove -y postgresql-client-16
 apt install -y postgresql-client-17
 ```
@@ -21,7 +21,7 @@ apt install -y postgresql-client-17
 
 - Make sure, that old and new clusters use the same versions of timescaledb. If not - upgrade old cluster to the new version first.
 
-```shell
+```sh
 export OLD_POSTGRESQL_VERSION=16
 export NEW_POSTGRESQL_VERSION=17
 export STACK_NAME=devel
