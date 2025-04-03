@@ -35,8 +35,8 @@ services:
 
     build:
       args:
-        POSTGRESQL_VERSION: 17
-        POSTGIS_VERSION: 3
+        POSTGRESQL_VERSION: "17"
+        POSTGIS_VERSION: "3"
 
   postgresql-sync:
     image: ghcr.io/zerocluster/postgresql/17
