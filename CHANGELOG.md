@@ -1,5 +1,13 @@
 # Changelog
 
+### 2.25.60 (2025-04-03)
+
+Other changes:
+
+- chore: fix POSTGRESQL_VERSION
+
+Compare with the previous release: [`v2.25.59...v2.25.60`](https://github.com/zerocluster/postgresql/compare/v2.25.59...v2.25.60)
+
 ### 2.25.59 (2025-04-03)
 
 Other changes:
