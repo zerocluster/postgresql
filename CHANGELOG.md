@@ -1,5 +1,14 @@
 # Changelog
 
+### 2.25.67 (2025-04-10)
+
+Other changes:
+
+- chore: rename dockerfile
+- chore: update package dependencies
+
+Compare with the previous release: [`v2.25.66...v2.25.67`](https://github.com/zerocluster/postgresql/compare/v2.25.66...v2.25.67)
+
 ### 2.25.66 (2025-04-06)
 
 Other changes:
