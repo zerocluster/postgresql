@@ -1,6 +1,6 @@
 {
     "name": "@zerocluster/postgresql",
-    "version": "2.25.69",
+    "version": "2.25.70",
     "private": true,
     "description": "PostgreSQL service",
     "keywords": [
