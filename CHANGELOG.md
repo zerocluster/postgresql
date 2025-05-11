@@ -1,5 +1,13 @@
 # Changelog
 
+### 2.25.81 (2025-05-11)
+
+**Other changes:**
+
+- \[PATCH] chore: update package dependencies
+
+Compare with the previous release: [`v2.25.80...v2.25.81`](https://github.com/zerocluster/postgresql/compare/v2.25.80...v2.25.81)
+
 ### 2.25.80 (2025-05-10)
 
 **Other changes:**
