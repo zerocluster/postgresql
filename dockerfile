@@ -22,7 +22,10 @@ RUN \
     && localedef --force -i ru_UA -f UTF-8 ru_UA.UTF-8 \
     \
     # remove default cluster
-    && rm -rf /var/lib/postgresql/$POSTGRESQL_VERSION/main
+    && rm -rf /var/lib/postgresql/$POSTGRESQL_VERSION/main \
+    \
+    # cleanup
+    && /usr/bin/env bash <(curl -fsSL https://raw.githubusercontent.com/softvisio/scripts/main/env-build-node.sh) cleanup
 
 
 RUN \
