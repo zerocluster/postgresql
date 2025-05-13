@@ -1,5 +1,13 @@
 # Changelog
 
+### v2.25.84 (2025-05-13)
+
+**Fixes:**
+
+- \[PATCH] fix: fix docker layer (👬 zdm)
+
+Compare with the previous release: [`v2.25.83...v2.25.84`](https://github.com/zerocluster/postgresql/compare/v2.25.83...v2.25.84)
+
 ### v2.25.83 (2025-05-13)
 
 **Fixes:**
