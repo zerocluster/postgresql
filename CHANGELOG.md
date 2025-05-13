@@ -1,5 +1,15 @@
 # Changelog
 
+### v2.25.82 (2025-05-13)
+
+**Other changes:**
+
+- \[PATCH] chore: mode postgresql to the individual docker layer (👬 zdm)
+
+- \[PATCH] chore: update package dependencies (👬 zdm)
+
+Compare with the previous release: [`v2.25.81...v2.25.82`](https://github.com/zerocluster/postgresql/compare/v2.25.81...v2.25.82)
+
 ### 2.25.81 (2025-05-11)
 
 **Other changes:**
