@@ -1,5 +1,13 @@
 # Changelog
 
+### v2.25.87 (2025-05-21)
+
+**Other changes:**
+
+- \[PATCH] chore: update package dependencies (👬 zdm)
+
+Compare with the previous release: [`v2.25.86...v2.25.87`](https://github.com/zerocluster/postgresql/compare/v2.25.86...v2.25.87)
+
 ### v2.25.86 (2025-05-17)
 
 **Other changes:**
