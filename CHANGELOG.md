@@ -1,5 +1,11 @@
 # Changelog
 
+### v2.25.91 (2025-05-30)
+
+**Other changes:**
+
+- \[PATCH] chore: update package dependencies (👬 zdm)
+
 ### v2.25.90 (2025-05-28)
 
 **Other changes:**
