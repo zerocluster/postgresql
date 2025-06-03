@@ -1,5 +1,15 @@
 # Changelog
 
+### v2.25.95 (2025-06-03)
+
+**Other changes:**
+
+- \[PATCH] chore: add app name (👬 zdm)
+
+- \[PATCH] chore: update package dependencies (👬 zdm)
+
+Compare with the previous release: [v2.25.94](https://github.com/zerocluster/postgresql/compare/v2.25.94...v2.25.95)
+
 ### v2.25.94 (2025-06-01)
 
 **Other changes:**
