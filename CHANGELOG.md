@@ -1,5 +1,15 @@
 # Changelog
 
+### v2.25.99 (2025-06-09)
+
+**Other changes:**
+
+- \[PATCH] chore: update cli config (👬 zdm)
+
+- \[PATCH] chore(deps): update package dependencies (👬 zdm)
+
+Compare with the previous release: [v2.25.98](https://github.com/zerocluster/postgresql/compare/v2.25.98...v2.25.99)
+
 ### v2.25.98 (2025-06-03)
 
 **Other changes:**
