@@ -1,5 +1,17 @@
 # Changelog
 
+### v2.25.102 (2025-06-12)
+
+**Refactoring:**
+
+- \[PATCH] refactor: update nginx config (● [2e7913e](https://github.com/zerocluster/postgresql/commit/2e7913e), [d407615](https://github.com/zerocluster/postgresql/commit/d407615); 👬 zdm)
+
+**Other changes:**
+
+- chore(deps): update package dependencies (● [e233e69](https://github.com/zerocluster/postgresql/commit/e233e69), [6d82c11](https://github.com/zerocluster/postgresql/commit/6d82c11), [5b162da](https://github.com/zerocluster/postgresql/commit/5b162da); 👬 zdm)
+
+Compare with the previous release: [v2.25.101](https://github.com/zerocluster/postgresql/compare/v2.25.101...v2.25.102)
+
 ### v2.25.101 (2025-06-10)
 
 **Other changes:**
