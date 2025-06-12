@@ -23,9 +23,6 @@ services:
 
     networks: [network]
 
-    # ports:
-    #   - { published: 5432, target: 5432 }
-
     volumes:
       - { type: tmpfs, target: /dev/shm, tmpfs: { size: 1073741824 } }
       - { type: volume, source: postgresql, target: /var/local/package/data }
@@ -56,9 +53,6 @@ services:
 
     networks: [network]
 
-    # ports:
-    #   - { published: 5433, target: 5432 }
-
     volumes:
       - { type: tmpfs, target: /dev/shm, tmpfs: { size: 1073741824 } }
       - { type: volume, source: postgresql, target: /var/local/package/data }
@@ -83,9 +77,6 @@ services:
       - { source: postgresql_env.yaml, target: /var/local/package/env.yaml }
 
     networks: [network]
-
-    # ports:
-    #   - { published: 5434, target: 5432 }
 
     volumes:
       - { type: tmpfs, target: /dev/shm, tmpfs: { size: 1073741824 } }
