@@ -1,5 +1,13 @@
 # Changelog
 
+### v2.25.103 (2025-06-12)
+
+**Other changes:**
+
+- chore(deps): update package dependencies (● [aa803f3](https://github.com/zerocluster/postgresql/commit/aa803f3); 👬 zdm)
+
+Compare with the previous release: [v2.25.102](https://github.com/zerocluster/postgresql/compare/v2.25.102...v2.25.103)
+
 ### v2.25.102 (2025-06-12)
 
 **Refactoring:**
