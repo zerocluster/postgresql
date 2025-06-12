@@ -15,8 +15,6 @@ services:
         max_replicas_per_node: 1
         constraints:
           - "node.labels.postgresql == primary"
-      # labels:
-      #   nginx: upstream=5432&server=5432:ssl&serverName=postgresql.softvisio.net
 
     command: run --service=primary
 
