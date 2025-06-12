@@ -1,5 +1,13 @@
 # Changelog
 
+### v2.25.104-rc.0 (2025-06-12)
+
+**Other changes:**
+
+- chore(deps): update package dependencies (● [13afb3a](https://github.com/zerocluster/postgresql/commit/13afb3a); 👬 zdm)
+
+Compare with the previous release: [v2.25.103](https://github.com/zerocluster/postgresql/compare/v2.25.103...v2.25.104-rc.0)
+
 ### v2.25.103 (2025-06-12)
 
 **Other changes:**
