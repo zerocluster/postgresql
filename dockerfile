@@ -1,7 +1,7 @@
 FROM ghcr.io/zerocluster/node/app
 
-ARG POSTGRESQL_VERSION \
-    POSTGIS_VERSION
+ARG POSTGRESQL_VERSION
+ARG POSTGIS_VERSION
 
 ENV POSTGRESQL_VERSION=$POSTGRESQL_VERSION \
     POSTGIS_VERSION=$POSTGIS_VERSION \
@@ -25,11 +25,13 @@ RUN \
     && rm -rf /var/lib/postgresql/$POSTGRESQL_VERSION/main \
     \
     # cleanup
-    && bash <(curl -fsSL "https://raw.githubusercontent.com/softvisio/scripts/main/env-build-node.sh") cleanup
+    && script=$(curl -fsSL "https://raw.githubusercontent.com/softvisio/scripts/main/env-build-node.sh") \
+    && bash <(echo "$script") cleanup
 
 RUN \
     # install dependencies
     NODE_ENV=production npm install-clean \
     \
     # cleanup
-    && bash <(curl -fsSL "https://raw.githubusercontent.com/softvisio/scripts/main/env-build-node.sh") cleanup
+    && script=$(curl -fsSL "https://raw.githubusercontent.com/softvisio/scripts/main/env-build-node.sh") \
+    && bash <(echo "$script") cleanup
