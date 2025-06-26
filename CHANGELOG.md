@@ -1,5 +1,19 @@
 # Changelog
 
+### v2.25.111 (2025-06-26)
+
+**Code refactoring:**
+
+- \[PATCH] refactor: fix bash invocation in scripts (● [b78b91e](https://github.com/zerocluster/postgresql/commit/b78b91e); 👬 zdm)
+
+- \[PATCH] refactor: fix external bash scripts invocation (● [a3ce439](https://github.com/zerocluster/postgresql/commit/a3ce439); 👬 zdm)
+
+**Other changes:**
+
+- chore(deps): update package dependencies (● [cde1927](https://github.com/zerocluster/postgresql/commit/cde1927); 👬 zdm)
+
+Compare with the previous release: [v2.25.110](https://github.com/zerocluster/postgresql/compare/v2.25.110...v2.25.111)
+
 ### v2.25.110 (2025-06-25)
 
 **Other changes:**
