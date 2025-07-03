@@ -1,5 +1,17 @@
 # Changelog
 
+### v2.25.113 (2025-07-03)
+
+**Code refactoring:**
+
+- \[PATCH] refactor: use url instead of uri (● [a03b227](https://github.com/zerocluster/postgresql/commit/a03b227); 👬 zdm)
+
+**Other changes:**
+
+- chore(deps): update locked dependencies (● [1cab819](https://github.com/zerocluster/postgresql/commit/1cab819); 👬 zdm)
+
+Compare with the previous release: [v2.25.112](https://github.com/zerocluster/postgresql/compare/v2.25.112...v2.25.113)
+
 ### v2.25.112 (2025-07-03)
 
 **Other changes:**
