@@ -1,5 +1,23 @@
 # Changelog
 
+### v2.25.112 (2025-07-03)
+
+**Other changes:**
+
+- build(deps): bump @softvisio/core 7.172.0 (● [af47e6a](https://github.com/zerocluster/postgresql/commit/af47e6a); 👬 zdm)
+
+- build(deps): bump @softvisio/core 7.172.0-alpha.1 (● [7c74c08](https://github.com/zerocluster/postgresql/commit/7c74c08); 👬 zdm)
+
+- chore(deps): update locked dependencies (● [43b2cb0](https://github.com/zerocluster/postgresql/commit/43b2cb0), [360b03e](https://github.com/zerocluster/postgresql/commit/360b03e), [56c02ac](https://github.com/zerocluster/postgresql/commit/56c02ac), [b441b9a](https://github.com/zerocluster/postgresql/commit/b441b9a); 👬 zdm)
+
+- chore(deps): update package dependencies (● [d37a575](https://github.com/zerocluster/postgresql/commit/d37a575); 👬 zdm)
+
+**Included pre-releases:**
+
+- build(release): release v2.25.112-alpha.0 (● [98f1797](https://github.com/zerocluster/postgresql/commit/98f1797); 👬 zdm)
+
+Compare with the previous release: [v2.25.111](https://github.com/zerocluster/postgresql/compare/v2.25.111...v2.25.112)
+
 ### v2.25.112-alpha.0 (2025-07-02)
 
 **Other changes:**
