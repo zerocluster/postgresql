@@ -28,7 +28,7 @@ services:
       postgresql:
         mode: primary
       dbh:
-        uri: postgresql://
+        url: postgresql://
       storage: true
 
   standby-sync:
