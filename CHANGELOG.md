@@ -1,5 +1,15 @@
 # Changelog
 
+### v2.25.117-alpha.0 (2025-07-12)
+
+**Other changes:**
+
+- build(deps): bump dependencies (● [3214122](https://github.com/zerocluster/postgresql/commit/3214122); 👬 zdm)
+
+- chore(deps): update locked dependencies (● [82b489f](https://github.com/zerocluster/postgresql/commit/82b489f), [a81e22f](https://github.com/zerocluster/postgresql/commit/a81e22f); 👬 zdm)
+
+Compare with the previous release: [v2.25.116](https://github.com/zerocluster/postgresql/compare/v2.25.116...v2.25.117-alpha.0)
+
 ### v2.25.116 (2025-07-04)
 
 **Other changes:**
