@@ -1,5 +1,19 @@
 # Changelog
 
+### v2.25.123 (2025-07-23)
+
+**Bug fixes:**
+
+- \[PATCH] fix: fix editorconfig (● [702052e](https://github.com/zerocluster/postgresql/commit/702052e); 👬 zdm)
+
+- \[PATCH] fix: update editorconfig (● [ba3de3d](https://github.com/zerocluster/postgresql/commit/ba3de3d); 👬 zdm)
+
+**Other changes:**
+
+- chore(deps): update locked dependencies (● [3d6891b](https://github.com/zerocluster/postgresql/commit/3d6891b); 👬 zdm)
+
+Compare with the previous release: [v2.25.122](https://github.com/zerocluster/postgresql/compare/v2.25.122...v2.25.123)
+
 ### v2.25.122 (2025-07-16)
 
 **Other changes:**
