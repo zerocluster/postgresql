@@ -1,5 +1,13 @@
 # Changelog
 
+### v2.25.128 (2025-08-10)
+
+**Other changes:**
+
+- chore(deps): update locked dependencies (● [eaac0dd](https://github.com/zerocluster/postgresql/commit/eaac0dd); 👬 zdm)
+
+Compare with the previous release: [v2.25.127](https://github.com/zerocluster/postgresql/compare/v2.25.127...v2.25.128)
+
 ### v2.25.127 (2025-08-09)
 
 **Other changes:**
