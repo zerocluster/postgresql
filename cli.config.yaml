@@ -3,7 +3,8 @@ release:
 
 docker:
   composeFile:
-    - compose.17.yaml
+    - compose.17
+    - compose.18
   defaultTag: latest
   autoTags: [main, latest, next]
 
