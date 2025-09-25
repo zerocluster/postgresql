@@ -1,5 +1,19 @@
 # Changelog
 
+### v2.26.0 (2025-09-25)
+
+**New features:**
+
+- \[MINOR] feat: add postgresql 18 (● [76c4b78](https://github.com/zerocluster/postgresql/commit/76c4b78), [ad82e78](https://github.com/zerocluster/postgresql/commit/ad82e78); 👬 zdm)
+
+**Other changes:**
+
+- build: enable postgresql 18 (● [d05a0e6](https://github.com/zerocluster/postgresql/commit/d05a0e6); 👬 zdm)
+
+- chore(deps): update locked dependencies (● [5b07eb6](https://github.com/zerocluster/postgresql/commit/5b07eb6); 👬 zdm)
+
+Compare with the previous release: [v2.25.133](https://github.com/zerocluster/postgresql/compare/v2.25.133...v2.26.0)
+
 ### v2.25.133 (2025-08-28)
 
 **Other changes:**
