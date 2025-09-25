@@ -1,5 +1,13 @@
 # Changelog
 
+### v2.26.1 (2025-09-25)
+
+**Bug fixes:**
+
+- \[PATCH] fix: fix cli config compose file (● [989794f](https://github.com/zerocluster/postgresql/commit/989794f); 👬 zdm)
+
+Compare with the previous release: [v2.26.0](https://github.com/zerocluster/postgresql/compare/v2.26.0...v2.26.1)
+
 ### v2.26.0 (2025-09-25)
 
 **New features:**
