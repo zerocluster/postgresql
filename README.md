@@ -7,14 +7,14 @@
 ### Debug
 
 ```sh
-docker run --rm -it --network main -p 5432:5432 -v /var/local/zerocluster/postgresql:/var/local/package -v /var/run/postgresql:/var/run/postgresql -v postgresql:/var/local/package/data --entrypoint bash ghcr.io/zerocluster/postgresql/17
+docker run --rm -it --network main -p 5432:5432 -v /var/local/zerocluster/postgresql:/var/local/package -v /var/run/postgresql:/var/run/postgresql -v postgresql:/var/local/package/data --entrypoint bash ghcr.io/zerocluster/postgresql/18
 ```
 
 ### Upgrade client
 
 ```sh
-apt remove -y postgresql-client-16
-apt install -y postgresql-client-17
+apt remove -y postgresql-client-17
+apt install -y postgresql-client-18
 ```
 
 ### Upgrade cluster
