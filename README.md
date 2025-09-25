@@ -22,8 +22,8 @@ apt install -y postgresql-client-17
 - Make sure, that old and new clusters use the same versions of timescaledb. If not - upgrade old cluster to the new version first.
 
 ```sh
-export OLD_POSTGRESQL_VERSION=16
-export NEW_POSTGRESQL_VERSION=17
+export OLD_POSTGRESQL_VERSION=17
+export NEW_POSTGRESQL_VERSION=18
 export STACK_NAME=devel
 export VOLUME_NAME=${STACK_NAME}_postgresql
 
