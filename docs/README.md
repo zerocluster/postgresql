@@ -26,13 +26,21 @@ export VOLUME_NAME=${STACK_NAME}_postgresql
 # stop and remove stack
 docker stack rm $STACK_NAME
 
+# migrate cluster
 docker run \
     --rm -it \
     -v $VOLUME_NAME:/var/local/package/data \
     ghcr.io/zerocluster/postgresql/$NEW_POSTGRESQL_VERSION \
     postgresql upgrade $OLD_POSTGRESQL_VERSION main
+```
 
-vacuumdb --all --analyze-in-stages
+After cluster migrated:
+
+```sh
+docker exec -it $CONTAINER_ID bash
+
+vacuumdb --all --analyze-in-stages --missing-stats-only
+vacuumdb --all --analyze-only
 ```
 
 ### Restore from backup
