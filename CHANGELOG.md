@@ -1,5 +1,15 @@
 # Changelog
 
+### v2.26.3 (2025-09-25)
+
+**Other changes:**
+
+- build: remove postgreslq 17 (● [9f99a19](https://github.com/zerocluster/postgresql/commit/9f99a19), [d981d6d](https://github.com/zerocluster/postgresql/commit/d981d6d); 👬 zdm)
+
+- docs: update (● [846683f](https://github.com/zerocluster/postgresql/commit/846683f), [bae2176](https://github.com/zerocluster/postgresql/commit/bae2176); 👬 zdm)
+
+Compare with the previous release: [v2.26.2](https://github.com/zerocluster/postgresql/compare/v2.26.2...v2.26.3)
+
 ### v2.26.2 (2025-09-25)
 
 **Other changes:**
