@@ -27,9 +27,6 @@ services:
     components:
       postgresql:
         mode: primary
-      dbh:
-        url: postgresql://
-      storage: true
 
   standby-sync:
     components:
@@ -49,10 +46,5 @@ components:
 
   healthcheck:
     enabled: false
-
-  storage:
-    buckets:
-      /postgresql:
-        type: local
 
 config: ~
