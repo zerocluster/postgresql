@@ -1,5 +1,17 @@
 # Changelog
 
+### v2.26.5 (2025-10-09)
+
+**Code refactoring:**
+
+- \[PATCH] refactor: remove storage component (● [ae53df9](https://github.com/zerocluster/postgresql/commit/ae53df9); 👬 zdm)
+
+**Other changes:**
+
+- chore(deps): update locked dependencies (● [83b1e69](https://github.com/zerocluster/postgresql/commit/83b1e69); 👬 zdm)
+
+Compare with the previous release: [v2.26.4](https://github.com/zerocluster/postgresql/compare/v2.26.4...v2.26.5)
+
 ### v2.26.4 (2025-10-09)
 
 **Other changes:**
