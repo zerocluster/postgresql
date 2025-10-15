@@ -1,5 +1,17 @@
 # Changelog
 
+### v2.26.8 (2025-10-15)
+
+**Code refactoring:**
+
+- \[PATCH] refactor: refactor postgresql component (● [3720c1b](https://github.com/zerocluster/postgresql/commit/3720c1b); 👬 zdm)
+
+**Other changes:**
+
+- chore(deps): update locked dependencies (● [cc88319](https://github.com/zerocluster/postgresql/commit/cc88319), [e75165a](https://github.com/zerocluster/postgresql/commit/e75165a); 👬 zdm)
+
+Compare with the previous release: [v2.26.7](https://github.com/zerocluster/postgresql/compare/v2.26.7...v2.26.8)
+
 ### v2.26.7 (2025-10-14)
 
 **Other changes:**
