@@ -1,5 +1,15 @@
 # Changelog
 
+### v2.26.10 (2025-10-17)
+
+**Bug fixes:**
+
+- \[PATCH] fix: fix $PATH (● [fec2012](https://github.com/zerocluster/postgresql/commit/fec2012); 👬 zdm)
+
+- \[PATCH] fix: remove postgresql-contrib (● [2991d35](https://github.com/zerocluster/postgresql/commit/2991d35); 👬 zdm)
+
+Compare with the previous release: [v2.26.9](https://github.com/zerocluster/postgresql/compare/v2.26.9...v2.26.10)
+
 ### v2.26.9 (2025-10-16)
 
 **Other changes:**
