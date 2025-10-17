@@ -37,8 +37,6 @@ docker run \
 After cluster migrated:
 
 ```sh
-docker exec -it $CONTAINER_ID bash
-
 vacuumdb --all --analyze-in-stages --missing-stats-only
 vacuumdb --all --analyze-only
 ```
