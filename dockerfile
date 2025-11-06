@@ -22,7 +22,6 @@ RUN \
     \
     # remove default cluster
     && rm -rf /var/lib/postgresql/$POSTGRESQL_VERSION/main \
-    && mkdir -p /dev/shm && chmod 1777 /dev/shm \
     \
     # cleanup
     && script=$(curl -fsSL "https://raw.githubusercontent.com/softvisio/scripts/main/env-build-node.sh") \
