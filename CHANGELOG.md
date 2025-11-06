@@ -1,5 +1,13 @@
 # Changelog
 
+### v2.26.16 (2025-11-06)
+
+**Bug fixes:**
+
+- \[PATCH] fix: fix /dev/shm permissions (● [aa0a154](https://github.com/zerocluster/postgresql/commit/aa0a154); 👬 zdm)
+
+Compare with the previous release: [v2.26.15](https://github.com/zerocluster/postgresql/compare/v2.26.15...v2.26.16)
+
 ### v2.26.15 (2025-11-06)
 
 **Bug fixes:**
