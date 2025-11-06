@@ -1,5 +1,17 @@
 # Changelog
 
+### v2.26.15 (2025-11-06)
+
+**Bug fixes:**
+
+- \[PATCH] fix: fix /dev/shm permissions (● [5f5f9b3](https://github.com/zerocluster/postgresql/commit/5f5f9b3); 👬 zdm)
+
+**Other changes:**
+
+- chore(deps): update locked dependencies (● [f28b9c8](https://github.com/zerocluster/postgresql/commit/f28b9c8), [540bbac](https://github.com/zerocluster/postgresql/commit/540bbac), [893f72a](https://github.com/zerocluster/postgresql/commit/893f72a), [7efe800](https://github.com/zerocluster/postgresql/commit/7efe800); 👬 zdm)
+
+Compare with the previous release: [v2.26.14](https://github.com/zerocluster/postgresql/compare/v2.26.14...v2.26.15)
+
 ### v2.26.14 (2025-10-28)
 
 **Other changes:**
