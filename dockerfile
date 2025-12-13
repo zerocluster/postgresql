@@ -28,6 +28,8 @@ RUN \
     && bash <(echo "$script") cleanup
 
 RUN \
+    --mount=type=secret,id=NPM_TOKEN_GITHUB,env=NPM_TOKEN_GITHUB \
+    \
     # install dependencies
     NODE_ENV=production npm install-clean \
     \
