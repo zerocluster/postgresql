@@ -1,5 +1,13 @@
 # Changelog
 
+### v2.27.1 (2026-01-18)
+
+**Bug fixes:**
+
+- \[PATCH] fix: fix compose file (● [2fc4a51](https://github.com/zerocluster/postgresql/commit/2fc4a51); 👬 zdm)
+
+Compare with the previous release: [v2.27.0](https://github.com/zerocluster/postgresql/compare/v2.27.0...v2.27.1)
+
 ### v2.27.0 (2026-01-18)
 
 **New features:**
