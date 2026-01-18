@@ -1,5 +1,27 @@
 # Changelog
 
+### v2.27.0 (2026-01-18)
+
+**New features:**
+
+- \[MINOR] feat: add docker build secrets (● [3582d03](https://github.com/zerocluster/postgresql/commit/3582d03); 👬 zdm)
+
+**Bug fixes:**
+
+- \[PATCH] fix: add sudo, less to setup (● [425cfc1](https://github.com/zerocluster/postgresql/commit/425cfc1); 👬 zdm)
+
+- \[PATCH] fix: fix /dev/shm permissions (● [10a79c8](https://github.com/zerocluster/postgresql/commit/10a79c8); 👬 zdm)
+
+- \[PATCH] fix: remove NPM_TOKEN_GITHUB (● [b60113d](https://github.com/zerocluster/postgresql/commit/b60113d); 👬 zdm)
+
+**Other changes:**
+
+- chore: remove npm @sencha:registry (● [790511c](https://github.com/zerocluster/postgresql/commit/790511c); 👬 zdm)
+
+- chore(deps): update locked dependencies (● [8f38824](https://github.com/zerocluster/postgresql/commit/8f38824), [3bd25c9](https://github.com/zerocluster/postgresql/commit/3bd25c9), [1421fb7](https://github.com/zerocluster/postgresql/commit/1421fb7), [0d677b2](https://github.com/zerocluster/postgresql/commit/0d677b2), [a002dca](https://github.com/zerocluster/postgresql/commit/a002dca), [919dbb6](https://github.com/zerocluster/postgresql/commit/919dbb6), [5149aac](https://github.com/zerocluster/postgresql/commit/5149aac), [c6d3e9a](https://github.com/zerocluster/postgresql/commit/c6d3e9a), [43465f1](https://github.com/zerocluster/postgresql/commit/43465f1), [81adea6](https://github.com/zerocluster/postgresql/commit/81adea6), [210305b](https://github.com/zerocluster/postgresql/commit/210305b), [e988514](https://github.com/zerocluster/postgresql/commit/e988514), [3f1337d](https://github.com/zerocluster/postgresql/commit/3f1337d), [a9344fc](https://github.com/zerocluster/postgresql/commit/a9344fc), [e20e6a4](https://github.com/zerocluster/postgresql/commit/e20e6a4), [07048aa](https://github.com/zerocluster/postgresql/commit/07048aa), [5f21b67](https://github.com/zerocluster/postgresql/commit/5f21b67); 👬 zdm)
+
+Compare with the previous release: [v2.26.17](https://github.com/zerocluster/postgresql/compare/v2.26.17...v2.27.0)
+
 ### v2.26.17 (2025-11-06)
 
 **Bug fixes:**
