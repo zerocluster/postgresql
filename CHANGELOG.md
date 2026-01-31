@@ -1,5 +1,15 @@
 # Changelog
 
+### v2.27.6 (2026-01-31)
+
+**Other changes:**
+
+- chore: rename c0rejs namespace (● [ce8950c](https://github.com/zerocluster/postgresql/commit/ce8950c); 👬 zdm)
+
+- chore(deps): update locked dependencies (● [9bbd420](https://github.com/zerocluster/postgresql/commit/9bbd420); 👬 zdm)
+
+Compare with the previous release: [v2.27.5](https://github.com/zerocluster/postgresql/compare/v2.27.5...v2.27.6)
+
 ### v2.27.5 (2026-01-30)
 
 **Other changes:**
