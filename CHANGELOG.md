@@ -1,5 +1,15 @@
 # Changelog
 
+### v2.27.7 (2026-02-05)
+
+**Other changes:**
+
+- chore: remove @zdm npm registry (● [583dff2](https://github.com/zerocluster/postgresql/commit/583dff2); 👬 zdm)
+
+- chore(deps): update locked dependencies (● [11d624e](https://github.com/zerocluster/postgresql/commit/11d624e), [843b4a4](https://github.com/zerocluster/postgresql/commit/843b4a4), [c7fc090](https://github.com/zerocluster/postgresql/commit/c7fc090); 👬 zdm)
+
+Compare with the previous release: [v2.27.6](https://github.com/zerocluster/postgresql/compare/v2.27.6...v2.27.7)
+
 ### v2.27.6 (2026-01-31)
 
 **Other changes:**
