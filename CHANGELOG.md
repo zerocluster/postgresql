@@ -1,5 +1,15 @@
 # Changelog
 
+### v2.27.19 (2026-03-24)
+
+**Other changes:**
+
+- chore(deps): update locked dependencies (● [38324cd](https://github.com/zerocluster/postgresql/commit/38324cd), [6dd0a9b](https://github.com/zerocluster/postgresql/commit/6dd0a9b), [cc1ae23](https://github.com/zerocluster/postgresql/commit/cc1ae23), [8b2d7c0](https://github.com/zerocluster/postgresql/commit/8b2d7c0), [6e6dd85](https://github.com/zerocluster/postgresql/commit/6e6dd85), [88da538](https://github.com/zerocluster/postgresql/commit/88da538), [9e2818b](https://github.com/zerocluster/postgresql/commit/9e2818b), [9ce26d5](https://github.com/zerocluster/postgresql/commit/9ce26d5); 👬 zdm)
+
+- chore(metadata): update package metadata (● [b5d1b28](https://github.com/zerocluster/postgresql/commit/b5d1b28); 👬 zdm)
+
+Compare with the previous release: [v2.27.18](https://github.com/zerocluster/postgresql/compare/v2.27.18...v2.27.19)
+
 ### v2.27.18 (2026-03-14)
 
 **Other changes:**
