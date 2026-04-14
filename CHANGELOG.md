@@ -1,5 +1,17 @@
 # Changelog
 
+### v2.27.36 (2026-04-14)
+
+**Code refactoring:**
+
+- \[PATCH] refactor: update dockerfile (● [2b1904f](https://github.com/zerocluster/postgresql/commit/2b1904f); 👬 zdm)
+
+**Other changes:**
+
+- chore(deps): update locked dependencies (● [9ce1b02](https://github.com/zerocluster/postgresql/commit/9ce1b02), [5cb69be](https://github.com/zerocluster/postgresql/commit/5cb69be), [8e139e9](https://github.com/zerocluster/postgresql/commit/8e139e9), [a53ca99](https://github.com/zerocluster/postgresql/commit/a53ca99), [ec81f96](https://github.com/zerocluster/postgresql/commit/ec81f96), [344f24d](https://github.com/zerocluster/postgresql/commit/344f24d), [f8c2640](https://github.com/zerocluster/postgresql/commit/f8c2640); 👬 zdm)
+
+Compare with the previous release: [v2.27.35](https://github.com/zerocluster/postgresql/compare/v2.27.35...v2.27.36)
+
 ### v2.27.35 (2026-04-09)
 
 **Other changes:**
