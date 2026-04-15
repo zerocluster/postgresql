@@ -11,6 +11,9 @@ ENV POSTGRESQL_VERSION=$POSTGRESQL_VERSION \
 RUN <<EOF
 #!/usr/bin/env bash
 
+set -Eeuo pipefail
+trap 'echo -e "⚠  Error ($0:$LINENO): $(sed -n "${LINENO}p" "$0" 2> /dev/null | grep -oE "\S.*\S|\S" || true)" >&2; return 3 2> /dev/null || exit 3' ERR
+
 # install postgresql
 apt-get update
 apt-get install -y \
@@ -34,6 +37,9 @@ EOF
 
 RUN --mount=type=secret,id=GITHUB_TOKEN,env=GITHUB_TOKEN <<EOF
 #!/usr/bin/env bash
+
+set -Eeuo pipefail
+trap 'echo -e "⚠  Error ($0:$LINENO): $(sed -n "${LINENO}p" "$0" 2> /dev/null | grep -oE "\S.*\S|\S" || true)" >&2; return 3 2> /dev/null || exit 3' ERR
 
 # install dependencies
 NODE_ENV=production npm install-clean
