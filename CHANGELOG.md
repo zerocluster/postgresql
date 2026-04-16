@@ -1,5 +1,17 @@
 # Changelog
 
+### v2.27.37 (2026-04-16)
+
+**Bug fixes:**
+
+- \[PATCH] fix: fix dockerfile errors handler (● [0974b0c](https://github.com/zerocluster/postgresql/commit/0974b0c); 👬 zdm)
+
+**Other changes:**
+
+- chore(deps): update locked dependencies (● [d7ae4fc](https://github.com/zerocluster/postgresql/commit/d7ae4fc); 👬 zdm)
+
+Compare with the previous release: [v2.27.36](https://github.com/zerocluster/postgresql/compare/v2.27.36...v2.27.37)
+
 ### v2.27.36 (2026-04-14)
 
 **Code refactoring:**
