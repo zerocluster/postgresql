@@ -1,5 +1,23 @@
 # Changelog
 
+### v2.27.39 (2026-04-26)
+
+**Bug fixes:**
+
+- \[PATCH] fix: fix sh error trap (● [df38e8b](https://github.com/zerocluster/postgresql/commit/df38e8b); 👬 zdm)
+
+**Code refactoring:**
+
+- \[PATCH] refactor: update .editorconfig (● [1772fab](https://github.com/zerocluster/postgresql/commit/1772fab); 👬 zdm)
+
+- \[PATCH] refactor: update sh error trap (● [64c6627](https://github.com/zerocluster/postgresql/commit/64c6627); 👬 zdm)
+
+**Other changes:**
+
+- chore(deps): update locked dependencies (● [174904a](https://github.com/zerocluster/postgresql/commit/174904a), [cf07cec](https://github.com/zerocluster/postgresql/commit/cf07cec), [162844c](https://github.com/zerocluster/postgresql/commit/162844c), [cc98d90](https://github.com/zerocluster/postgresql/commit/cc98d90), [f314957](https://github.com/zerocluster/postgresql/commit/f314957), [f9a7d0a](https://github.com/zerocluster/postgresql/commit/f9a7d0a), [5e8e6c2](https://github.com/zerocluster/postgresql/commit/5e8e6c2); 👬 zdm)
+
+Compare with the previous release: [v2.27.38...v2.27.39](https://github.com/zerocluster/postgresql/compare/v2.27.38...v2.27.39)
+
 ### v2.27.38 (2026-04-20)
 
 **Other changes:**
