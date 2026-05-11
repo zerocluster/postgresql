@@ -1,5 +1,17 @@
 # Changelog
 
+### v2.27.41 (2026-05-11)
+
+**Code refactoring:**
+
+- \[PATCH] refactor: rename cli.config.yaml to scli.config.yaml (● [5211975](https://github.com/zerocluster/postgresql/commit/5211975); 👬 zdm)
+
+**Other changes:**
+
+- chore(deps): update locked dependencies (● [4f1d898](https://github.com/zerocluster/postgresql/commit/4f1d898), [f8384fc](https://github.com/zerocluster/postgresql/commit/f8384fc), [59116fe](https://github.com/zerocluster/postgresql/commit/59116fe), [67a09ba](https://github.com/zerocluster/postgresql/commit/67a09ba), [6af0539](https://github.com/zerocluster/postgresql/commit/6af0539), [8d8c787](https://github.com/zerocluster/postgresql/commit/8d8c787), [0768849](https://github.com/zerocluster/postgresql/commit/0768849), [e6902b1](https://github.com/zerocluster/postgresql/commit/e6902b1), [4453b1f](https://github.com/zerocluster/postgresql/commit/4453b1f), [bab58a6](https://github.com/zerocluster/postgresql/commit/bab58a6), [857e7d4](https://github.com/zerocluster/postgresql/commit/857e7d4), [5d02570](https://github.com/zerocluster/postgresql/commit/5d02570), [1fd93ba](https://github.com/zerocluster/postgresql/commit/1fd93ba), [8ac8556](https://github.com/zerocluster/postgresql/commit/8ac8556); 👬 zdm)
+
+Compare with the previous release: [v2.27.40...v2.27.41](https://github.com/zerocluster/postgresql/compare/v2.27.40...v2.27.41)
+
 ### v2.27.40 (2026-04-29)
 
 **Other changes:**
