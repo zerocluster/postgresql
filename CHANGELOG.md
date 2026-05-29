@@ -1,5 +1,15 @@
 # Changelog
 
+### v2.27.45 (2026-05-29)
+
+**Other changes:**
+
+- build: remove registries from .npmrc (● [7e24dd9](https://github.com/zerocluster/postgresql/commit/7e24dd9); 👬 zdm)
+
+- chore(deps): update locked dependencies (● [7242036](https://github.com/zerocluster/postgresql/commit/7242036), [d800027](https://github.com/zerocluster/postgresql/commit/d800027), [50d2719](https://github.com/zerocluster/postgresql/commit/50d2719), [2713d80](https://github.com/zerocluster/postgresql/commit/2713d80), [8c361f8](https://github.com/zerocluster/postgresql/commit/8c361f8), [d59dbb9](https://github.com/zerocluster/postgresql/commit/d59dbb9); 👬 zdm)
+
+Compare with the previous release: [v2.27.44...v2.27.45](https://github.com/zerocluster/postgresql/compare/v2.27.44...v2.27.45)
+
 ### v2.27.44 (2026-05-19)
 
 **Other changes:**
