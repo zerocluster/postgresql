@@ -468,7 +468,7 @@ Compare with the previous release: [v2.27.0](https://github.com/zerocluster/post
 
 - \[PATCH] fix: fix /dev/shm permissions (● [10a79c8](https://github.com/zerocluster/postgresql/commit/10a79c8); 👬 zdm)
 
-- \[PATCH] fix: remove NPM_TOKEN_GITHUB (● [b60113d](https://github.com/zerocluster/postgresql/commit/b60113d); 👬 zdm)
+- \[PATCH] fix: remove NPM\_TOKEN\_GITHUB (● [b60113d](https://github.com/zerocluster/postgresql/commit/b60113d); 👬 zdm)
 
 **Other changes:**
 
@@ -1317,7 +1317,7 @@ Compare with the previous release: [`v2.25.61...v2.25.62`](https://github.com/ze
 
 Other changes:
 
-- chore: fix POSTGRESQL_VERSION
+- chore: fix POSTGRESQL\_VERSION
 - chore: update package dependencies
 
 Compare with the previous release: [`v2.25.60...v2.25.61`](https://github.com/zerocluster/postgresql/compare/v2.25.60...v2.25.61)
@@ -1326,7 +1326,7 @@ Compare with the previous release: [`v2.25.60...v2.25.61`](https://github.com/ze
 
 Other changes:
 
-- chore: fix POSTGRESQL_VERSION
+- chore: fix POSTGRESQL\_VERSION
 
 Compare with the previous release: [`v2.25.59...v2.25.60`](https://github.com/zerocluster/postgresql/compare/v2.25.59...v2.25.60)
 
@@ -1878,7 +1878,7 @@ Fixes:
 Fixes:
 
 - fix: deps
-- fix: docker depends_on
+- fix: docker depends\_on
 
 ### 2.23.0 (2024-07-31)
 
@@ -2101,13 +2101,13 @@ Fixes:
 
 Fixes:
 
-- fix: POSTGRES_HOME removed
+- fix: POSTGRES\_HOME removed
 
 ### 2.20.15 (2023-09-26)
 
 Fixes:
 
-- fix: POSTGRES_HOME removed
+- fix: POSTGRES\_HOME removed
 
 ### 2.20.14 (2023-09-25)
 
@@ -2672,7 +2672,7 @@ Fixes:
 - fix: deps
 - fix: healthcheck
 - fix: int53 extension added
-- fix: pg_hba.conf
+- fix: pg\_hba.conf
 - fix: timescaledb removed
 
 ### 2.12.8 (2022-09-14)
@@ -2896,7 +2896,7 @@ Fixes:
 
 Features:
 
-- feat: cron last_run_error
+- feat: cron last\_run\_error
 
 ### 2.8.0 (2022-01-09)
 
@@ -2968,7 +2968,7 @@ Features:
 
 Features:
 
-- feat: softvisio_locks extension
+- feat: softvisio\_locks extension
 
 ### 2.5.2 (2021-12-12)
 
@@ -3002,7 +3002,7 @@ Fixes:
 
 Fixes:
 
-- fix: pg_hba 127.0.0.1 removed
+- fix: pg\_hba 127.0.0.1 removed
 
 ### 2.4.1 (2021-12-07)
 
@@ -3014,7 +3014,7 @@ Fixes:
 
 Features:
 
-- feat: pg_cron extension
+- feat: pg\_cron extension
 
 ### 2.3.4 (2021-12-03)
 
@@ -3251,7 +3251,7 @@ Fixes:
 
 Fixes:
 
-- fix: docker autobuild_tags renamed to auto_tags
+- fix: docker autobuild\_tags renamed to auto\_tags
 
 ### 1.5.4 (2021-09-07)
 
@@ -3592,7 +3592,7 @@ Changed:
 
 ### 0.3.0 (2020-07-18)
 
-- docker CONTAINER_NAME var added
+- docker CONTAINER\_NAME var added
 
 ### 0.2.6 (2020-07-17)
 
