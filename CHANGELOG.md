@@ -1,5 +1,17 @@
 # Changelog
 
+### v2.27.53 (2026-07-03)
+
+**Bug fixes:**
+
+- \[PATCH] fix: fix md \_ escape (● [46c13a5](https://github.com/zerocluster/postgresql/commit/46c13a5); 👬 zdm)
+
+**Other changes:**
+
+- chore(deps): update locked dependencies (● [7f060d5](https://github.com/zerocluster/postgresql/commit/7f060d5), [800cece](https://github.com/zerocluster/postgresql/commit/800cece), [72f2fea](https://github.com/zerocluster/postgresql/commit/72f2fea), [120abe9](https://github.com/zerocluster/postgresql/commit/120abe9), [8a4dc5e](https://github.com/zerocluster/postgresql/commit/8a4dc5e), [38aa2f6](https://github.com/zerocluster/postgresql/commit/38aa2f6), [b86edac](https://github.com/zerocluster/postgresql/commit/b86edac), [5f86870](https://github.com/zerocluster/postgresql/commit/5f86870), [afac83b](https://github.com/zerocluster/postgresql/commit/afac83b), [58a0a1e](https://github.com/zerocluster/postgresql/commit/58a0a1e), [a7c5700](https://github.com/zerocluster/postgresql/commit/a7c5700); 👬 zdm)
+
+Compare with the previous release: [v2.27.52...v2.27.53](https://github.com/zerocluster/postgresql/compare/v2.27.52...v2.27.53)
+
 ### v2.27.52 (2026-06-25)
 
 **Other changes:**
