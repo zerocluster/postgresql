@@ -1,5 +1,15 @@
 # Changelog
 
+### v2.27.58 (2026-07-06)
+
+**Other changes:**
+
+- build(deps): bunp @corejslib/core@^8.0.0 (● [c64188d](https://github.com/zerocluster/postgresql/commit/c64188d); 👬 zdm)
+
+- chore(deps): update locked dependencies (● [78d2b49](https://github.com/zerocluster/postgresql/commit/78d2b49); 👬 zdm)
+
+Compare with the previous release: [v2.27.57...v2.27.58](https://github.com/zerocluster/postgresql/compare/v2.27.57...v2.27.58)
+
 ### v2.27.57 (2026-07-05)
 
 **Other changes:**
