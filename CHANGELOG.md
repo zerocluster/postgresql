@@ -1,5 +1,15 @@
 # Changelog
 
+### v2.27.74 (2026-08-02)
+
+**Other changes:**
+
+- chore: rename softvisio to corejslib (● [cace6ce](https://github.com/zerocluster/postgresql/commit/cace6ce); 👬 zdm)
+
+- chore(deps): update locked dependencies (● [a0c6f97](https://github.com/zerocluster/postgresql/commit/a0c6f97); 👬 zdm)
+
+Compare with the previous release: [v2.27.73...v2.27.74](https://github.com/zerocluster/postgresql/compare/v2.27.73...v2.27.74)
+
 ### v2.27.73 (2026-08-01)
 
 **Other changes:**
