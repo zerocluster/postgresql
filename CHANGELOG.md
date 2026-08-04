@@ -1,5 +1,15 @@
 # Changelog
 
+### v2.27.78 (2026-08-04)
+
+**Other changes:**
+
+- chore: rename ccli to zcli (● [e726207](https://github.com/zerocluster/postgresql/commit/e726207), [213d510](https://github.com/zerocluster/postgresql/commit/213d510), [3e4efa2](https://github.com/zerocluster/postgresql/commit/3e4efa2); 👬 zdm)
+
+- chore(deps): update locked dependencies (● [284ba17](https://github.com/zerocluster/postgresql/commit/284ba17); 👬 zdm)
+
+Compare with the previous release: [v2.27.77...v2.27.78](https://github.com/zerocluster/postgresql/compare/v2.27.77...v2.27.78)
+
 ### v2.27.77 (2026-08-04)
 
 **Other changes:**
