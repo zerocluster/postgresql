@@ -1,5 +1,13 @@
 # Changelog
 
+### v2.27.80 (2026-08-17)
+
+**Other changes:**
+
+- chore(deps): update locked dependencies (● [afb822e](https://github.com/zerocluster/postgresql/commit/afb822e); 👬 zdm)
+
+Compare with the previous release: [v2.27.79...v2.27.80](https://github.com/zerocluster/postgresql/compare/v2.27.79...v2.27.80)
+
 ### v2.27.79 (2026-08-16)
 
 **Other changes:**
