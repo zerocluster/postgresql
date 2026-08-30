@@ -1,5 +1,17 @@
 # Changelog
 
+### v2.27.86 (2026-08-30)
+
+**Bug fixes:**
+
+- \[PATCH] fix: fix shebang (● [20ecb14](https://github.com/zerocluster/postgresql/commit/20ecb14); 👬 zdm)
+
+**Other changes:**
+
+- chore(deps): update locked dependencies (● [db1df83](https://github.com/zerocluster/postgresql/commit/db1df83), [856353e](https://github.com/zerocluster/postgresql/commit/856353e), [5f4dd30](https://github.com/zerocluster/postgresql/commit/5f4dd30), [fd63b8e](https://github.com/zerocluster/postgresql/commit/fd63b8e), [4ce0a82](https://github.com/zerocluster/postgresql/commit/4ce0a82); 👬 zdm)
+
+Compare with the previous release: [v2.27.85...v2.27.86](https://github.com/zerocluster/postgresql/compare/v2.27.85...v2.27.86)
+
 ### v2.27.85 (2026-08-27)
 
 **Other changes:**
