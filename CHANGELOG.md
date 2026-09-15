@@ -1,5 +1,15 @@
 # Changelog
 
+### v2.27.95 (2026-09-15)
+
+**Other changes:**
+
+- chore: migrate to @corejslib/app (● [be6adf3](https://github.com/zerocluster/postgresql/commit/be6adf3); 👬 zdm)
+
+- chore(deps): update locked dependencies (● [1151f7c](https://github.com/zerocluster/postgresql/commit/1151f7c); 👬 zdm)
+
+Compare with the previous release: [v2.27.94...v2.27.95](https://github.com/zerocluster/postgresql/compare/v2.27.94...v2.27.95)
+
 ### v2.27.94 (2026-09-15)
 
 **Other changes:**
