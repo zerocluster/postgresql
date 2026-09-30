@@ -1,5 +1,13 @@
 # Changelog
 
+### v2.27.105 (2026-09-30)
+
+**Other changes:**
+
+- chore(deps): update locked dependencies (● [e30fa11](https://github.com/zerocluster/postgresql/commit/e30fa11); 👬 zdm)
+
+Compare with the previous release: [v2.27.104...v2.27.105](https://github.com/zerocluster/postgresql/compare/v2.27.104...v2.27.105)
+
 ### v2.27.104 (2026-09-29)
 
 **Other changes:**
