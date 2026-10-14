@@ -1,5 +1,13 @@
 # Changelog
 
+### v2.27.120 (2026-10-14)
+
+**Other changes:**
+
+- chore(deps): update locked dependencies (● [3723d20](https://github.com/zerocluster/postgresql/commit/3723d20), [0c3fe12](https://github.com/zerocluster/postgresql/commit/0c3fe12), [96f2762](https://github.com/zerocluster/postgresql/commit/96f2762), [18551d5](https://github.com/zerocluster/postgresql/commit/18551d5); 👬 zdm)
+
+Compare with the previous release: [v2.27.119...v2.27.120](https://github.com/zerocluster/postgresql/compare/v2.27.119...v2.27.120)
+
 ### v2.27.119 (2026-10-12)
 
 **Other changes:**
