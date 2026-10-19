@@ -1,5 +1,17 @@
 # Changelog
 
+### v2.28.0 (2026-10-19)
+
+**New features:**
+
+- \[MINOR] feat: assign names to PostgreSQL service environments (● [2970f1f](https://github.com/zerocluster/postgresql/commit/2970f1f); 👬 zdm)
+
+**Other changes:**
+
+- chore(deps): update locked dependencies (● [c105851](https://github.com/zerocluster/postgresql/commit/c105851), [11d058d](https://github.com/zerocluster/postgresql/commit/11d058d); 👬 zdm)
+
+Compare with the previous release: [v2.27.124...v2.28.0](https://github.com/zerocluster/postgresql/compare/v2.27.124...v2.28.0)
+
 ### v2.27.124 (2026-10-19)
 
 **Other changes:**
