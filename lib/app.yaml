@@ -4,24 +4,31 @@ dependencies:
 services:
   primary:
     components:
+      env:
+        name: postgresql
       postgresql:
         mode: primary
 
   standby-sync:
     components:
+      env:
+        name: postgresql-sync
       postgresql:
         mode: standby-sync
 
   standby-async:
     components:
+      env:
+        name: postgresql-async
       postgresql:
         mode: standby-async
 
   backup:
     components:
+      env:
+        name: postgresql-backup
       postgresql:
         mode: backup
-
       rpc: true
 
 defaultService: primary
