@@ -1,5 +1,13 @@
 # Changelog
 
+### v2.28.5 (2026-10-24)
+
+**Other changes:**
+
+- chore(deps): update locked dependencies (● [cf2ef51](https://github.com/zerocluster/postgresql/commit/cf2ef51); 👬 zdm)
+
+Compare with the previous release: [v2.28.4...v2.28.5](https://github.com/zerocluster/postgresql/compare/v2.28.4...v2.28.5)
+
 ### v2.28.4 (2026-10-24)
 
 **Other changes:**
