@@ -1,5 +1,17 @@
 # Changelog
 
+### v2.28.9 (2026-10-28)
+
+**Code refactoring:**
+
+- \[PATCH] refactor: align standby service names and simplify components (● [961daf6](https://github.com/zerocluster/postgresql/commit/961daf6); 👬 zdm)
+
+**Other changes:**
+
+- chore(deps): update locked dependencies (● [a5c58b4](https://github.com/zerocluster/postgresql/commit/a5c58b4), [6239e39](https://github.com/zerocluster/postgresql/commit/6239e39), [52bfa99](https://github.com/zerocluster/postgresql/commit/52bfa99); 👬 zdm)
+
+Compare with the previous release: [v2.28.8...v2.28.9](https://github.com/zerocluster/postgresql/compare/v2.28.8...v2.28.9)
+
 ### v2.28.8 (2026-10-26)
 
 **Other changes:**
