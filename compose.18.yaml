@@ -49,7 +49,7 @@ services:
         constraints:
           - "node.labels.postgresql == sync"
 
-    command: run --service=standby-sync
+    command: run --service=standby-synchronous
 
     secrets:
       - { source: postgresql_env.yaml, target: /var/local/package/env.yaml }
@@ -74,7 +74,7 @@ services:
         constraints:
           - "node.labels.postgresql == async"
 
-    command: run --service=standby-async
+    command: run --service=standby-asynchronous
 
     secrets:
       - { source: postgresql_env.yaml, target: /var/local/package/env.yaml }
