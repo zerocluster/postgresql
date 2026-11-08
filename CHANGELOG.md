@@ -1,5 +1,17 @@
 # Changelog
 
+### v2.28.24 (2026-11-08)
+
+**Bug fixes:**
+
+- \[PATCH] fix: remove depends_on from compose file (● [df9cf37](https://github.com/zerocluster/postgresql/commit/df9cf37); 👬 zdm)
+
+**Other changes:**
+
+- chore(deps): update locked dependencies (● [7b47670](https://github.com/zerocluster/postgresql/commit/7b47670); 👬 zdm)
+
+Compare with the previous release: [v2.28.23...v2.28.24](https://github.com/zerocluster/postgresql/compare/v2.28.23...v2.28.24)
+
 ### v2.28.23 (2026-11-06)
 
 **Other changes:**
