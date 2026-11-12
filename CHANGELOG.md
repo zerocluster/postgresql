@@ -1,5 +1,13 @@
 # Changelog
 
+### v2.28.31 (2026-11-12)
+
+**Other changes:**
+
+- build(deps): update installed softvisio packages (● [d5a46cb](https://github.com/zerocluster/postgresql/commit/d5a46cb); 👬 zdm)
+
+Compare with the previous release: [v2.28.30...v2.28.31](https://github.com/zerocluster/postgresql/compare/v2.28.30...v2.28.31)
+
 ### v2.28.30 (2026-11-12)
 
 **Other changes:**
