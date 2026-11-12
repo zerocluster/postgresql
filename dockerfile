@@ -20,8 +20,8 @@ apt-get install -y \
     postgresql-$POSTGRESQL_VERSION \
     postgresql-$POSTGRESQL_VERSION-pgvector \
     postgresql-$POSTGRESQL_VERSION-postgis-$POSTGIS_VERSION \
-    postgresql-$POSTGRESQL_VERSION-softvisio-admin \
-    postgresql-$POSTGRESQL_VERSION-softvisio-types
+    postgresql-$POSTGRESQL_VERSION-softvisio \
+    postgresql-$POSTGRESQL_VERSION-softvisio-admin
 
 # add locales
 localedef --force -i ru_UA -f UTF-8 ru_UA.UTF-8
