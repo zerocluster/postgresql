@@ -1,5 +1,17 @@
 # Changelog
 
+### v2.29.0 (2026-11-13)
+
+**New features:**
+
+- \[MINOR] feat: trust postgis and vector extensions (● [7267475](https://github.com/zerocluster/postgresql/commit/7267475); 👬 zdm)
+
+**Other changes:**
+
+- chore(deps): update locked dependencies (● [fecbb33](https://github.com/zerocluster/postgresql/commit/fecbb33); 👬 zdm)
+
+Compare with the previous release: [v2.28.33...v2.29.0](https://github.com/zerocluster/postgresql/compare/v2.28.33...v2.29.0)
+
 ### v2.28.33 (2026-11-13)
 
 **Other changes:**
