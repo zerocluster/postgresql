@@ -23,8 +23,16 @@ apt-get install -y \
     postgresql-$POSTGRESQL_VERSION-softvisio \
     postgresql-$POSTGRESQL_VERSION-softvisio-admin
 
+# make extensions trusted
+for extension in postgis vector; do
+    control_file="$(pg_config --sharedir)/extension/${extension}.control"
+    sed -i '/^trusted[[:space:]]*=/d' "$control_file"
+    echo 'trusted = true' >> "$control_file"
+done
+
 # add locales
-localedef --force -i ru_UA -f UTF-8 ru_UA.UTF-8
+# NOTE: not used because now we use `icu` locale provider
+# localedef --force -i ru_UA -f UTF-8 ru_UA.UTF-8
 
 # remove default cluster
 rm -rf /var/lib/postgresql/$POSTGRESQL_VERSION/main
