@@ -1,5 +1,13 @@
 # Changelog
 
+### v2.28.33 (2026-11-13)
+
+**Other changes:**
+
+- build(deps): update @corejslib packages to latest versions (● [ec2112d](https://github.com/zerocluster/postgresql/commit/ec2112d); 👬 zdm)
+
+Compare with the previous release: [v2.28.32...v2.28.33](https://github.com/zerocluster/postgresql/compare/v2.28.32...v2.28.33)
+
 ### v2.28.32 (2026-11-12)
 
 **Other changes:**
