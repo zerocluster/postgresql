@@ -8,14 +8,18 @@
 ### Debug
 
 ```sh
-docker run --rm -it --network main -p 5432:5432 -v /var/local/zerocluster/postgresql:/var/local/package -v /var/run/postgresql:/var/run/postgresql -v postgresql:/var/local/package/data --entrypoint bash ghcr.io/zerocluster/postgresql/18
+docker run --rm -it --network devel_network -v /var/local/zerocluster/postgresql:/var/local/package -v /var/local/111:/var/local/package/data --entrypoint bash ghcr.io/zerocluster/postgresql/18
+```
+
+```sh
+docker run --rm -it --network devel_network -p 5432:5432 -v /var/local/zerocluster/postgresql:/var/local/package -v /var/run/postgresql:/var/run/postgresql -v postgresql:/var/local/package/data --entrypoint bash ghcr.io/zerocluster/postgresql/18
 ```
 
 ### Upgrade client
 
 ```sh
-apt remove -y postgresql-client-17
-apt install -y postgresql-client-18
+apt remove -y postgresql-client-18
+apt install -y postgresql-client-19
 ```
 
 ### Upgrade cluster
@@ -23,8 +27,8 @@ apt install -y postgresql-client-18
 - Make sure, that old and new clusters use the same versions of timescaledb. If not - upgrade old cluster to the new version first.
 
 ```sh
-export OLD_POSTGRESQL_VERSION=17
-export NEW_POSTGRESQL_VERSION=18
+export OLD_POSTGRESQL_VERSION=18
+export NEW_POSTGRESQL_VERSION=19
 export STACK_NAME=devel
 export VOLUME_NAME=${STACK_NAME}_postgresql
 
