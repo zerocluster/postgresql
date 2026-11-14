@@ -6,16 +6,19 @@ services:
     components:
       postgresql:
         mode: primary
+      rpc: true
 
   standby-synchronous:
     components:
       postgresql:
         mode: standby-synchronous
+      rpc: true
 
   standby-asynchronous:
     components:
       postgresql:
         mode: standby-asynchronous
+      rpc: true
 
   backup:
     components:
