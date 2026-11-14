@@ -4,6 +4,7 @@ release:
 docker:
   composeFile:
     - compose.18.yaml
+    # - compose.19.yaml
   defaultTag: latest
   autoTags: [main, latest, next]
 
