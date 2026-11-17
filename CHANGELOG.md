@@ -1,5 +1,25 @@
 # Changelog
 
+### v2.30.0 (2026-11-17)
+
+**New features:**
+
+- \[MINOR] feat: add PostgreSQL 19 compose configuration (● [b2fd47b](https://github.com/zerocluster/postgresql/commit/b2fd47b); 👬 zdm)
+
+- \[MINOR] feat: enable rpc for postgresql service roles (● [67366a6](https://github.com/zerocluster/postgresql/commit/67366a6); 👬 zdm)
+
+**Other changes:**
+
+- chore(deps): update locked dependencies (● [c84362f](https://github.com/zerocluster/postgresql/commit/c84362f); 👬 zdm)
+
+- docs: update docs (● [fbad8be](https://github.com/zerocluster/postgresql/commit/fbad8be); 👬 zdm)
+
+- docs: update PostgreSQL upgrade instructions to 19 (● [b5de6b6](https://github.com/zerocluster/postgresql/commit/b5de6b6); 👬 zdm)
+
+    Update debug commands to use the devel_network Docker network.
+
+Compare with the previous release: [v2.29.7...v2.30.0](https://github.com/zerocluster/postgresql/compare/v2.29.7...v2.30.0)
+
 ### v2.29.7 (2026-11-14)
 
 **Other changes:**
