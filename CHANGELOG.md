@@ -1,5 +1,21 @@
 # Changelog
 
+### v2.31.4 (2026-11-18)
+
+**Bug fixes:**
+
+- \[PATCH] fix: mount public PostgreSQL socket directory separately (● [c212319](https://github.com/zerocluster/postgresql/commit/c212319); 👬 zdm)
+
+**Other changes:**
+
+- chore(deps): update locked dependencies (● [83d094b](https://github.com/zerocluster/postgresql/commit/83d094b); 👬 zdm)
+
+- docs: update (● [5a6dbef](https://github.com/zerocluster/postgresql/commit/5a6dbef); 👬 zdm)
+
+- docs: update docs (● [261e3ba](https://github.com/zerocluster/postgresql/commit/261e3ba); 👬 zdm)
+
+Compare with the previous release: [v2.31.3...v2.31.4](https://github.com/zerocluster/postgresql/compare/v2.31.3...v2.31.4)
+
 ### v2.31.3 (2026-11-18)
 
 **Other changes:**
