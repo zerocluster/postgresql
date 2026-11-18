@@ -1,5 +1,19 @@
 # Changelog
 
+### v2.31.0 (2026-11-18)
+
+**New features:**
+
+- \[MINOR] feat: consolidate PostgreSQL services into main (● [b7880c6](https://github.com/zerocluster/postgresql/commit/b7880c6); 👬 zdm)
+
+    Remove separate primary, standby, and backup services and update `@corejslib/app` to 1.18.0.
+
+**Other changes:**
+
+- docs: update docs (● [e95b506](https://github.com/zerocluster/postgresql/commit/e95b506); 👬 zdm)
+
+Compare with the previous release: [v2.30.1...v2.31.0](https://github.com/zerocluster/postgresql/compare/v2.30.1...v2.31.0)
+
 ### v2.30.1 (2026-11-17)
 
 **Other changes:**
