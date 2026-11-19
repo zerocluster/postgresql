@@ -1,5 +1,15 @@
 # Changelog
 
+### v2.31.8 (2026-11-19)
+
+**Other changes:**
+
+- docs: update (● [ec597f0](https://github.com/zerocluster/postgresql/commit/ec597f0); 👬 zdm)
+
+- docs: update docs (● [e6914c2](https://github.com/zerocluster/postgresql/commit/e6914c2); 👬 zdm)
+
+Compare with the previous release: [v2.31.7...v2.31.8](https://github.com/zerocluster/postgresql/compare/v2.31.7...v2.31.8)
+
 ### v2.31.7 (2026-11-19)
 
 **Other changes:**
