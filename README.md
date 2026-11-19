@@ -8,11 +8,11 @@
 ### Debug
 
 ```sh
-docker run --rm -it --network devel_network -v /var/local/zerocluster/postgresql:/var/local/package -v /var/local/111:/var/local/package/data --entrypoint bash ghcr.io/zerocluster/postgresql/18
+docker run --rm -it --network devel_network -v /var/local/zerocluster/postgresql:/var/local/package -v /var/local/111:/var/local/package/data --entrypoint bash ghcr.io/zerocluster/postgresql/19
 ```
 
 ```sh
-docker run --rm -it --network devel_network -p 5432:5432 -v /var/local/zerocluster/postgresql:/var/local/package -v /var/run/postgresql:/var/run/postgresql-public -v postgresql:/var/local/package/data --entrypoint bash ghcr.io/zerocluster/postgresql/18
+docker run --rm -it --network devel_network -p 5432:5432 -v /var/local/zerocluster/postgresql:/var/local/package -v /var/run/postgresql:/var/run/postgresql-public -v postgresql:/var/local/package/data --entrypoint bash ghcr.io/zerocluster/postgresql/19
 ```
 
 ### Upgrade client
