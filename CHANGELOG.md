@@ -1,5 +1,15 @@
 # Changelog
 
+### v2.31.7 (2026-11-19)
+
+**Other changes:**
+
+- chore: enable compose.19.yaml in zcli config (● [1990cc2](https://github.com/zerocluster/postgresql/commit/1990cc2); 👬 zdm)
+
+- chore(deps): update locked dependencies (● [2ca1b6d](https://github.com/zerocluster/postgresql/commit/2ca1b6d); 👬 zdm)
+
+Compare with the previous release: [v2.31.6...v2.31.7](https://github.com/zerocluster/postgresql/compare/v2.31.6...v2.31.7)
+
 ### v2.31.6 (2026-11-19)
 
 **Other changes:**
