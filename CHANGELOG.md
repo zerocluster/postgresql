@@ -1,5 +1,15 @@
 # Changelog
 
+### v2.31.9 (2026-11-19)
+
+**Other changes:**
+
+- chore: remove PostgreSQL 18 compose configuration (● [a17e174](https://github.com/zerocluster/postgresql/commit/a17e174); 👬 zdm)
+
+- chore(deps): update locked dependencies (● [3db30b0](https://github.com/zerocluster/postgresql/commit/3db30b0); 👬 zdm)
+
+Compare with the previous release: [v2.31.8...v2.31.9](https://github.com/zerocluster/postgresql/compare/v2.31.8...v2.31.9)
+
 ### v2.31.8 (2026-11-19)
 
 **Other changes:**
