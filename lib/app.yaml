@@ -13,7 +13,4 @@ components:
   env:
     name: postgresql
 
-  healthcheck:
-    enabled: false
-
 config: ~
