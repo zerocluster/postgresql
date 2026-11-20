@@ -1,5 +1,29 @@
 # Changelog
 
+### v2.32.0 (2026-11-20)
+
+**New features:**
+
+- \[MINOR] feat: add postgresql component (● [d8ff9c2](https://github.com/zerocluster/postgresql/commit/d8ff9c2); 👬 zdm)
+
+**Bug fixes:**
+
+- \[PATCH] fix: enable healthcheck (● [5e47e04](https://github.com/zerocluster/postgresql/commit/5e47e04); 👬 zdm)
+
+- \[PATCH] fix: start manager after app started (● [a75754f](https://github.com/zerocluster/postgresql/commit/a75754f); 👬 zdm)
+
+**Other changes:**
+
+- build: remove PostgreSQL version environment variables (● [b4b55b7](https://github.com/zerocluster/postgresql/commit/b4b55b7); 👬 zdm)
+
+- chore(deps): update locked dependencies (● [3ed6b7b](https://github.com/zerocluster/postgresql/commit/3ed6b7b); 👬 zdm)
+
+- docs: remove replication monitoring comments (● [3e1cd11](https://github.com/zerocluster/postgresql/commit/3e1cd11); 👬 zdm)
+
+- docs: update docs (● [5eda4fc](https://github.com/zerocluster/postgresql/commit/5eda4fc); 👬 zdm)
+
+Compare with the previous release: [v2.31.9...v2.32.0](https://github.com/zerocluster/postgresql/compare/v2.31.9...v2.32.0)
+
 ### v2.31.9 (2026-11-19)
 
 **Other changes:**
