@@ -1,0 +1,73 @@
+dependencies:
+  - cluster
+  - rpc
+
+optionalDependencies:
+  - nginxUpstream
+
+config:
+  clusterName: main
+  clusterVersion: ~
+  dataDir: ~
+
+  access:
+    - { host: local, database: all, user: all, address: ~, auth-method: trust, auth-options: ~ }
+    - { host: local, database: replication, user: replication, address: ~, auth-method: trust, auth-options: ~ }
+    - { host: host, database: replication, user: replication, address: 0.0.0.0/0, auth-method: scram-sha-256, auth-options: ~ }
+    - { host: host, database: all, user: all, address: 0.0.0.0/0, auth-method: scram-sha-256, auth-options: ~ }
+
+  backup:
+    enabled: false
+    pitrEnabled: true
+    maxAge: 1 week
+    incrementalBackupInterval: 1 day
+
+  replication:
+    username: replication
+    password: ~
+    numberOfSynchronousStandbys: 0
+
+  settings:
+    maintenance_work_mem: 512 MB
+    shared_preload_libraries: ~ # [ timescaledb ]
+
+    # replication slots
+    max_slot_wal_keep_size: 10GB
+    idle_replication_slot_timeout: 1d
+
+    # log
+    log_checkpoints: false
+    log_line_prefix: "[%t] "
+
+    # plpgsql
+    plpgsql.variable_conflict: error
+
+    IntervalStyle: iso_8601
+
+  primary:
+    publishUnixSocket: true
+    nginx:
+      enabled: false
+      port: 5432
+      serverNames: ~
+      defaultServer: false # true - to accept non-ssl connections
+
+  standby-synchronous:
+    publishUnixSocket: true
+    nginx:
+      enabled: false
+      port: 5432
+      serverNames: ~
+      defaultServer: false # true - to accept non-ssl connections
+
+  standby-asynchronous:
+    publishUnixSocket: true
+    nginx:
+      enabled: false
+      port: 5432
+      serverNames: ~
+      defaultServer: false # true - to accept non-ssl connections
+
+  packages:
+    - postgresql-<%- postgresqlVersion %>
+    - postgresql-<%- postgresqlVersion %>-postgis-3

@@ -1,0 +1,79 @@
+- $id: public-config
+  type: object
+  properties: {}
+
+- $id: config
+  type: object
+  properties:
+    clusterName: { type: string }
+    clusterVersion: { type: integer, minimum: 18 }
+    dataDir: { type: ["null", string] }
+
+    access:
+      type: array
+      items:
+        type: object
+        properties:
+          host: { enum: [local, host, hostssl, hostnossl, hostgssenc, hostnogssenc] }
+          database: { type: string }
+          user: { type: string }
+          address: { type: ["null", string] }
+          auth-method: { enum: [trust, reject, scram-sha-256, md5, password, gss, sspi, ident, peer, ldap, radius, cert, pam, bsd] }
+          auth-options: { type: ["null", string] }
+        additionalProperties: false
+        required: [host, database, user, address, auth-method, auth-options]
+
+    backup:
+      type: object
+      properties:
+        enabled: { type: boolean }
+        pitrEnabled: { type: boolean }
+        maxAge: { type: string, format: interval }
+        incrementalBackupInterval: { type: string, format: interval }
+      additionalProperties: false
+      required: [enabled, pitrEnabled, maxAge, incrementalBackupInterval]
+
+    replication:
+      type: object
+      properties:
+        username: { type: string }
+        password: { type: string }
+        numberOfSynchronousStandbys: { type: integer }
+
+      additionalProperties: false
+      required: [username, password, numberOfSynchronousStandbys]
+
+    settings:
+      type: ["null", object]
+
+    primary: { $ref: role-config }
+    standby-synchronous: { $ref: role-config }
+    standby-asynchronous: { $ref: role-config }
+
+    packages:
+      type: array
+      items:
+        type: string
+
+  additionalProperties: false
+  required: [clusterName, clusterVersion, dataDir, access, backup, primary, standby-synchronous, standby-asynchronous, packages]
+
+- $id: role-config
+  type: object
+  properties:
+    publishUnixSocket: { type: boolean }
+    nginx:
+      type: object
+      properties:
+        enabled: { type: boolean }
+        port: { type: integer, format: ip-port }
+        serverNames:
+          anyOf:
+            - type: "null"
+            - { type: string, format: nginx-server-name }
+            - { type: array, items: { type: string, format: nginx-server-name }, minItems: 1, uniqueItems: true }
+        defaultServer: { type: boolean }
+      additionalProperties: false
+      required: [enabled, port, serverNames, defaultServer]
+  additionalProperties: false
+  required: [publishUnixSocket, nginx]

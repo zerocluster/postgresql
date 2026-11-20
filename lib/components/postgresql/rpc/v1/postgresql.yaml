@@ -1,0 +1,46 @@
+title: PostgreSQL cluster instance
+
+methods:
+  get-status:
+    title: Get instance status
+    connectionType: websockets
+
+  recover:
+    title: Recover cluster
+    connectionType: websockets
+
+  start:
+    title: Start cluster
+    connectionType: websockets
+    params:
+      - name: options
+        required: true
+        schema:
+          anyOf:
+            - type: object
+              properties:
+                role: { const: primary }
+              additionalProperties: false
+              required: [role]
+            - type: object
+              properties:
+                role: { enum: [standby-synchronous, standby-asynchronous] }
+                replicationHostname: { type: string, format: ip-address }
+              additionalProperties: false
+              required: [role, replicationHostname]
+
+  stop:
+    title: Stop cluster
+    connectionType: websockets
+
+  delete-cluster-old-versions:
+    title: Delete cluster old versions
+    params:
+      - name: options
+        required: true
+        schema:
+          type: object
+          properties:
+            password: { type: string }
+          additionalProperties: false
+          required: [password]

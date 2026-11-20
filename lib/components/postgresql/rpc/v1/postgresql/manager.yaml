@@ -1,0 +1,17 @@
+title: PostgreSQL cluster manager
+
+methods:
+  get-status:
+    title: Get cluster status
+
+  delete-cluster-old-versions:
+    title: Delete cluster old versions
+    params:
+      - name: options
+        required: true
+        schema:
+          type: object
+          properties:
+            password: { type: string }
+          additionalProperties: false
+          required: [password]
