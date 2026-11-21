@@ -12,5 +12,3 @@ defaultService: main
 components:
   env:
     name: postgresql
-
-config: ~
