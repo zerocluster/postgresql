@@ -1,5 +1,21 @@
 # Changelog
 
+### v2.33.0 (2026-11-21)
+
+**New features**:
+
+- \[MINOR] feat: persist cluster roles and prefer the former primary (● [03a472f](https://github.com/zerocluster/postgresql/commit/03a472f); 👬 zdm)
+
+**Code refactoring**:
+
+- \[PATCH] refactor: remove unused app configuration fields (● [2d8428c](https://github.com/zerocluster/postgresql/commit/2d8428c); 👬 zdm)
+
+**Other changes**:
+
+- chore(deps): update locked dependencies (● [e228ac1](https://github.com/zerocluster/postgresql/commit/e228ac1); 👬 zdm)
+
+Compare with the previous release: [v2.32.1...v2.33.0](https://github.com/zerocluster/postgresql/compare/v2.32.1...v2.33.0)
+
 ### v2.32.1 (2026-11-21)
 
 **Other changes**:
