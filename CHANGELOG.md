@@ -1,5 +1,17 @@
 # Changelog
 
+### v2.33.3 (2026-11-24)
+
+**Bug fixes**:
+
+- \[PATCH] fix: rename app run command to start (● [1c50836](https://github.com/zerocluster/postgresql/commit/1c50836); 👬 zdm)
+
+**Other changes**:
+
+- chore(deps): update locked dependencies (● [bc85fda](https://github.com/zerocluster/postgresql/commit/bc85fda), [2934d3f](https://github.com/zerocluster/postgresql/commit/2934d3f); 👬 zdm)
+
+Compare with the previous release: [v2.33.2...v2.33.3](https://github.com/zerocluster/postgresql/compare/v2.33.2...v2.33.3)
+
 ### v2.33.2 (2026-11-22)
 
 **Other changes**:
