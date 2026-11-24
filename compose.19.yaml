@@ -14,7 +14,7 @@ services:
         constraints:
           - "node.labels.postgresql == true"
 
-    command: run
+    command: start
 
     secrets:
       - { source: postgresql_env.yaml, target: /var/local/package/env.yaml }
