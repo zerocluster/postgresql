@@ -1,5 +1,17 @@
 # Changelog
 
+### v2.33.4 (2026-11-25)
+
+**Bug fixes**:
+
+- \[PATCH] fix: use start command in development script (● [c75a085](https://github.com/zerocluster/postgresql/commit/c75a085); 👬 zdm)
+
+**Other changes**:
+
+- chore(deps): update locked dependencies (● [5ff4265](https://github.com/zerocluster/postgresql/commit/5ff4265); 👬 zdm)
+
+Compare with the previous release: [v2.33.3...v2.33.4](https://github.com/zerocluster/postgresql/compare/v2.33.3...v2.33.4)
+
 ### v2.33.3 (2026-11-24)
 
 **Bug fixes**:
