@@ -1,5 +1,21 @@
 # Changelog
 
+### v2.34.0 (2026-11-26)
+
+**New features**:
+
+- \[MINOR] feat: add postgresql ALPN protocol to nginx proxies (● [0d6a20e](https://github.com/zerocluster/postgresql/commit/0d6a20e); 👬 zdm)
+
+**Bug fixes**:
+
+- \[PATCH] fix: replace nginx ssl option with tls (● [f0c026f](https://github.com/zerocluster/postgresql/commit/f0c026f); 👬 zdm)
+
+**Other changes**:
+
+- chore(deps): update locked dependencies (● [eb1a23d](https://github.com/zerocluster/postgresql/commit/eb1a23d), [b919614](https://github.com/zerocluster/postgresql/commit/b919614), [b58e794](https://github.com/zerocluster/postgresql/commit/b58e794), [6305a63](https://github.com/zerocluster/postgresql/commit/6305a63), [b0c229e](https://github.com/zerocluster/postgresql/commit/b0c229e); 👬 zdm)
+
+Compare with the previous release: [v2.33.4...v2.34.0](https://github.com/zerocluster/postgresql/compare/v2.33.4...v2.34.0)
+
 ### v2.33.4 (2026-11-25)
 
 **Bug fixes**:
